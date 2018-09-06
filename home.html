@@ -1,42 +1,215 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Главная страница</title>
-  </head>
-  <body id="top">
-    <div class="b-header">
-      <div class="container">
-        <div class="b-header__wrap">
-          <div class="b-header__part"><a class="b-header__logo" href=""></a>
-            <div class="b-header__hamburgers"></div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Главная страница</title>
+</head>
+
+<body id="top">
+  <div class="b-header">
+    <div class="container">
+      <div class="b-header__wrap">
+        <div class="b-header__part"><a class="b-header__logo" href=""></a>
+          <div class="b-header__hamburgers"></div>
+        </div>
+        <div class="b-header__social">
+          <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--fb"
+              href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--ok"
+              href=""></a></div>
+        </div><a class="b-header__phone-mobile" href="tel:+74951182511"></a>
+        <div class="b-header__phone"><a href="tel:+74951182511">+7 (495) 118 - 2511</a>
+          <div class="b-header__phone-arrow"></div>
+          <p><a href="tel:+79169906297">+7 (916) 990 - 6297</a><span>(what’s app / viber)</span></p>
+        </div>
+        <div class="b-header__part"><a class="b-header__email" href="mailto:"></a>
+          <div class="b-header__lang"><a class="b-header__lang-item" href="">En</a>
+            <!--a(href='').b-header__lang-item.b-header__lang-item--active En-->
           </div>
-          <div class="b-header__social">
-            <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--ok" href=""></a></div>
-          </div><a class="b-header__phone-mobile" href="tel:+74951182511"></a>
-          <div class="b-header__phone"><a href="tel:+74951182511">+7 (495) 118 - 2511</a>
-            <div class="b-header__phone-arrow"></div>
-            <p><a href="tel:+79169906297">+7 (916) 990 - 6297</a><span>(what’s app / viber)</span></p>
-          </div>
-          <div class="b-header__part"><a class="b-header__email" href="mailto:"></a>
-            <div class="b-header__lang"><a class="b-header__lang-item" href="">En</a>
-              <!--a(href='').b-header__lang-item.b-header__lang-item--active En-->
-            </div>
-            <div class="b-header__button">Запись на консультацию</div>
-          </div>
+          <div class="b-header__button">Запись на консультацию</div>
         </div>
       </div>
     </div>
-    <div class="page page--home">
-      <div class="b-main">
-        <div class="b-left-form">
-          <div class="b-left-form__label">Запись на бесплатный прием</div>
-          <div class="b-left-form__wrap">
-            <div class="b-left-form__title">Запись на бесплатный прием</div>
-            <div class="b-left-form__close"></div>
+  </div>
+  <div class="page page--home">
+    <div class="b-main">
+      <div class="b-left-form">
+        <div class="b-left-form__label">Запись на бесплатный прием</div>
+        <div class="b-left-form__wrap">
+          <div class="b-left-form__title">Запись на бесплатный прием</div>
+          <div class="b-left-form__close"></div>
+          <form class="b-form">
+            <div class="b-form__content">
+              <div class="b-form__item">
+                <input type="text" placeholder="Ваше имя" required>
+              </div>
+              <div class="b-form__item">
+                <input type="tel" placeholder="Ваш телефон" required>
+              </div>
+            </div>
+            <div class="b-form__submit">
+              <button>Записаться на прием</button>
+            </div>
+            <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="">Cоглашения об использовании
+                сайта</a></p>
+          </form>
+        </div>
+      </div>
+      <div class="fullpage-slider">
+        <div class="fullpage-slider__more">Подробнее</div>
+        <div class="fullpage-slider__wrap js-fullpage-slider">
+          <div class="fullpage-slider__item">
+            <div class="fullpage-slider__img"><img src="./images/main/slider/main_slider_header@2x.jpg" alt=""></div>
+            <div class="container">
+              <div class="fullpage-slider__content">
+                <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
+                <div class="fullpage-slider__numbers">
+                  <div class="fullpage-slider__numbers-item">
+                    <p>1 800</p><span>операций<br>в год</span>
+                  </div>
+                  <div class="fullpage-slider__numbers-item">
+                    <p>5 000</p><span>благодарных<br>пациентов</span>
+                  </div>
+                  <div class="fullpage-slider__numbers-item">
+                    <p>20</p><span>лет стаж работы<br>докторов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fullpage-slider__item">
+            <div class="fullpage-slider__img"><img src="./images/main/slider/endocriniya_slider.png" alt=""></div>
+            <div class="container">
+              <div class="fullpage-slider__content">
+                <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
+                <div class="fullpage-slider__numbers">
+                  <div class="fullpage-slider__numbers-item">
+                    <p>1 800</p><span>операций<br>в год</span>
+                  </div>
+                  <div class="fullpage-slider__numbers-item">
+                    <p>5 000</p><span>благодарных<br>пациентов</span>
+                  </div>
+                  <div class="fullpage-slider__numbers-item">
+                    <p>20</p><span>лет стаж работы<br>докторов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fullpage-slider__item">
+            <div class="fullpage-slider__img"><img src="./images/main/slider/plasticheskay_slider.png" alt=""></div>
+            <div class="container">
+              <div class="fullpage-slider__content">
+                <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
+                <div class="fullpage-slider__numbers">
+                  <div class="fullpage-slider__numbers-item">
+                    <p>1 800</p><span>операций<br>в год</span>
+                  </div>
+                  <div class="fullpage-slider__numbers-item">
+                    <p>5 000</p><span>благодарных<br>пациентов</span>
+                  </div>
+                  <div class="fullpage-slider__numbers-item">
+                    <p>20</p><span>лет стаж работы<br>докторов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="select-category">
+          <div class="select-category__wrap js-select-category-slider"><a class="select-category__item" href=""><span
+                class="icon-girl"></span>
+              <p>Эндокринная<br>хирургия</p>
+            </a><a class="select-category__item" href=""><span class="icon-heart"></span>
+              <p>Сердечно-сосудистая<br>хирургия</p>
+            </a><a class="select-category__item" href=""><span class="icon-ears"></span>
+              <p>Пластическая<br>хирургия</p>
+            </a></div>
+        </div>
+      </div>
+      <div class="b-main__content" id="scroll-more">
+        <div class="container">
+          <h1>Почему Doctor Proff?</h1>
+          <div class="b-main__2-col">
+            <p>«Доктор Профф» обеспечивает профессиональное медицинское обслуживание пациентов на базе ведущих клиник.
+              Команда врачей «Доктор Профф» по праву является одной из лучших в России. Это специалисты со степенью
+              «доктор медицинских наук», с большим опытом врачебной практики, признанные среди своих коллег и
+              пациентов.</p>
+            <p>Идея «Доктор Профф» не нова, однако есть одно существенное отличие – это доступность. «Доктор Профф»
+              позволяет решить давно наболевший вопрос: «Как и где найти отличного доктора, причем срочно, да еще и за
+              очень разумные деньги?». Все просто. теперь есть «Доктор Профф».</p>
+          </div>
+          <div class="b-main__2-col-show">Читать полностью</div>
+          <div class="b-main__step-company">
+            <div class="step-company js-step-company">
+              <div class="step-company__item">
+                <div class="step-company__bg"><img src="./images/main/step_company/1.jpg" alt=""></div><strong>01</strong>
+                <p>Наши доктора - лучшие хирурги России</p><span>01</span>
+              </div>
+              <div class="step-company__item">
+                <div class="step-company__bg"><img src="./images/main/step_company/2.jpg" alt=""></div><strong>02</strong>
+                <p>Стаж работы более 20 лет</p><span>02</span>
+              </div>
+              <div class="step-company__item">
+                <div class="step-company__bg"><img src="./images/main/step_company/3.jpg" alt=""></div><strong>03</strong>
+                <p>Все доктора со степенью “доктор медицинских наук”</p><span>03</span>
+              </div>
+              <div class="step-company__item">
+                <div class="step-company__bg"><img src="./images/main/step_company/4.jpg" alt=""></div><strong>04</strong>
+                <p>Государственная клиническая база</p><span>04</span>
+              </div>
+              <div class="step-company__item">
+                <div class="step-company__bg"><img src="./images/main/step_company/5.jpg" alt=""></div><strong>05</strong>
+                <p>Современные методики и технологии</p><span>05</span>
+              </div>
+              <div class="step-company__item">
+                <div class="step-company__bg"><img src="./images/main/step_company/6.jpg" alt=""></div><strong>06</strong>
+                <p>Расрочка 0% на любую операцию</p><span>06</span>
+              </div>
+            </div>
+          </div>
+          <h2>4 шага к красоте<br>и здоровью</h2>
+          <div class="health-step">
+            <div class="health-step__bg"></div>
+            <div class="health-step__wrap">
+              <div class="health-step__item">
+                <div class="health-step__close"></div><span>Шаг 1</span>
+                <p>Консультация</p>
+                <div class="icon-hl icon-comm"></div>
+                <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших
+                  пластических хирургов России.</div>
+              </div>
+              <div class="health-step__item">
+                <div class="health-step__close"></div><span>Шаг 2</span>
+                <p>План лечения</p>
+                <div class="icon-hl icon-plan"></div>
+                <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших
+                  пластических хирургов России.</div>
+              </div>
+              <div class="health-step__item">
+                <div class="health-step__close"></div><span>Шаг 3</span>
+                <p>Операции</p>
+                <div class="icon-hl icon-operation"></div>
+                <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших
+                  пластических хирургов России.</div>
+              </div>
+              <div class="health-step__item">
+                <div class="health-step__close"></div><span>Шаг 4</span>
+                <p>Наблюдение</p>
+                <div class="icon-hl icon-spy"></div>
+                <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших
+                  пластических хирургов России.</div>
+              </div>
+            </div>
+          </div>
+          <h2>Отправить заявку<br>на бесплатный прием<br>прямо сейчас</h2>
+          <div class="b-main__request">
+            <div class="tablets tablets--three"></div>
+            <div class="tablets tablets--one"></div>
+            <div class="tablets tablets--two-up"></div>
             <form class="b-form">
               <div class="b-form__content">
                 <div class="b-form__item">
@@ -45,237 +218,106 @@
                 <div class="b-form__item">
                   <input type="tel" placeholder="Ваш телефон" required>
                 </div>
+                <div class="b-form__item">
+                  <input type="text" placeholder="Вид операции" required>
+                </div>
               </div>
+              <p>Нажимая на кнопку "Отправить", вы принимаете условия<a href=""> Cоглашения об использовании сайта</a></p>
               <div class="b-form__submit">
-                <button>Записаться на прием</button>
+                <button>Отправить</button>
               </div>
-              <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="">Cоглашения об использовании сайта</a></p>
             </form>
           </div>
-        </div>
-        <div class="fullpage-slider">
-          <div class="fullpage-slider__more">Подробнее</div>
-          <div class="fullpage-slider__wrap js-fullpage-slider">
-            <div class="fullpage-slider__item">
-              <div class="fullpage-slider__img"><img src="./images/main/slider/main_slider_header@2x.jpg" alt=""></div>
-              <div class="container">
-                <div class="fullpage-slider__content">
-                  <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
-                  <div class="fullpage-slider__numbers">
-                    <div class="fullpage-slider__numbers-item">
-                      <p>1 800</p><span>операций<br>в год</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>5 000</p><span>благодарных<br>пациентов</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>20</p><span>лет стаж работы<br>докторов</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fullpage-slider__item">
-              <div class="fullpage-slider__img"><img src="./images/main/slider/endocriniya_slider.png" alt=""></div>
-              <div class="container">
-                <div class="fullpage-slider__content">
-                  <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
-                  <div class="fullpage-slider__numbers">
-                    <div class="fullpage-slider__numbers-item">
-                      <p>1 800</p><span>операций<br>в год</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>5 000</p><span>благодарных<br>пациентов</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>20</p><span>лет стаж работы<br>докторов</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fullpage-slider__item">
-              <div class="fullpage-slider__img"><img src="./images/main/slider/plasticheskay_slider.png" alt=""></div>
-              <div class="container">
-                <div class="fullpage-slider__content">
-                  <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
-                  <div class="fullpage-slider__numbers">
-                    <div class="fullpage-slider__numbers-item">
-                      <p>1 800</p><span>операций<br>в год</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>5 000</p><span>благодарных<br>пациентов</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>20</p><span>лет стаж работы<br>докторов</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <h2>Новости и акции</h2>
+          <div class="b-main__news">
+            <div class="tablets tablets--two-down"></div>
+            <div class="news">
+              <div class="news__wrap js-slider-news"><a class="news__item" href="">
+                  <div class="news__img"><img src="./images/main/news/main_news-1@2x.jpg" alt=""></div>
+                  <div class="news__title">Пять поразительных фактов о пластической хирургии</div>
+                  <div class="news__desc">«Многим из нас кажется, что мы знаем о пластической хирургии практически всё»</div>
+                </a><a class="news__item" href="">
+                  <div class="news__img"><img src="./images/main/news/main_news-2@2x.jpg" alt=""></div>
+                  <div class="news__title">Интервью с врачом</div>
+                  <div class="news__desc">Какой размер груди предпочитают россиянки, европейки и американки? Почему
+                    пластическому хирургу иногда приходится отказывать пациенту в операции? Что такое липоскульптура?</div>
+                </a><a class="news__item" href="">
+                  <div class="news__img"><img src="./images/main/news/main_news-3@2x.jpg" alt=""></div>
+                  <div class="news__title">Скидка в день рождения!</div>
+                  <div class="news__desc">В день Вашего рождения и в течение недели после него, клиника дарит Вам
+                    скидку в размере 5% на коррекцию морщин биосовместимыми наполнителями или препаратами
+                    ботуллотоксина.</div>
+                </a><a class="news__item" href="">
+                  <div class="news__img"><img src="./images/main/news/main_news-1@2x.jpg" alt=""></div>
+                  <div class="news__title">Пять поразительных фактов о пластической хирургии</div>
+                  <div class="news__desc">«Многим из нас кажется, что мы знаем о пластической хирургии практически всё»</div>
+                </a><a class="news__item" href="">
+                  <div class="news__img"><img src="./images/main/news/main_news-2@2x.jpg" alt=""></div>
+                  <div class="news__title">Интервью с врачом</div>
+                  <div class="news__desc">Какой размер груди предпочитают россиянки, европейки и американки? Почему
+                    пластическому хирургу иногда приходится отказывать пациенту в операции? Что такое липоскульптура?</div>
+                </a><a class="news__item" href="">
+                  <div class="news__img"><img src="./images/main/news/main_news-3@2x.jpg" alt=""></div>
+                  <div class="news__title">Скидка в день рождения!</div>
+                  <div class="news__desc">В день Вашего рождения и в течение недели после него, клиника дарит Вам
+                    скидку в размере 5% на коррекцию морщин биосовместимыми наполнителями или препаратами
+                    ботуллотоксина.</div>
+                </a></div>
             </div>
           </div>
-          <div class="select-category">
-            <div class="select-category__wrap js-select-category-slider"><a class="select-category__item" href=""><span class="icon-girl"></span>
-                <p>Эндокринная<br>хирургия</p></a><a class="select-category__item" href=""><span class="icon-heart"></span>
-                <p>Сердечно-сосудистая<br>хирургия</p></a><a class="select-category__item" href=""><span class="icon-ears"></span>
-                <p>Пластическая<br>хирургия</p></a></div>
-          </div>
-        </div>
-        <div class="b-main__content" id="scroll-more">
-          <div class="container">
-            <h1>Почему Doctor Proff?</h1>
-            <div class="b-main__2-col">
-              <p>«Доктор Профф» обеспечивает профессиональное медицинское обслуживание пациентов на базе ведущих клиник. Команда врачей «Доктор Профф» по праву является одной из лучших в России. Это специалисты со степенью «доктор медицинских наук», с большим опытом врачебной практики, признанные среди своих коллег и пациентов.</p>
-              <p>Идея «Доктор Профф» не нова, однако есть одно существенное отличие – это доступность. «Доктор Профф» позволяет решить давно наболевший вопрос: «Как и где найти отличного доктора, причем срочно, да еще и за очень разумные деньги?». Все просто. теперь есть «Доктор Профф».</p>
-            </div>
-            <div class="b-main__2-col-show">Читать полностью</div>
-            <div class="b-main__step-company">
-              <div class="step-company js-step-company">
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/1.jpg" alt=""></div><strong>01</strong>
-                  <p>Наши доктора - лучшие хирурги России</p><span>01</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/2.jpg" alt=""></div><strong>02</strong>
-                  <p>Стаж работы более 20 лет</p><span>02</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/3.jpg" alt=""></div><strong>03</strong>
-                  <p>Все доктора со степенью “доктор медицинских наук”</p><span>03</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/4.jpg" alt=""></div><strong>04</strong>
-                  <p>Государственная клиническая база</p><span>04</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/5.jpg" alt=""></div><strong>05</strong>
-                  <p>Современные методики и технологии</p><span>05</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/6.jpg" alt=""></div><strong>06</strong>
-                  <p>Расрочка 0% на любую операцию</p><span>06</span>
-                </div>
-              </div>
-            </div>
-            <h2>4 шага к красоте<br>и здоровью</h2>
-            <div class="health-step">
-              <div class="health-step__bg"></div>
-              <div class="health-step__wrap">
-                <div class="health-step__item">
-                  <div class="health-step__close"></div><span>Шаг 1</span>
-                  <p>Консультация</p>
-                  <div class="icon-hl icon-comm"></div>
-                  <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших пластических хирургов России.</div>
-                </div>
-                <div class="health-step__item">
-                  <div class="health-step__close"></div><span>Шаг 2</span>
-                  <p>План лечения</p>
-                  <div class="icon-hl icon-plan"></div>
-                  <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших пластических хирургов России.</div>
-                </div>
-                <div class="health-step__item">
-                  <div class="health-step__close"></div><span>Шаг 3</span>
-                  <p>Операции</p>
-                  <div class="icon-hl icon-operation"></div>
-                  <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших пластических хирургов России.</div>
-                </div>
-                <div class="health-step__item">
-                  <div class="health-step__close"></div><span>Шаг 4</span>
-                  <p>Наблюдение</p>
-                  <div class="icon-hl icon-spy"></div>
-                  <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших пластических хирургов России.</div>
-                </div>
-              </div>
-            </div>
-            <h2>Отправить заявку<br>на бесплатный прием<br>прямо сейчас</h2>
-            <div class="b-main__request">
-              <div class="tablets tablets--three"></div>
-              <div class="tablets tablets--one"></div>
-              <div class="tablets tablets--two-up"></div>
-              <form class="b-form">
-                <div class="b-form__content">
-                  <div class="b-form__item">
-                    <input type="text" placeholder="Ваше имя" required>
-                  </div>
-                  <div class="b-form__item">
-                    <input type="tel" placeholder="Ваш телефон" required>
-                  </div>
-                  <div class="b-form__item">
-                    <input type="text" placeholder="Вид операции" required>
-                  </div>
-                </div>
-                <p>Нажимая на кнопку "Отправить", вы принимаете условия<a href=""> Cоглашения об использовании сайта</a></p>
-                <div class="b-form__submit">
-                  <button>Отправить</button>
-                </div>
-              </form>
-            </div>
-            <h2>Новости и акции</h2>
-            <div class="b-main__news">
-              <div class="tablets tablets--two-down"></div>
-              <div class="news">
-                <div class="news__wrap js-slider-news"><a class="news__item" href="">
-                    <div class="news__img"><img src="./images/main/news/main_news-1@2x.jpg" alt=""></div>
-                    <div class="news__title">Пять поразительных фактов о пластической хирургии</div>
-                    <div class="news__desc">«Многим из нас кажется, что мы знаем о пластической хирургии практически всё»</div></a><a class="news__item" href="">
-                    <div class="news__img"><img src="./images/main/news/main_news-2@2x.jpg" alt=""></div>
-                    <div class="news__title">Интервью с врачом</div>
-                    <div class="news__desc">Какой размер груди предпочитают россиянки, европейки и американки? Почему пластическому хирургу иногда приходится отказывать пациенту в операции? Что такое липоскульптура?</div></a><a class="news__item" href="">
-                    <div class="news__img"><img src="./images/main/news/main_news-3@2x.jpg" alt=""></div>
-                    <div class="news__title">Скидка в день рождения!</div>
-                    <div class="news__desc">В день Вашего рождения и в течение недели после него, клиника дарит Вам скидку в размере 5% на коррекцию морщин биосовместимыми наполнителями или препаратами ботуллотоксина.</div></a><a class="news__item" href="">
-                    <div class="news__img"><img src="./images/main/news/main_news-1@2x.jpg" alt=""></div>
-                    <div class="news__title">Пять поразительных фактов о пластической хирургии</div>
-                    <div class="news__desc">«Многим из нас кажется, что мы знаем о пластической хирургии практически всё»</div></a><a class="news__item" href="">
-                    <div class="news__img"><img src="./images/main/news/main_news-2@2x.jpg" alt=""></div>
-                    <div class="news__title">Интервью с врачом</div>
-                    <div class="news__desc">Какой размер груди предпочитают россиянки, европейки и американки? Почему пластическому хирургу иногда приходится отказывать пациенту в операции? Что такое липоскульптура?</div></a><a class="news__item" href="">
-                    <div class="news__img"><img src="./images/main/news/main_news-3@2x.jpg" alt=""></div>
-                    <div class="news__title">Скидка в день рождения!</div>
-                    <div class="news__desc">В день Вашего рождения и в течение недели после него, клиника дарит Вам скидку в размере 5% на коррекцию морщин биосовместимыми наполнителями или препаратами ботуллотоксина.</div></a></div>
-              </div>
-            </div>
-            <h2>Наши партнеры</h2>
-            <div class="b-main__partners">
-              <div class="partners">
-                <div class="partners__wrap"><a class="partners__item" href=""><img src="./images/main/partners/i-lenovo.png" alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-juniper.png" alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-xerox.png" alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-schneider.png" alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-dell.png" alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-aruba.png" alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-apc.png" alt=""></a></div>
-              </div>
+          <h2>Наши партнеры</h2>
+          <div class="b-main__partners">
+            <div class="partners">
+              <div class="partners__wrap"><a class="partners__item" href=""><img src="./images/main/partners/i-lenovo.png"
+                    alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-juniper.png" alt=""></a><a
+                  class="partners__item" href=""><img src="./images/main/partners/i-xerox.png" alt=""></a><a class="partners__item"
+                  href=""><img src="./images/main/partners/i-schneider.png" alt=""></a><a class="partners__item" href=""><img
+                    src="./images/main/partners/i-dell.png" alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-aruba.png"
+                    alt=""></a><a class="partners__item" href=""><img src="./images/main/partners/i-apc.png" alt=""></a></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="b-footer">
-      <div class="container">
-        <div class="b-footer__wrap">
-          <div class="b-footer__top">
-            <div class="b-footer__logo"></div>
-            <div class="b-footer__menu"><a href="">Доктор</a><a href="">Клиники</a><a href="">Женщинам</a><a href="">Мужчинам</a><a href="">Фото до и после</a><a href="">Отзывы</a><a href="">Расрочка</a><a href="">Контакты</a></div>
-            <div class="b-footer__social">
-              <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--ok" href=""></a></div>
-            </div>
-          </div>
-          <div class="b-footer__center">
-            <div class="b-footer__sub-menu">
-              <p><a href="">Пластическая хирургия</a><a href="">Эндокринная хирургия</a><a href="">Сердечно-сосудистая хирургия</a></p>
-              <p><a href="">О нас</a><a href="">Новости клиники</a><a href="">Согласия  на обработку данных</a><a href="">Согласие на использование сайта</a></p>
-            </div>
-            <div class="b-footer__center-right">
-              <div class="b-footer__phone"><a href="tel:">+7 (495) 118 - 2511</a><a href="tel:">+7 (495) 118 - 2511</a></div>
-              <div class="b-footer__center-bottom"><a class="b-footer__call" href="">Запись на консультацию</a><a class="b-footer__email" href="mailto:info@doctorproff.ru">info@doctorproff.ru</a></div>
-            </div>
-          </div>
-          <div class="b-footer__bottom">
-            <div class="b-footer__copy">doctorproff © 2018</div>
-            <div class="b-footer__city">г. Москва</div>
+  </div>
+  <footer class="b-footer">
+    <div class="container">
+      <div class="b-footer__wrap">
+        <div class="b-footer__top">
+          <div class="b-footer__logo"></div>
+          <div class="b-footer__menu"><a href="">Доктор</a><a href="">Клиники</a><a href="">Женщинам</a><a href="">Мужчинам</a><a
+              href="">Фото до и после</a><a href="">Отзывы</a><a href="">Расрочка</a><a href="">Контакты</a></div>
+          <div class="b-footer__social">
+            <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--fb"
+                href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--ok"
+                href=""></a></div>
           </div>
         </div>
+        <div class="b-footer__center">
+          <div class="b-footer__sub-menu">
+            <p><a href="">Пластическая хирургия</a><a href="">Эндокринная хирургия</a><a href="">Сердечно-сосудистая
+                хирургия</a></p>
+            <p><a href="">О нас</a><a href="">Новости клиники</a><a href="">Согласия на обработку данных</a><a href="">Согласие
+                на использование сайта</a></p>
+          </div>
+          <div class="b-footer__center-right">
+            <div class="b-footer__phone"><a href="tel:">+7 (495) 118 - 2511</a><a href="tel:">+7 (495) 118 - 2511</a></div>
+            <div class="b-footer__center-bottom"><a class="b-footer__call" href="">Запись на консультацию</a><a class="b-footer__email"
+                href="mailto:info@doctorproff.ru">info@doctorproff.ru</a></div>
+          </div>
+        </div>
+        <div class="b-footer__bottom">
+          <div class="b-footer__copy">doctorproff © 2018</div>
+          <div class="b-footer__city">г. Москва</div>
+        </div>
       </div>
-    </footer>
-  </body>
-  <!--script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")-->
-  <!--script(src="//yastatic.net/share2/share.js")-->
-  <!--script(src='https://www.youtube.com/iframe_api')-->
-  <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIj4H-aE1sWZ3_QyLEN1X4mXp6pN5aPk")-->
-  <script src="./js/bundle.js"></script>
+    </div>
+  </footer>
+</body>
+<!--script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")-->
+<!--script(src="//yastatic.net/share2/share.js")-->
+<!--script(src='https://www.youtube.com/iframe_api')-->
+<!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIj4H-aE1sWZ3_QyLEN1X4mXp6pN5aPk")-->
+<script src="./js/bundle.js?123456789"></script>
+
 </html>
