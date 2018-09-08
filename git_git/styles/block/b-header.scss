@@ -1,0 +1,354 @@
+.b-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 50;
+  transition: .3s ease-in-out all;
+
+  .container {
+    position: relative;
+    height: 100%;
+  }
+}
+
+.b-header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.b-header__part {
+  display: flex;
+  align-items: center;
+
+  @include bp($bp-712) {
+    &:first-child {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+.b-header__logo {
+  width: 126px;
+  height: 20px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon/doctorproff_logo.svg");
+}
+
+.b-header__hamburgers {
+  margin-left: 30px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 2px $white;
+  cursor: pointer;
+  transition: .3s ease-in-out all;
+
+  @include bp($bp-1000) {
+    margin-left: 20px;
+  }
+
+  @include bp($bp-712) {
+    margin-right: 58px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include svg-i-menu;
+  }
+
+  &:hover {
+    border-color: #42b0bd;
+  }
+}
+
+.b-header__social {
+  @include bp($bp-1190) {
+    display: none;
+  }
+}
+
+.b-header__phone-arrow {
+  position: absolute;
+  top: 1px;
+  right: -29px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: none;
+  transition: .3s ease-in-out all;
+
+  @include bp($bp-1000) {
+    display: block;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    @include svg-i-arrow-little_white;
+  }
+
+  &.active {
+    transform: rotate(180deg);
+  }
+}
+
+.b-header__phone {
+  position: relative;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+
+  @include bp($bp-712) {
+    display: none;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include svg-i-phone;
+  }
+
+  p {
+    position: relative;
+    margin-left: 32px;
+    margin-bottom: 0;
+
+    @include bp($bp-1000) {
+      opacity: 0;
+      position: absolute;
+      left: 13px;
+      top: 0;
+      transition: .3s ease-in-out all;
+    }
+
+    &.active {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+  }
+
+  a, span {
+    font-family: $Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: $white;
+  }
+
+  span {
+    position: absolute;
+    left: 1px;
+    bottom: -11px;
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: normal;
+  }
+}
+
+.b-header__phone-mobile {
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  display: none;
+  @include svg-i-phone;
+
+  @include bp($bp-712) {
+    display: block;
+  }
+}
+
+.b-header__email {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 2px $white;
+  transition: .3s ease-in-out all;
+
+  @include bp($bp-800) {
+    display: none;
+  }
+
+  &:hover {
+    border-color: #42b0bd;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include svg-i-email
+  }
+}
+
+.b-header__lang {
+  display: flex;
+  margin: 0 30px;
+
+  @include bp($bp-1000) {
+    margin: 0 20px;
+  }
+
+  @include bp($bp-800) {
+    margin-left: 0;
+  }
+
+  @include bp($bp-712) {
+    display: none;
+  }
+}
+
+.b-header__button {
+  border-radius: 20px;
+  background-color: $white;
+  padding: 13px 20px 13px 20px;
+  font-family: $Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $battleship-grey;
+  cursor: pointer;
+
+  @include bp($bp-712) {
+    display: none;
+  }
+}
+
+.b-header__lang-item {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-family: $Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: $white;
+  transition: 0.4s ease all;
+}
+
+.b-header__menu {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  z-index: 50;
+
+  @include bp($bp-540) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    overflow: scroll;
+  }
+}
+
+.b-header__menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 20px;
+
+  @include bp($bp-540) {
+    width: 662px;
+    justify-content: flex-start;
+  }
+
+  a {
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3598a4;
+
+    @include bp($bp-540) {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+//
+// Modifier
+//
+
+.b-header--size-lg {
+  background-color: rgba(83, 195, 208, 0.9);
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -52px;
+    width: 100%;
+    height: 52px;
+    background-color: rgba(255,255,255, .9);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -52px;
+    width: 100%;
+    height: 1px;
+    background-color: $seafoam-blue;
+    z-index: 5;
+  }
+}
+
+.b-header--category {
+  height: 132px;
+}
+
+.b-header--is-scroll {
+  position: fixed;
+  background-color: rgba(83, 195, 208, 0.9);
+  z-index: 1000;
+}
+
+
+.b-header__lang-item--active {
+  background-color: #fff;
+  color: $dark-sky-blue;
+  box-shadow: 0px 2px 8px 0 rgba(32, 32, 32, 0.1);
+}

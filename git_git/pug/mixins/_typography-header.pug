@@ -1,0 +1,15 @@
+mixin typography-header(url, title, product = false)
+    -if(!product )
+        .b-typography__header(style='background-image: url(' + url + ')')
+            //include ../blocks/header
+            .b-typography__header-box.l-container
+                .b-typography__header-title
+                    h1=title
+    -else
+        .b-typography__header(style='background-image: url(' + url + ')')
+            //include ../blocks/header
+            .b-typography__header-box.l-container
+                .b-typography__header-product= product
+                .b-typography__header-title
+                    h1=title
+

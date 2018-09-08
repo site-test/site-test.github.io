@@ -1,0 +1,6 @@
+mixin menu(menuItems, classMix)
+    nav(class='b-menu ' + classMix)
+        ul.b-menu__list
+            each val in menuItems
+                li.b-menu__item
+                    a(href="#")= val

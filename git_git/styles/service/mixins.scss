@@ -1,0 +1,81 @@
+.vertical-middle {
+  white-space: nowrap;
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+  }
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+  }
+}
+
+$columns: 12;
+$gutter: 10px;
+$gutter_blog: 24px;
+
+@function grid-width($cols) {
+  @return calc(((100% / #{$columns}) * #{$cols}) - #{$gutter});
+}
+
+@function grid-width_blog($cols) {
+  @return calc(((100% / #{$columns}) * #{$cols}) - #{$gutter_blog});
+}
+
+
+@function grid-width-no-margin($cols) {
+  @return calc(((100% / #{$columns}) * #{$cols}));
+
+}
+
+@function opposite-position($directions) {
+  $opposite-directions: ();
+  $direction-map: (
+          'top':    'bottom',
+          'right':  'left',
+          'bottom': 'top',
+          'left':   'right',
+          'center': 'center',
+          'ltr':    'rtl',
+          'rtl':    'ltr'
+  );
+
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+
+    @if map-has-key($direction-map, $direction) {
+      $opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+    } @else {
+      @warn 'Противоположное направление для #{$direction} не найдено. Проверьте правильность значения';
+    }
+  }
+
+  @return $opposite-directions;
+}
+// Create triangle
+@mixin triangle($side: top, $color: $black, $size: 16px) {
+  $border: $size solid transparent;
+  width: 0;
+  height: 0;
+
+  @if not index(top right bottom left, $side) {
+    @warn 'Неправльное значение. Попробуйте - top, right, bottom или left.';
+  } @else {
+
+    @if $side == 'top' or $side == 'bottom' {
+      border-left: $border;
+      border-right: $border;
+    }
+
+    @if $side == 'left' or $side == 'right' {
+      border-top: $border;
+      border-bottom: $border;
+    }
+
+    border-#{opposite_position($side)}: $size * 1.5 solid $color;
+  }
+}

@@ -1,0 +1,38 @@
+.filter {
+  display: flex;
+}
+
+.filter__link {
+  margin-right: 30px;
+  font-family: $Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-40;
+  transition: .3s ease-in-out all;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//
+// Modifier
+//
+
+.filter__link--active {
+  pointer-events: none;
+  color: $black;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

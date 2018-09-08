@@ -1,0 +1,240 @@
+extends _layout_with_black_bg
+block title
+    title Главная страница
+block content
+
+    -var sliderFullpage = './images/main/slider/endocriniya_slider.png'
+    -var person = './images/endocrina_main/endocrina_doctor.png'
+    -var vidoe_docor = './images/endocrina_doctor/doctor_video.jpg'
+
+
+    -var certificates_1 = './images/endocrina_doctor/certificates_1.jpg'
+    -var certificates_2 = './images/endocrina_doctor/certificates_2.jpg'
+    -var certificates_3 = './images/endocrina_doctor/certificates_3.jpg'
+
+    -var education_1 = './images/endocrina_doctor/education_1.jpg'
+    -var education_2 = './images/endocrina_doctor/education_2.jpg'
+    -var education_3 = './images/endocrina_doctor/education_3.jpg'
+
+    .b-main
+        .b-left-form
+            .b-left-form__label Запись на бесплатный прием
+            .b-left-form__wrap
+                .b-left-form__title Запись на бесплатный прием
+                .b-left-form__close
+                form.b-form
+                    .b-form__content
+                        .b-form__item
+                            input(type='text' placeholder='Ваше имя' required)
+                        .b-form__item
+                            input(type='tel' placeholder='Ваш телефон' required)
+                    .b-form__submit
+                        button Записаться на прием
+                    p Нажимая на кнопку "Записаться на прием", вы принимаете условия
+                        a(href='') Cоглашения об использовании сайта
+
+        .fullpage-top.fullpage-top--doctor
+            .fullpage-top__img
+                img(src=sliderFullpage alt='')
+            .container
+                .fullpage-top__content
+                    .fullpage-top__left
+                        .fullpage-top__person
+                            img(src=person alt='')
+                    .fullpage-top__right
+                        .fullpage-top__type
+                            .fullpage-top__type-icon.icon-girl
+                            .fullpage-top__type-text Эндокринная хирургия
+                        .fullpage-top__info
+                            h3 Руководитель центра эндрокинной хирургии
+                            .fullpage-top__numbers
+                                .fullpage-top__numbers-item
+                                    p 90+
+                                    span научных
+                                        br
+                                        | работ
+                                .fullpage-top__numbers-item
+                                    p 3 000+
+                                    span благодарных
+                                        br
+                                        | пациентов
+                                .fullpage-top__numbers-item
+                                    p 20+
+                                    span лет стаж
+                                        br
+                                        | работы
+                        .fullpage-top__container
+                            .fullpage-top__numbers
+                                .fullpage-top__numbers-wrap
+                                    .fullpage-top__numbers-item
+                                        p 90+
+                                        span научных
+                                            br
+                                            | работ
+                                    .fullpage-top__numbers-item
+                                        p 3 000+
+                                        span благодарных
+                                            br
+                                            | пациентов
+                                    .fullpage-top__numbers-item
+                                        p 20+
+                                        span лет стаж
+                                            br
+                                            | работы
+                            .fullpage-top__doctor
+                                .fullpage-top__doctor-name Соловьев Николай Алексеевич
+                                .fullpage-top__doctor-desc Эндокринный хирург, доктор медицинских наук, профессор, хирург высшей категории
+
+
+        #scroll-more.b-main__content.b-main__content--doctor
+            .container
+                h2 О докторе
+                .b-main__anchor
+                    .b-main__anchor-wrap
+                        a(href='').b-main__anchor-item Доктор
+                        a(href='').b-main__anchor-item Биографий
+                        a(href='').b-main__anchor-item Образование
+                        a(href='').b-main__anchor-item Дипломы и сертификаты
+                .b-main__container
+                    .share
+                        .share__title Поделиться в соцсетях
+                        .share__content
+                            .share__item.share__item--fb
+                            .share__item.share__item--vk
+                            .share__item.share__item--ok
+
+                    p Шаробаро Валентин Ильич - пластический хирург, хирург высшей категории, доктор медицинских наук, профессор, профессор кафедры пластической, реконструктивной хирургии, косметологии и клеточных технологий Российского национального исследовательского медицинского университета им. Н.И.Пирогова. Валентин Ильич имеет многолетний опыт работы, и является действующим членом Российского общества пластической, реконструктивной и эстетической хирургии (РОПРЭХ), членом комитета по этике и оценке профессиональной деятельности РОПРЭХ, Российской и Европейской Ассоциаций Эндоскопической Хирургии, Международной конфедерации пластической, реконструктивной и эстетической хирургии (IPRAS).
+                    .b-main__video
+                        .b-main__video-play
+                        img(src=vidoe_docor alt='')
+                    hr
+                    h2 Биография
+                    p Шаробаро Валентин Ильич - пластический хирург, хирург высшей категории, доктор медицинских наук, профессор, профессор кафедры пластической, реконструктивной хирургии, косметологии и клеточных технологий Российского национального исследовательского медицинского университета им. Н.И.Пирогова.
+                    .b-main__2-col
+                        p Шаробаро В.И. окончил Московскую Медицинскую Академию им. И.М. Сеченова с красным дипломом. В 1996-1997 годах прошел обучение по пластической, эстетической и реконструктивной хирургии и микрохирургии в США. Работал над научным проектом по трансплантации кисти совместно с Ворреном Брейденбахом, который успешно выполнил первые в США операции по пересадке кисти. Закончил сертификационный курс обучения микрохирургии в отделении пластической и реконструктивной хирургии в отделе хирургии Люивельского Университета (США).
+                        p В 1998-2000 гг. обучался в аспирантуре по специальности "хирургия" в Институте хирургии им. А.В. Вишневского РАМН. В 2000 г. защитил кандидатскую диссертацию. В 2000-2001 г. проходил годичную стажировку в абдоминальном отделе Института хирургии им. А.В. Вишневского РАМН; в 2001 г. прошел обучение по эндоскопической хирургии. В 2000-2006 гг. работал пластическим хирургом в поликлинике Управления Делами Президента РФ и хирургом-дежурантом в Пушкинской районной больнице Московской области. В 2004 г. защитил докторскую диссертацию.
+                    .b-main__2-col-show Читать полностью
+
+                hr.full
+
+                h2 Образование
+                .b-main__education
+                    .b-main__education-wrap.js-education-slider
+                        .card-education
+                            .card-education__wrap
+                                .card-education__img
+                                    img(src=education_1 alt='')
+                                .card-education__title Московская Медицинская Академия им. И.М. Сеченова
+                                .card-education__number 01
+                        .card-education
+                            .card-education__wrap
+                                .card-education__img
+                                    img(src=education_2 alt='')
+                                .card-education__title Курс обучения микрохирургии в отделении пластической и реконструктивной хирургии в отделе хирургии Люивельского Университета (США)
+                                .card-education__number 02
+                        .card-education
+                            .card-education__wrap
+                                .card-education__img
+                                    img(src=education_3 alt='')
+                                .card-education__title Аспирантура по специальности "хирургия" в Институте хирургии им. А.В. Вишневского РАМН
+                                .card-education__number 03
+                        .card-education
+                            .card-education__wrap
+                                .card-education__img
+                                    img(src=education_1 alt='')
+                                .card-education__title Стажировка в абдоминальном отделе Института хирургии им. А.В. Вишневского РАМН, обучение по эндоскопической хирургии
+                                .card-education__number 04
+                        .card-education
+                            .card-education__wrap
+                                .card-education__img
+                                    img(src=education_2 alt='')
+                                .card-education__title Курс обучения микрохирургии в отделении пластической и реконструктивной хирургии в отделе хирургии Люивельского Университета (США)
+                                .card-education__number 05
+                        .card-education
+                            .card-education__wrap
+                                .card-education__img
+                                    img(src=education_3 alt='')
+                                .card-education__title Аспирантура по специальности "хирургия" в Институте хирургии им. А.В. Вишневского РАМН
+                                .card-education__number 06
+
+                hr.full
+                h2 Дипломы и сертификаты
+                .b-main__certificates
+                    .b-main__certificates-wrap.js-certificates-slider
+                        .card-certificates
+                            img(src=certificates_1 alt='')
+                        .card-certificates
+                            img(src=certificates_2 alt='')
+                        .card-certificates
+                            img(src=certificates_3 alt='')
+                        .card-certificates
+                            img(src=certificates_1 alt='')
+                        .card-certificates
+                            img(src=certificates_2 alt='')
+                        .card-certificates
+                            img(src=certificates_3 alt='')
+                        .card-certificates
+                            img(src=certificates_1 alt='')
+                        .card-certificates
+                            img(src=certificates_2 alt='')
+                        .card-certificates
+                            img(src=certificates_3 alt='')
+
+                h2 Часто задаваемые вопросы
+                .b-main__question
+                    .question
+                        .question__row
+                            .question__item
+                                h3 Пять поразительных фактов о пластической хирургии
+                                p Является членом Российского общества пластической, реконструктивной и эстетической хирургии (РОПРЭХ), членом комитета по этике и оценке профессиональной деятельности РОПРЭХ, Российской и Европейской Ассоциаций Эндоскопической Хирургии, Международной конфедерации пластической, реконструктивной и эстетической хирургии (IPRAS).
+
+                            .question__item
+                                h3 Интервью с врачом
+                                p Является членом Российского общества пластической, реконструктивной и эстетической хирургии (РОПРЭХ), членом комитета по этике и оценке профессиональной деятельности РОПРЭХ, Российской и Европейской Ассоциаций Эндоскопической Хирургии, Международной конфедерации пластической, реконструктивной и эстетической хирургии (IPRAS).
+
+                            .question__item
+                                h3 Скидка в день рождения!
+                                p Курс обучения микрохирургии в отделении пластической и реконструктивной хирургии в отделе хирургии Люивельского Университета (США)
+
+                            .question__item
+                                h3 Пять поразительных фактов о пластической хирургии
+                                p Является членом Российского общества пластической, реконструктивной и эстетической хирургии (РОПРЭХ), членом комитета по этике и оценке профессиональной деятельности РОПРЭХ, Российской и Европейской Ассоциаций Эндоскопической Хирургии, Международной конфедерации пластической, реконструктивной и эстетической хирургии (IPRAS).
+
+
+                    .question__btn
+                        .btn Показать еще
+                        .btn.btn--fill Задать вопрос доктору
+                h2 Отправить заявку
+                    br
+                    | на бесплатный прием
+                    br
+                    | прямо сейчас
+                .b-main__request
+                    .tablets.tablets--three
+                    .tablets.tablets--one
+                    .tablets.tablets--two-up
+                    form.b-form
+                            .b-form__content
+                                .b-form__item
+                                    input(type='text' placeholder='Ваше имя' required)
+                                .b-form__item
+                                    input(type='tel' placeholder='Ваш телефон' required)
+                                .b-form__item
+                                    input(type='text' placeholder='Вид операции' required)
+                            p Нажимая на кнопку "Отправить", вы принимаете условия
+                                a(href='')  Cоглашения об использовании сайта
+                            .b-form__submit
+                                button Отправить
+
+
+
+
+
+
+
+
+
+
+
+
+

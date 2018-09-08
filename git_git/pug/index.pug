@@ -1,0 +1,21 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset="UTF-8")
+        link(rel='stylesheet' href="/styles/guideline.css")
+        title Гайдлайн проекта
+    body
+        // Сверстанные страницы
+        -var links = []
+
+        -links.push({'url': 'home', 'name': 'Главная'});
+        -links.push({'url': 'endocrina_main', 'name': 'Эндокринная хирургия'});
+        -links.push({'url': 'endocrina_doctor', 'name': 'Эндокринная Доктор'});
+        -links.push({'url': 'endocrina_clinic', 'name': 'Эндокринная Клиника'});
+
+
+        h2 Список свёрстанных страниц
+        ol
+            each link in links
+                li
+                    a(href!=link.url+'.html')=link.name

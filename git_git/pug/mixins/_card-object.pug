@@ -1,0 +1,16 @@
+mixin card-object(url, src, labelName, title, subtitle,  isCase = true)
+    -if(isCase)
+        a.card-object(href='case_single.html')
+            .card-object__img
+                img(src=src)
+            .card-object__info
+                .card-object__label #{labelName}
+                .card-object__title #{title}
+    -else
+        a.card-object(href='product_single.html')
+            .card-object__img
+                img(src=src)
+            .card-object__info
+                .card-object__label #{labelName}
+                .card-object__subtitle #{subtitle}
+                .card-object__title #{title}

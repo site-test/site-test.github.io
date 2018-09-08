@@ -1,0 +1,91 @@
+mixin news(url, src, title, label, data, time, comments)
+        .news
+            a(href='').news__img
+                img(src=src alt='')
+            .news__content
+                h3
+                    a(href='') #{title}
+                .news__info
+                    a(href='').news__label.label #{label}
+                    span
+                    a(href='')
+                        time #{data}
+                            span #{time}
+                    a(href='').news__comments.comments #{comments}
+
+mixin news--full(url, src, title, label, data, time, comments)
+    .news.news--full
+        a(href='').news__img
+            img(src=src alt='')
+        .news__content
+            h3
+                a(href='') #{title}
+            .news__info
+                a(href='').news__label.label #{label}
+                span
+                a(href='')
+                    time #{data}
+                        span #{time}
+                a(href='').news__comments.comments #{comments}
+
+mixin news--full-custom(url, src, title, label, data, time, comments)
+    .news.news--full.news--full-custom
+        a(href='').news__img(style='background-color: #f5b44a')
+            .news__img-text
+                h4 10
+                span примьер
+        .news__content
+            h3
+                a(href='') #{title}
+            .news__info
+                a(href='').news__label.label #{label}
+                span
+                a(href='')
+                    time #{data}
+                        span #{time}
+                a(href='').news__comments.comments #{comments}
+
+mixin news--full-mobile(url, src, title, label, data, time, comments)
+    .news.news--full-mobile
+        a(href='').news__img
+            img(src=src alt='')
+        .news__content
+            h3
+                a(href='') #{title}
+            .news__info
+                a(href='').news__label.label #{label}
+                span
+                a(href='')
+                    time #{data}
+                        span #{time}
+                a(href='').news__comments.comments #{comments}
+
+mixin news--mobile-hidden(url, src, title, label, data, time, comments)
+    .news.news--mobile-hidden
+        a(href='').news__img
+            img(src=src alt='')
+        .news__content
+            h3
+                a(href='') #{title}
+            .news__info
+                a(href='').news__label.label #{label}
+                span
+                a(href='')
+                    time #{data}
+                        span #{time}
+                a(href='').news__comments.comments #{comments}
+
+mixin news--full-mobile-with-hidden(url, src, title, label, data, time, comments)
+    .news.news--full-mobile.news--mobile-hidden
+        a(href='').news__img
+            img(src=src alt='')
+        .news__content
+            h3
+                a(href='') #{title}
+            .news__info
+                a(href='').news__label.label #{label}
+                span
+                a(href='')
+                    time #{data}
+                        span #{time}
+                a(href='').news__comments.comments #{comments}

@@ -1,0 +1,41 @@
+.main-menu {
+  display: flex;
+}
+
+.main-menu__link {
+  position: relative;
+  margin-right: 30px;
+
+  @include bp($bp-1190) {
+    margin-right: 24px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    a {
+      color: $macaroni-and-cheese
+    }
+  }
+
+  a {
+    font-family: $Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $white;
+    outline: none;
+    transition: .3s ease all;
+  }
+}
+
+//
+// Modifier
+//
+

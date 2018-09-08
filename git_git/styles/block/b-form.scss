@@ -1,0 +1,113 @@
+.b-form {
+  & > p {
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
+    margin-bottom: 40px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.b-form__submit {
+  text-align: center;
+
+  button {
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    border-radius: 22.5px;
+    background-color: $seafoam-blue;
+    color: $white;
+    border: none;
+    padding: 16px 81px;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.b-form__count-symb {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 22px;
+  font-family: $Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black;
+  padding: 0 7px;
+  background-color: #fff;
+  border-radius: 14px;
+  border: solid 1px #e5e5e5;
+
+  @include bp($bp-480) {
+    display: none;
+  }
+
+}
+
+.b-form__content {
+  display: flex;
+}
+
+.b-form__item {
+  width: 100%;
+
+  input {
+    width: 100%;
+    padding: 17px 26px;
+    border-radius: 3px;
+    background-color: transparent;
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ababab;
+    outline: none;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #ababab;
+    }
+    &:-ms-input-placeholder {
+      color: #ababab;
+    }
+    &::-moz-placeholder {
+      color: #ababab;
+      opacity: 1;
+    }
+    &:-moz-placeholder {
+      color: #ababab;
+      opacity: 1;
+    }
+  }
+}

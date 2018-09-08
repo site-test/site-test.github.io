@@ -1,0 +1,52 @@
+.aside {
+  width: 330px;
+  padding-left: 30px;
+}
+
+//
+// Modifier
+//
+
+.aside--fullpage {
+  position: absolute;
+  top: 89px;
+  right: calc((100% - 1290px)/2);
+  padding-left: 29px;
+  margin-bottom: 30px;
+  border-left: 1px solid $white-30;
+
+  @include bp($bp-1330) {
+    right: 20px;
+  }
+
+  @include bp($bp-1023) {
+    right: 34px;
+  }
+
+  .news--aside {
+    border-color: $white-30;
+
+    &:last-child {
+      border-color: transparent;
+      padding-bottom: 0;
+    }
+  }
+
+  .news__content {
+    h3 {
+      color: $white;
+    }
+  }
+
+  .news__label, .news__comments, time {
+    color: $white-60;
+  }
+
+  .news__comments {
+    &:before {
+      opacity: .6;
+      @include svg-i-comments_white
+    }
+  }
+
+}
