@@ -395,8 +395,19 @@
   position: absolute;
   bottom: 60px;
   left: 24px;
-  @include svg-i-play-40px;
+  @include svg-i-pause;
   cursor: pointer;
+
+  @include bp($bp-1000) {
+    left: 0;
+    right: 0;
+    bottom: 158px;
+    margin: auto;
+  }
+
+  @include bp($bp-640) {
+    bottom: 111px;
+  }
 }
 
 .fullpage-top__sub-title {
@@ -415,6 +426,10 @@
   letter-spacing: normal;
   text-align: center;
   color: $white;
+
+  @include bp($bp-640) {
+    bottom: 38px;
+  }
 }
 
 //
@@ -422,11 +437,73 @@
 //
 
 .fullpage-top__control--pause {
-  @include svg-i-pause;
+  @include svg-i-play-40px;
 }
 
 .fullpage-top--doctor {
+  @include bp($bp-800) {
+
+    .fullpage-top__right {
+      margin-top: 180px;
+    }
+
+    .fullpage-top__info h3 {
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: 1.13;
+      letter-spacing: 0.4px;
+    }
+
+    .fullpage-top__numbers {
+      flex-wrap: wrap;
+    }
+
+    .fullpage-top__numbers-item {
+      width: 50%;
+      margin-right: 0;
+      margin-bottom: 25px;
+
+      @include bp($bp-640) {
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 32px;
+      }
+
+      p {
+        margin-bottom: 8px;
+        @include bp($bp-640) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include bp($bp-640) {
+    .fullpage-top__right {
+      margin-top: 160px;
+    }
+
+    .fullpage-top__type {
+      margin-top: 0;
+    }
+
+    .fullpage-top__info h3 {
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: 0.5px;
+      max-width: 304px;
+      margin: auto;
+    }
+  }
+}
+
+.fullpage-top--clinic {
   margin-bottom: 50px;
+
+  @include bp($bp-640) {
+    height: 582px;
+    margin-bottom: 40px;
+  }
 
   .fullpage-top__doctor-name {
     font-size: 34px;
@@ -451,15 +528,76 @@
   }
 
   .fullpage-top__title {
+    width: 100%;
     max-width: 540px;
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
+    letter-spacing: 1.2px;
+    font-size: 48px;
+
+    @include bp($bp-1000) {
+      position: absolute;
+      top: 55%;
+      font-size: 26px;
+      line-height: 1.23;
+      letter-spacing: 0.7px;
+    }
+
+    @include bp($bp-640) {
+      max-width: 294px;
+      top: 50%;
+    }
   }
 
   .fullpage-top__type {
     position: absolute;
     top: 184px;
     left: 24px;
+
+    @include bp($bp-1000) {
+      top: 170px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      justify-content: center;
+    }
+  }
+
+  @include bp($bp-640) {
+    .fullpage-top__type-icon {
+      display: block;
+    }
+
+    .fullpage-top__type-text {
+      margin-left: 12px;
+    }
+  }
+}
+
+.fullpage-top--services {
+  min-height: 100%;
+  height: 654px;
+  margin-bottom: 60px;
+
+  .fullpage-top__type {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fullpage-top__title {
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fullpage-top__sub-title {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    right: auto;
   }
 }

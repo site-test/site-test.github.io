@@ -182,7 +182,6 @@
     @include bp($bp-ipad-768) {
       max-width: 600px;
 
-
       & > p {
         max-width: 368px;
         margin: 0 auto 38px;
@@ -194,7 +193,6 @@
         }
       }
     }
-
 
   }
 
@@ -303,9 +301,9 @@
   }
 
   &:hover {
-      &:after {
-        background-color: $seafoam-blue;
-      }
+    &:after {
+      background-color: $seafoam-blue;
+    }
   }
 }
 
@@ -390,6 +388,10 @@
 
   .slick-list {
     padding-bottom: 30px;
+
+    @include bp($bp-360) {
+      padding-bottom: 50px;
+    }
   }
 
   .slick-track {
@@ -413,6 +415,11 @@
       top: 0;
       bottom: 0;
     }
+
+    @include bp($bp-360) {
+      top: auto;
+    }
+
     &:before {
       display: none;
     }
@@ -422,11 +429,20 @@
     left: 9px;
     @include svg-i-arrow-left_blue;
 
+    @include bp($bp-360) {
+      left: -50px;
+      right: 0;
+    }
   }
 
   .slick-next {
     right: 9px;;
     @include svg-i-arrow-right_blue;
+
+    @include bp($bp-360) {
+      left: 0;
+      right: -50px;
+    }
   }
 }
 
@@ -486,6 +502,14 @@
 .b-main__two-paragraphs {
   margin-bottom: 88px;
 
+  @include bp($bp-1000) {
+    margin-bottom: 60px;
+  }
+
+  @include bp($bp-540) {
+    margin-bottom: 50px;
+  }
+
   p {
     margin-bottom: 26px;
 
@@ -542,11 +566,31 @@
     margin-bottom: 10px;
   }
 
+  .b-main__education {
+      @include bp($bp-360) {
+        margin-bottom: 40px;
+
+        .slick-list {
+          padding-bottom: 60px;
+        }
+      }
+  }
+
   .b-main__education-wrap .slick-arrow {
     top: -118px;
 
     @include bp($bp-ipad-768) {
       top: 0;
+    }
+
+    @include bp($bp-360) {
+      top: auto;
+    }
+  }
+
+  h2 {
+    @include bp($bp-540) {
+      margin-bottom: 27px;
     }
   }
 }
@@ -554,9 +598,21 @@
 .b-main__education--palata {
   margin-bottom: 160px;
 
+  @include bp($bp-1000) {
+    margin-bottom: 120px;
+  }
+
+  @include bp($bp-360) {
+    margin-bottom: 140px!important;
+  }
+
   .b-main__education-wrap {
     .slick-arrow {
       top: -87px;
+
+      @include bp($bp-360) {
+        top: auto;
+      }
     }
   }
 }

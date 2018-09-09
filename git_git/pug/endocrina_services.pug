@@ -1,0 +1,132 @@
+extends _layout_with_black_bg
+block title
+    title Услуги и цены
+block content
+
+    -var sliderFullpage = './images/main/slider/endocriniya_slider.png'
+    -var headerImg = './images/services/header_services.jpg'
+    -var person = './images/endocrina_main/endocrina_doctor.png'
+    -var vidoe_docor = './images/endocrina_doctor/doctor_video.jpg'
+
+
+    -var clinic_1 = './images/clinic/666_0.jpg'
+    -var clinic_2 = './images/clinic/original_5493fb52862a2121268b4573_5501a8a9e6845.jpg'
+    -var clinic_3 = './images/clinic/original_5493fb52862a2121268b4573_5501a8ab5833c.jpg'
+    -var clinic_4 = './images/clinic/original_5493fb52862a2121268b4573_5501a907930d7.jpg'
+
+    -var clinic_1video = './images/clinic/clinic_video_1.jpg'
+    -var clinic_2video = './images/clinic/clinic_video_2.jpg'
+
+    -var palata_1 = './images/clinic/palata_1.jpg'
+    -var palata_2 = './images/clinic/palata_2.jpg'
+    -var palata_3 = './images/clinic/palata_3.jpg'
+    -var palata_4 = './images/clinic/palata_4.jpg'
+
+
+    .b-main
+        .b-left-form
+            .b-left-form__label Запись на бесплатный прием
+            .b-left-form__wrap
+                .b-left-form__title Запись на бесплатный прием
+                .b-left-form__close
+                form.b-form
+                    .b-form__content
+                        .b-form__item
+                            input(type='text' placeholder='Ваше имя' required)
+                        .b-form__item
+                            input(type='tel' placeholder='Ваш телефон' required)
+                    .b-form__submit
+                        button Записаться на прием
+                    p Нажимая на кнопку "Записаться на прием", вы принимаете условия
+                        a(href='') Cоглашения об использовании сайта
+
+        .fullpage-top.fullpage-top--services
+            .fullpage-top__img
+                img(src=headerImg alt='')
+
+            .container
+                .fullpage-top__content
+                    .fullpage-top__center
+                        .fullpage-top__type
+                            .fullpage-top__type-icon.icon-girl
+                        .fullpage-top__title Услуги и цены
+                        .fullpage-top__sub-title Эндокринная хирургия
+
+        #scroll-more.b-main__content.b-main__content--services
+            .container
+                .services
+                    .services__left
+
+                    .services__right
+                        .services__title Голова и шея (щитовидка)
+                        .services__table
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__show
+                                        .services__name Латеральная
+                                    .services__header-half
+                                        .services__price от 25 140 р.
+                                        .services__more Подробнее
+                                .services__body
+                                    .services__sub-item
+                                        p доброкачественные узлы
+                                        p 22 523 р.
+                                    .services__sub-item
+                                        p видеоассистированная из минидоступа (доброкачественные узлы менее 3.0 см; с объемом железы менее 30 см3)
+                                        p 28 875 р.
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Паратиреоидэктомия
+                                    .services__header-half
+                                        .services__price 17 325 р.
+                                        .services__more Подробнее
+
+
+
+
+
+                        .services__title Грудь
+                        .services__table
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Вакуумная аспирационная биопсия молочной железы
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        .services__more Подробнее
+                h2 Отправить заявку
+                    br
+                    | на бесплатный прием
+                    br
+                    | прямо сейчас
+                .b-main__request
+                    .tablets.tablets--three
+                    .tablets.tablets--one
+                    .tablets.tablets--two-up
+                    form.b-form
+                            .b-form__content
+                                .b-form__item
+                                    input(type='text' placeholder='Ваше имя' required)
+                                .b-form__item
+                                    input(type='tel' placeholder='Ваш телефон' required)
+                                .b-form__item
+                                    input(type='text' placeholder='Вид операции' required)
+                            p Нажимая на кнопку "Отправить", вы принимаете условия
+                                a(href='')  Cоглашения об использовании сайта
+                            .b-form__submit
+                                button Отправить
+
+
+
+
+
+
+
+
+
+
+
+
+

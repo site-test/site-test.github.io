@@ -59,6 +59,10 @@
     margin-right: 58px;
   }
 
+  @include bp($bp-540) {
+    margin-right: 46px;
+  }
+
   &:after {
     content: '';
     display: block;

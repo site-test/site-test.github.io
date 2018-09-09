@@ -8,9 +8,10 @@ block content
     -var vidoe_docor = './images/endocrina_doctor/doctor_video.jpg'
 
 
-    -var clinic_1 = './images/clinic/clinic_1.jpg'
-    -var clinic_2 = './images/clinic/clinic_2.jpg'
-    -var clinic_3 = './images/clinic/clinic_3.jpg'
+    -var clinic_1 = './images/clinic/666_0.jpg'
+    -var clinic_2 = './images/clinic/original_5493fb52862a2121268b4573_5501a8a9e6845.jpg'
+    -var clinic_3 = './images/clinic/original_5493fb52862a2121268b4573_5501a8ab5833c.jpg'
+    -var clinic_4 = './images/clinic/original_5493fb52862a2121268b4573_5501a907930d7.jpg'
 
     -var clinic_1video = './images/clinic/clinic_video_1.jpg'
     -var clinic_2video = './images/clinic/clinic_video_2.jpg'
@@ -38,7 +39,7 @@ block content
                     p Нажимая на кнопку "Записаться на прием", вы принимаете условия
                         a(href='') Cоглашения об использовании сайта
 
-        .fullpage-top.fullpage-top--doctor
+        .fullpage-top.fullpage-top--clinic
             .fullpage-top__img
                 video#clinic-video(loop autoplay src='./video/Arc de Triomphe in Paris.mp4')
 
@@ -109,10 +110,11 @@ block content
 
 
 
+
                 h2 Эндокринный центр
                     br
                     | хирургии и маммологии в ФНКЦ
-                .clinic-slider
+                .clinic-slider.clinic-slider--nav
                     .clinic-slider__wrap
                         .clinic-slider__left
                             .clinic-slider__slider
@@ -120,26 +122,30 @@ block content
                                     .clinic-slider__item
                                         img(src=clinic_1 alt='')
                                     .clinic-slider__item
-                                        img(src=clinic_1video alt='')
+                                        img(src=clinic_2 alt='')
                                     .clinic-slider__item
-                                        img(src=clinic_2video alt='')
+                                        img(src=clinic_3 alt='')
+                                    .clinic-slider__item
+                                        img(src=clinic_4 alt='')
                                     .clinic-slider__item
                                         img(src=clinic_1 alt='')
                                     .clinic-slider__item
-                                        img(src=clinic_2video alt='')
+                                        img(src=clinic_1 alt='')
+
 
                                 .clinic-slider__slider-nav.js-clinic-slider-nav
                                     .clinic-slider__item
-                                        img(src=clinic_2 alt='')
-                                    .clinic-slider__item
-                                        img(src=clinic_3 alt='')
+                                        img(src=clinic_1 alt='')
                                     .clinic-slider__item
                                         img(src=clinic_2 alt='')
                                     .clinic-slider__item
                                         img(src=clinic_3 alt='')
                                     .clinic-slider__item
-                                        img(src=clinic_2 alt='')
-
+                                        img(src=clinic_4 alt='')
+                                    .clinic-slider__item
+                                        img(src=clinic_1 alt='')
+                                    .clinic-slider__item
+                                        img(src=clinic_1 alt='')
 
                         .clinic-slider__right
                             .clinic-slider__text
@@ -154,7 +160,7 @@ block content
                 h2 Оборудование
                     br
                     | операционной палаты
-                .clinic-slider
+                .clinic-slider.clinic-slider--reverse
                     .clinic-slider__wrap
                         .clinic-slider__left
                             .clinic-slider__text

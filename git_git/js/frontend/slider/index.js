@@ -145,22 +145,65 @@ let clinicSliderNav = $('.js-clinic-slider-nav');
 // let typographySlider = $('.js-slider-typography');
 
 let paramClinicSlider = {
-    slidesToShow: 1,
+    slidesToShow  : 1,
     slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.js-clinic-slider-nav',
-    arrows: true
+    fade          : true,
+    asNavFor      : '.js-clinic-slider-nav',
+    arrows        : true
 };
 
 let paramClinicSliderNav = {
-    slidesToShow: 4,
+    slidesToShow  : 5,
     slidesToScroll: 1,
-    asNavFor: '.js-clinic-slider',
-    dots: false,
-    focusOnSelect: true,
-    centerMode: true,
-    arrows: false
+    asNavFor      : '.js-clinic-slider',
+    dots          : false,
+    focusOnSelect : true,
+    arrows        : false,
+    infinite      : false,
+    responsive    : [
+        {
+            breakpoint: 1000,
+            settings  : {
+                slidesToShow  : 8,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 800,
+            settings  : {
+                slidesToShow  : 7,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 700,
+            settings  : {
+                slidesToShow  : 6,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 640,
+            settings  : {
+                slidesToShow  : 5,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 540,
+            settings  : {
+                slidesToShow  : 4,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 430,
+            settings  : {
+                slidesToShow  : 3,
+                slidesToScroll: 1
+            }
+        },
+    ]
 };
 
 let paramEducationSlider = {
@@ -173,14 +216,14 @@ let paramEducationSlider = {
             breakpoint: 1190,
             settings  : {
                 slidesToShow  : 2,
-                slidesToScroll: 1,
+                slidesToScroll: 1
             }
         },
         {
             breakpoint: 540,
             settings  : {
                 slidesToShow  : 1,
-                slidesToScroll: 1,
+                slidesToScroll: 1
             }
         }
     ]
@@ -197,14 +240,14 @@ let paramCertificatesSlider = {
             breakpoint: 1190,
             settings  : {
                 slidesToShow  : 3,
-                slidesToScroll: 3,
+                slidesToScroll: 3
             }
         },
         {
             breakpoint: 540,
             settings  : {
                 slidesToShow  : 2,
-                slidesToScroll: 2,
+                slidesToScroll: 2
             }
         }
     ]
