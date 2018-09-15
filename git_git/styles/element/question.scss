@@ -1,24 +1,27 @@
 .question {
+}
+
+.question__row {
+  font-size: 0;
   margin-bottom: 42px;
 
   @include bp($bp-1000) {
     margin-bottom: 38px;
   }
-}
 
-.question__row {
-  display: flex;
-
-  @include bp($bp-1000) {
-    flex-direction: column;
+  &.hidden {
+    display: none;
   }
 }
 
 .question__item {
   width: calc(100%/4);
   padding-right: 40px;
+  display: inline-block;
+  vertical-align: top;
 
   @include bp($bp-1000) {
+    display: block;
     width: 100%;
     margin-bottom: 27px;
   }
@@ -71,14 +74,29 @@
   display: flex;
   justify-content: center;
 
+  @include bp($bp-414) {
+    align-items: center;
+    flex-direction: column;
+  }
+
   .btn {
     width: 234px;
 
     &:first-child {
       margin-right: 10px;
+
+      @include bp($bp-414) {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 156px;
+      }
     }
     &:last-child {
       margin-left: 10px;
+
+      @include bp($bp-414) {
+        margin-left: 0;
+      }
     }
   }
 }

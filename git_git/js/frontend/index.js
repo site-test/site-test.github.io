@@ -10,6 +10,8 @@ import './webcams'
 import './notify'
 import './videoYT'
 import './paralax'
+import './hoverHuman'
+import './map'
 
 
 import './header'

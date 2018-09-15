@@ -1,4 +1,4 @@
-extends _layout_with_black_bg
+extends _layout_with_lg_header
 block title
     title Клиника
 block content
@@ -259,27 +259,30 @@ block content
                                     span в сутки*
                                 .card-education__number 2х
 
-                h2 Отправить заявку
-                    br
-                    | на бесплатный прием
-                    br
-                    | прямо сейчас
                 .b-main__request
-                    .tablets.tablets--three
-                    .tablets.tablets--one
+                    h2 Отправить заявку
+                        br
+                        | на бесплатный прием
+                        br
+                        | прямо сейчас
+
                     .tablets.tablets--two-up
+                    .tablets.tablets--one
+                    .tablets.tablets--three
+                    .tablets.tablets--two-down
+
                     form.b-form
-                            .b-form__content
-                                .b-form__item
-                                    input(type='text' placeholder='Ваше имя' required)
-                                .b-form__item
-                                    input(type='tel' placeholder='Ваш телефон' required)
-                                .b-form__item
-                                    input(type='text' placeholder='Вид операции' required)
-                            p Нажимая на кнопку "Отправить", вы принимаете условия
-                                a(href='')  Cоглашения об использовании сайта
-                            .b-form__submit
-                                button Отправить
+                        .b-form__content
+                            .b-form__item
+                                input(type='text' placeholder='Ваше имя' required)
+                            .b-form__item
+                                input(type='tel' placeholder='Ваш телефон' required)
+                            .b-form__item
+                                input(type='text' placeholder='Вид операции' required)
+                        p Нажимая на кнопку "Отправить", вы принимаете условия
+                            a(href='')  Cоглашения об использовании сайта
+                        .b-form__submit
+                            button Отправить
 
 
 

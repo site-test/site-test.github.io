@@ -45,14 +45,14 @@ $(document).ready(function() {
         $this.closest('.health-step__item').removeClass('active')
     });
 
-    $('.b-left-form__label').on('click', function() {
+    $('.js-label-form').on('click', function() {
         let $this = $(this);
-        $this.closest('.b-left-form').addClass('active');
+        $this.closest('.js-form-transform').addClass('active');
     });
 
-    $('.b-left-form__close').on('click', function() {
+    $('.js-close-form').on('click', function() {
         let $this = $(this);
-        $this.closest('.b-left-form').removeClass('active');
+        $this.closest('.js-form-transform').removeClass('active');
     });
 
     // setTimeout(function() {
@@ -62,10 +62,20 @@ $(document).ready(function() {
     $('.clinic-slider__more').on('click', function() {
         let $this = $(this);
 
-
         $this.prev().find('.clinic-slider__hidden').fadeToggle();
         if ($this.text() === 'Cкрыть') {
             $this.text('Читать полностью')
+        } else {
+            $this.text('Cкрыть')
+        }
+    });
+
+    $('.js-show-more').on('click', function() {
+        let $this = $(this);
+
+        $this.parent().prev().find('.hidden').fadeToggle();
+        if ($this.text() === 'Cкрыть') {
+            $this.text('Показать еще')
         } else {
             $this.text('Cкрыть')
         }
@@ -80,5 +90,11 @@ $(document).ready(function() {
         } else {
             $('#clinic-video').get(0).pause();
         }
+    });
+
+    $('.js-anchor-lg').click(function(e) {
+        e.preventDefault();
+        var aid = $(this).attr('href');
+        $('html,body').animate({scrollTop: $(aid).offset().top - 155}, 'slow');
     });
 });

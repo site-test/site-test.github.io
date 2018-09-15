@@ -28,11 +28,11 @@ block content
     -var partners7 = './images/main/partners/i-apc.png';
 
     .b-main
-        .b-left-form
-            .b-left-form__label Запись на бесплатный прием
+        .b-left-form.js-form-transform
+            .b-left-form__label.js-label-form Запись на бесплатный прием
             .b-left-form__wrap
                 .b-left-form__title Запись на бесплатный прием
-                .b-left-form__close
+                .b-left-form__close.js-close-form
                 form.b-form
                     .b-form__content
                         .b-form__item
@@ -222,15 +222,19 @@ block content
                             .icon-hl.icon-spy
                             .health-step__desc проводится на базе федерального клинического центра одним из лучших пластических хирургов России.
 
-                h2 Отправить заявку
-                    br
-                    | на бесплатный прием
-                    br
-                    | прямо сейчас
+
                 .b-main__request
-                    .tablets.tablets--three
-                    .tablets.tablets--one
+                    h2 Отправить заявку
+                        br
+                        | на бесплатный прием
+                        br
+                        | прямо сейчас
+
                     .tablets.tablets--two-up
+                    .tablets.tablets--one
+                    .tablets.tablets--three
+                    .tablets.tablets--two-down
+
                     form.b-form
                             .b-form__content
                                 .b-form__item
@@ -245,7 +249,7 @@ block content
                                 button Отправить
                 h2 Новости и акции
                 .b-main__news
-                    .tablets.tablets--two-down
+
                     .news
                         .news__wrap.js-slider-news
                             a(href='').news__item

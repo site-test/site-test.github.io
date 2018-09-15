@@ -1,4 +1,4 @@
-extends _layout_with_black_bg
+extends _layout_with_lg_header
 block title
     title Главная страница
 block content
@@ -92,9 +92,9 @@ block content
                                     .card-slider__img
                                         img(src=cardSlider1 alt='')
                                     .card-slider__tabs
-                                        .card-slider__tabs-items.card-slider__tabs-items--active Операционная
-                                        .card-slider__tabs-items Палаты
-                                        .card-slider__tabs-items Клиники
+                                        a(href='http://doctorproff.ru/local/ajax/tour3d1/').card-slider__tabs-items.js-popup-youtube Операционная
+                                        a(href='http://doctorproff.ru/local/ajax/tour3d2/').card-slider__tabs-items.js-popup-youtube Палаты
+                                        a(href='https://www.youtube.com/embed/CY3kv0cgNPs').card-slider__tabs-items.js-popup-youtube Клиники
 
 
                         .card-slider__slider
@@ -192,27 +192,30 @@ block content
                             .icon-hl.icon-spy
                             .health-step__desc проводится на базе федерального клинического центра одним из лучших пластических хирургов России.
 
-                h2 Отправить заявку
-                    br
-                    | на бесплатный прием
-                    br
-                    | прямо сейчас
                 .b-main__request
-                    .tablets.tablets--three
-                    .tablets.tablets--one
+                    h2 Отправить заявку
+                        br
+                        | на бесплатный прием
+                        br
+                        | прямо сейчас
+
                     .tablets.tablets--two-up
+                    .tablets.tablets--one
+                    .tablets.tablets--three
+                    .tablets.tablets--two-down
+
                     form.b-form
-                            .b-form__content
-                                .b-form__item
-                                    input(type='text' placeholder='Ваше имя' required)
-                                .b-form__item
-                                    input(type='tel' placeholder='Ваш телефон' required)
-                                .b-form__item
-                                    input(type='text' placeholder='Вид операции' required)
-                            p Нажимая на кнопку "Отправить", вы принимаете условия
-                                a(href='')  Cоглашения об использовании сайта
-                            .b-form__submit
-                                button Отправить
+                        .b-form__content
+                            .b-form__item
+                                input(type='text' placeholder='Ваше имя' required)
+                            .b-form__item
+                                input(type='tel' placeholder='Ваш телефон' required)
+                            .b-form__item
+                                input(type='text' placeholder='Вид операции' required)
+                        p Нажимая на кнопку "Отправить", вы принимаете условия
+                            a(href='')  Cоглашения об использовании сайта
+                        .b-form__submit
+                            button Отправить
                 h2 Новости и акции
                 .b-main__news
                     .tablets.tablets--two-down

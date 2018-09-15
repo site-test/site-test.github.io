@@ -4,11 +4,20 @@
 
 .services__left {
   width: 400px;
+
+  @include bp($bp-1000) {
+    display: none;
+  }
 }
 
 .services__right {
   width: calc(100% - 400px);
   padding-left: 20px;
+
+  @include bp($bp-1000) {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .services__title {
@@ -28,15 +37,34 @@
   width: 100%;
   margin-bottom: 50px;
 
+  @include bp($bp-640) {
+    margin-bottom: 39px;
+  }
+
   &:last-child {
-    margin-bottom: 120px;
+    margin-bottom: 0;
+  }
+
+  &.active {
+    .services__item {
+      background-color: rgba(83, 208, 195, .1);
+    }
   }
 }
 
 .services__item {
-  width: 100%;
+  width: calc(100% - 63px);
+  margin-left: 63px;
   border-top: 1px solid $seafoam-blue;
-  padding: 10px 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: .3s ease-in-out all;
+
+  @include bp($bp-640) {
+    width: calc(100% - 44px);
+    margin-left: 44px;
+  }
 
   &:last-child {
     border-bottom: 1px solid $seafoam-blue;
@@ -44,24 +72,59 @@
 }
 
 .services__header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include bp($bp-480) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .services__header-half {
   display: flex;
   align-items: center;
+
+  &:last-child {
+    @include bp($bp-480) {
+      height: 30px;
+    }
+  }
 }
 
 .services__show {
+  position: absolute;
+  top: 0;
+  left: -72px;
+  bottom: 0;
+  margin: auto;
   width: 30px;
   height: 30px;
   border-radius: 15px;
   background-color: $seafoam-blue;
+  border: solid 2px $seafoam-blue;
+  cursor: pointer;
+  transition: .3s ease-in-out all;
+
+  @include bp($bp-640) {
+    left: -42px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include svg-i-add;
+  }
 }
 
 .services__name {
+  max-width: 430px;
   font-family: $Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -71,6 +134,24 @@
   letter-spacing: normal;
   text-align: left;
   color: #010101;
+
+  @include bp($bp-1000) {
+    max-width: 390px;
+  }
+
+  @include bp($bp-712) {
+    max-width: 300px;
+  }
+
+  @include bp($bp-640) {
+    max-width: 200px;
+  }
+
+  @include bp($bp-480) {
+    line-height: 1.5;
+    margin-bottom: 8px;
+    max-width: 360px;
+  }
 }
 
 .services__price {
@@ -83,12 +164,17 @@
   letter-spacing: 0.5px;
   text-align: left;
   color: #5ec7d3;
+
+  @include bp($bp-640) {
+    font-size: 16px;
+  }
 }
 
 .services__more {
-  padding: 8px 20px;
+  padding: 7px 20px;
   border-radius: 15px;
   background-color: $seafoam-blue;
+  border: 1px solid $seafoam-blue;
   font-family: $Roboto;
   font-size: 14px;
   font-weight: normal;
@@ -100,12 +186,42 @@
   color: $white;
   margin-left: 40px;
   margin-right: 20px;
+  cursor: pointer;
+  transition: .3s ease-in-out all;
+  outline: none;
+
+  &:hover {
+    background-color: $white;
+    color: $seafoam-blue;
+  }
+
+  @include bp($bp-1000) {
+    margin-left: 20px;
+  }
+
+  @include bp($bp-640) {
+    margin-left: 14px;
+    margin-right: 10px;
+  }
+
+  @include bp($bp-480) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
 }
 
 
 .services__body {
+  display: none;
   margin-left: 94px;
   width: calc(100% - 94px);
+
+  @include bp($bp-480) {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .services__sub-item {
@@ -115,8 +231,17 @@
   padding: 10px 0;
   border-bottom: 1px solid  $seafoam-blue;
 
+  @include bp($bp-480) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &:first-child {
     padding-top: 24px;
+
+    @include bp($bp-480){
+      padding-top: 19px;
+    }
   }
 
   &:last-child {
@@ -137,6 +262,18 @@
       letter-spacing: normal;
       text-align: left;
       color: #010101;
+
+      @include bp($bp-712) {
+        width: calc(100% - 140px);
+      }
+
+      @include bp($bp-480) {
+        width: 100%;
+      }
+
+      @include bp($bp-480) {
+        margin-bottom: 2px;
+      }
     }
 
     &:last-child {
@@ -147,9 +284,156 @@
       font-stretch: normal;
       line-height: 1.33;
       letter-spacing: 0.5px;
-      text-align: left;
+      text-align: right;
       color: #5ec7d3;
       margin-right: 37px;
+
+      @include bp($bp-1000) {
+        margin-right: 30px;
+      }
+
+      @include bp($bp-712) {
+        width: 140px;
+        margin-right: 0;
+        padding-right: 30px;
+      }
+
+      @include bp($bp-640) {
+        padding-right: 15px;
+      }
+
+      @include bp($bp-480) {
+        width: auto;
+      }
     }
+  }
+}
+
+.services__endocrina-human {
+  position: relative;
+
+  & > img {
+    display: block;
+    width: 296px;
+    height: 556px;
+    object-fit: cover;
+    margin: auto;
+  }
+}
+
+.services__endocrina-head {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  img {
+    display: block;
+    width: 49px;
+    height: 42px;
+    margin: auto;
+    object-fit: cover;
+
+    &:first-child {
+
+    }
+
+    &:last-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      opacity: 0;
+      transition: .3s ease-in-out all;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+.services__endocrina-breast {
+  position: absolute;
+  top: 79px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  img {
+    display: block;
+    width: 108px;
+    height: 83px;
+    margin: auto;
+    object-fit: cover;
+
+    &:first-child {
+
+    }
+
+    &:last-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      opacity: 0;
+      transition: .3s ease-in-out all;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+.services__endocrina-body {
+  position: absolute;
+  top: 158px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  img {
+    display: block;
+    width: 107px;
+    height: 48px;
+    margin: auto;
+    object-fit: cover;
+
+    &:first-child {
+
+    }
+
+    &:last-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      opacity: 0;
+      transition: .3s ease-in-out all;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+//
+// Modidier
+//
+
+.services__show--hidden {
+  background-color: $white;
+
+  &:after {
+    @include svg-i-remove;
   }
 }

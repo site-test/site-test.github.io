@@ -302,6 +302,10 @@
   color: #1f87a5;
   padding: 10px 0;
   cursor: pointer;
+  border-right: 1px solid #1f87a5;
+  border-left: 1px solid #1f87a5;
+  transition: .3s ease-in-out all;
+  outline: none;
 
   @include bp($bp-1190) {
     font-size: 12px;
@@ -322,6 +326,7 @@
 
   &:nth-child(2) {
     width: 29.9%;
+    margin: 0 -1px;
 
     @include bp($bp-1190) {
       width: 26.9%;
@@ -335,6 +340,12 @@
     @include bp($bp-1190) {
       width: 31.3%;
     }
+  }
+
+  &:hover {
+    color: $white;
+    background-color: #1f87a5;
+    border-color: #1f87a5;
   }
 }
 
@@ -362,6 +373,7 @@
 .card-slider__tabs-items--active {
   color: $white;
   background-color: #1f87a5;
+  border-color: #1f87a5;
 }
 
 .card-slider__title--review {

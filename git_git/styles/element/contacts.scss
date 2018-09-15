@@ -1,0 +1,174 @@
+.contacts-people {
+  display: flex;
+  align-items: center;
+
+  @include bp($bp-1000) {
+    flex-direction: column;
+    margin-bottom: 68px;
+  }
+
+  img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.contacts-people__wrap {
+  margin-left: 23px;
+
+  @include bp($bp-1000) {
+    margin-left: 0;
+    margin-top: 17px;
+  }
+
+  p {
+    font-family: $Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #0c0c0c;
+    margin-bottom: 0;
+
+    @include bp($bp-1190) {
+      font-size: 15px;
+    }
+
+    @include bp($bp-1000) {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    b {
+      font-family: $Roboto;
+      font-weight: 500;
+    }
+  }
+}
+
+.contacts-address {
+  @include bp($bp-ipad-768) {
+    width: 100%;
+  }
+
+  @include bp($bp-540) {
+    width: calc(100% + 40px);
+    overflow: scroll;
+    padding-bottom: 24px;
+  }
+}
+
+.contacts-address__wrap {
+  display: flex;
+
+  @include bp($bp-ipad-768) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @include bp($bp-540) {
+    overflow: scroll;
+    display: block;
+    font-size: 0;
+    width: 525px;
+    padding-left: 17px;
+  }
+}
+
+.contacts-dot {
+  position: relative;
+
+  @include bp($bp-ipad-768) {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+
+  @include bp($bp-540) {
+    width: 216px;
+    display: inline-block;
+  }
+
+  p {
+    font-family: $Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #0c0c0c;
+    margin-bottom: 0;
+
+    @include bp($bp-1190) {
+      font-size: 15px;
+    }
+
+    @include bp($bp-1000) {
+      font-size: 16px;
+    }
+
+    @include bp($bp-ipad-768) {
+      font-size: 15px;
+    }
+
+    @include bp($bp-540) {
+      font-size: 14px;
+      line-height: 1.43;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -28px;
+    @include svg-i-dot-map;
+  }
+
+  &:last-child {
+    margin-left: 116px;
+
+    @include bp($bp-1190) {
+      margin-left: 40px;
+    }
+
+    @include bp($bp-540) {
+      margin-left: 27px;
+    }
+  }
+}
+
+.contacts-dot__tab {
+  margin-top: 35px;
+
+  @include bp($bp-540) {
+    margin-top: 20px;
+  }
+  span {
+    display: inline-block;
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #48b3c0;
+    padding-bottom: 16px;
+    border-bottom: 4px solid transparent;
+  }
+
+  &.active {
+    span {
+      border-color: $seafoam-blue;;
+    }
+  }
+}

@@ -134,6 +134,8 @@ let cardSlider = $('.js-card-slider');
 let cardSliderV2 = $('.js-card-slider-v2');
 let educationSlider = $('.js-education-slider');
 let certificatesSlider = $('.js-certificates-slider');
+let bankSlider = $('.js-bank-slider');
+
 
 let clinicSlider = $('.js-clinic-slider');
 let clinicSliderNav = $('.js-clinic-slider-nav');
@@ -143,6 +145,19 @@ let clinicSliderNav = $('.js-clinic-slider-nav');
 // let sectionMobileSlider = $('.js-section-slider-mobile');
 // let sectionMiniSlider = $('.js-section-slider--mini');
 // let typographySlider = $('.js-slider-typography');
+let paramBankSlider = {
+    slidesToShow  : 3,
+    slidesToScroll: 1,
+    arrows        : true,
+    infinite      : true,
+};
+
+let paramPopupSlider = {
+    slidesToShow  : 1,
+    slidesToScroll: 1,
+    fade          : true,
+    arrows        : true
+};
 
 let paramClinicSlider = {
     slidesToShow  : 1,
@@ -435,6 +450,8 @@ $(document).ready(function() {
     $(cardSliderV2).slick(paramCardSliderV2);
     $(educationSlider).slick(paramEducationSlider);
     $(certificatesSlider).slick(paramCertificatesSlider);
+    $(bankSlider).slick(paramBankSlider);
+
 
     $(clinicSlider).slick(paramClinicSlider);
     $(clinicSliderNav).slick(paramClinicSliderNav);

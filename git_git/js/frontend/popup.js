@@ -1,3 +1,6 @@
+let magnificPopup = require('magnific-popup');
+import slick from 'slick-carousel';
+
 $(document).ready(function () {
     let windowWidth = $(window).innerWidth()/2;
     const posTriangle = 42;
@@ -32,6 +35,46 @@ $(document).ready(function () {
         if ($(event.target).closest('.b-login').length ) return;
 
         loginBlock.removeClass('active');
+    });
+
+    let popupSlider = $('.js-popup-slider');
+    let paramPopupSlider = {
+        slidesToShow  : 1,
+        slidesToScroll: 1,
+        fade          : true,
+        arrows        : true
+    };
+
+    $('.js-popup').magnificPopup({
+        fixedContentPos: true,
+        preloader: false,
+        mainClass: 'custom-mfp',
+        callbacks: {
+            open: function() {
+                $(popupSlider).slick(paramPopupSlider);
+            },
+            beforeClose: function() {
+            }
+        }
+    });
+
+    $('.js-popup-youtube').magnificPopup({
+        type: 'iframe'
+    });
+
+    $('.js-zoom-img').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        closeBtnInside: false,
+        fixedContentPos: true,
+        mainClass: 'mfp-no-margins mfp-with-zoom b-product-gallery__popup', // class to remove default margin from left and right side
+        image: {
+            verticalFit: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+        },
     });
 
 });

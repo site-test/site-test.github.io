@@ -2,72 +2,67 @@
   position: absolute;
   background-size: contain;
 }
-
-.tablets--two-down {
-
-  top: -170px;
-  right: 310px;
-  width: 76px;
-  height: 49px;
-  background-image: url("../images/main/tablets/tabls_2_paralax-v2@2x.png");
-
-  @include bp($bp-712) {
-    right: 180px;
-  }
-
-  @include bp($bp-414) {
-    right: 90px;
-  }
-}
-
-.tablets--three {
-  top: 135px;
-  left: 120px;
-  width: 73px;
-  height: 48px;
-  background-image: url("../images/main/tablets/tabls_3_paralax@2x.png");
+.tablets--two-up {
+  top: -20px;
+  left: 25px;
+  width: 86px;
+  height: 63px;
+  background-image: url("../images/main/tablets/tabls_2_paralax@2x.png");
+  z-index: 10;
 
   @include bp($bp-712) {
-    top: 230px;
-    left: -20px;
+    left: 0;
   }
 }
 
 .tablets--one {
-  top: -290px;
+  top: 100px;
   right: 40px;
   width: 66px;
   height: 50px;
   background-image: url("../images/main/tablets/tabls_1_paralax@2x.png");
 
-  @include bp($bp-540) {
-    top: -45px;
-    right: -30px;
+  @include bp($bp-712) {
+    top: 180px;
+    right: -28px;
   }
 }
 
-.tablets--two-up {
-  top: -416px;
-  left: 25px;
-  width: 86px;
-  height: 63px;
-  background-image: url("../images/main/tablets/tabls_2_paralax@2x.png");
+.tablets--three {
+  top: 430px;
+  left: 120px;
+  width: 73px;
+  height: 48px;
+  background-image: url("../images/main/tablets/tabls_3_paralax@2x.png");
 
   @include bp($bp-1000) {
-    top: -240px;
-  }
-
-  @include bp($bp-712) {
-    top: -336px;
     left: 0px;
   }
 
-  @include bp($bp-540) {
-    top: -240px;
-  }
-
-  @include bp($bp-320) {
-    top: -230px;
-    left: -5px;
+  @include bp($bp-712) {
+    top: 450px;
+    left: -26px;
   }
 }
+
+.tablets--two-down {
+  bottom: 90px;
+  right: 290px;
+  width: 76px;
+  height: 49px;
+  background-image: url("../images/main/tablets/tabls_2_paralax-v2@2x.png");
+
+  @include bp($bp-1000) {
+    bottom: 50px;
+    right: 140px;
+  }
+
+  @include bp($bp-712) {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+
+
+
