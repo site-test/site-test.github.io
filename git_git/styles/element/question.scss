@@ -9,6 +9,10 @@
     margin-bottom: 38px;
   }
 
+  @include bp($bp-540) {
+    margin-bottom: 28px;
+  }
+
   &.hidden {
     display: none;
   }

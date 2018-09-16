@@ -192,8 +192,10 @@
   }
 
   .b-form {
+    position: relative;
     max-width: 820px;
     margin: auto;
+    z-index: 10;
 
     @include bp($bp-ipad-768) {
       max-width: 600px;
@@ -216,6 +218,7 @@
     border-radius: 25px;
     box-shadow: 0px 6px 59px 0 rgba(75, 100, 104, 0.25);
     margin-bottom: 40px;
+    background-color: $white;
 
     @include bp($bp-712) {
       flex-direction: column;
@@ -511,6 +514,9 @@
 
 .b-main__question {
 
+  @include bp($bp-712) {
+    margin-bottom: 30px;
+  }
 }
 
 .b-main__two-paragraphs {
@@ -593,14 +599,34 @@
     }
   }
 
+  .b-main__request {
+    h2 {
+      @include bp($bp-ipad-768) {
+        margin-bottom: 38px;
+        line-height: 1.17;
+      }
+    }
+  }
+
   .b-main__2-col {
     p {
       &:first-child {
         padding-right: 55px;
+
+        @include bp($bp-540) {
+          padding-right: 0;
+        }
       }
+
       &:last-child {
         padding-left: 48px;
         padding-right: 0;
+
+        @include bp($bp-540) {
+          padding-left: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -704,6 +730,11 @@
 
       @include bp($bp-ipad-768) {
         margin-bottom: 30px;
+        line-height: 1;
+      }
+
+      @include bp($bp-540) {
+        font-size: 21px;
       }
     }
   }
@@ -715,13 +746,37 @@
 
     @include bp($bp-ipad-768) {
       margin-top: 38px;
+      margin-bottom: 32px;
     }
 
     @include bp($bp-640) {
       margin-top: 29px;
       font-size: 32px;
       line-height: 1;
-      margin-bottom: 18px;
+      margin-bottom: 17px;
+    }
+
+    @include bp($bp-540) {
+      font-size: 32px;
+      line-height: 1;
+    }
+  }
+
+  .b-main__request {
+    h2 {
+      @include bp($bp-ipad-768) {
+        margin-bottom: 38px;
+      }
+      @include bp($bp-640) {
+        margin-top: 29px;
+        font-size: 32px;
+        line-height: 1;
+      }
+
+      @include bp($bp-540) {
+        font-size: 24px;
+        line-height: 1.17;
+      }
     }
   }
 
