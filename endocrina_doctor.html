@@ -24,8 +24,7 @@
           <div class="b-header__part"><a class="b-header__email" href="mailto:"></a>
             <div class="b-header__lang"><a class="b-header__lang-item" href="">En</a>
               <!--a(href='').b-header__lang-item.b-header__lang-item--active En-->
-            </div>
-            <div class="b-header__button">Запись на консультацию</div>
+            </div><a class="b-header__button js-popup" href="#main-popup">Запись на консультацию</a>
           </div>
         </div>
         <div class="b-header__menu">
@@ -295,6 +294,31 @@
         </div>
       </div>
     </footer>
+    <div class="b-main-popup mfp-hide" id="main-popup">
+      <div class="b-main-popup__wrap">
+        <div class="b-main-popup__title">Запись на консультацию</div>
+        <form class="b-main-popup__formform b-form">
+          <div class="b-form__content">
+            <div class="b-form__item">
+              <input type="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="b-form__item">
+              <input type="tel" placeholder="Возраст" required>
+            </div>
+            <div class="b-form__item">
+              <input type="text" placeholder="Тип операции" required>
+            </div>
+            <div class="b-form__item">
+              <textarea placeholder="Описание" required></textarea>
+            </div>
+          </div>
+          <div class="b-form__submit">
+            <button>Записаться</button>
+          </div>
+          <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="">Cоглашения об использовании сайта</a></p>
+        </form>
+      </div>
+    </div>
   </body>
   <script async defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/bundle.js"></script>
