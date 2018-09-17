@@ -73,11 +73,18 @@
         </div>
         <div class="b-main__content b-main__content--services" id="scroll-more">
           <div class="container">
+            <div class="b-main__anchor b-main__anchor--service">
+              <div class="b-main__anchor-wrap"><a class="b-main__anchor-item js-anchor-lg" href="#service-golova">Голова и шея</a><a class="b-main__anchor-item js-anchor-lg" href="#service-gryd">Грудь</a><a class="b-main__anchor-item js-anchor-lg" href="#service-nadpod">Надпочечники</a><a class="b-main__anchor-item js-anchor-lg" href="#service-podshed">Поджелудочная железа копия</a></div>
+            </div>
             <div class="services">
-              <div class="services__left"></div>
+              <div class="services__left">
+                <div class="services__endocrina">
+                  <div class="services__endocrina-human"><img src="./images/services/290@3x.png" alt=""><a class="services__endocrina-head js-hover-head js-anchor-lg" href="#service-golova"><img src="./images/services/head_transparent.png" alt=""><img class="js-hidden" src="./images/services/head_color.png" alt=""></a><a class="services__endocrina-breast js-hover-breast js-anchor-lg" href="#service-gryd"><img src="./images/services/breast_transparent.png" alt=""><img class="js-hidden" src="./images/services/breast_color.png" alt=""></a><a class="services__endocrina-body js-hover-body js-anchor-lg" href="#service-nadpod"><img src="./images/services/body_transparent.png" alt=""><img class="js-hidden" src="./images/services/body_color.png" alt=""></a></div>
+                </div>
+              </div>
               <div class="services__right">
-                <div class="services__title">Голова и шея (щитовидка)</div>
-                <div class="services__table">
+                <div class="services__title" id="service-golova">Голова и шея (щитовидка)</div>
+                <div class="services__table js-container-head">
                   <div class="services__item">
                     <div class="services__header">
                       <div class="services__header-half">
@@ -85,7 +92,28 @@
                         <div class="services__name">Латеральная</div>
                       </div>
                       <div class="services__header-half">
-                        <div class="services__price">от 25 140 р.</div>
+                        <div class="services__price">от 25 140 р.</div><a class="services__more js-popup" href="#popup">Подробнее</a>
+                      </div>
+                    </div>
+                    <div class="services__body">
+                      <div class="services__sub-item">
+                        <p>доброкачественные узлы</p>
+                        <p>22 523 р.</p>
+                      </div>
+                      <div class="services__sub-item">
+                        <p>видеоассистированная из минидоступа (доброкачественные узлы менее 3.0 см; с объемом железы менее 30 см3)</p>
+                        <p>28 875 р.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <div class="services__header">
+                      <div class="services__header-half">
+                        <div class="services__show"></div>
+                        <div class="services__name">Гемитиреоидэктомия с перешейком</div>
+                      </div>
+                      <div class="services__header-half">
+                        <div class="services__price"></div>
                         <div class="services__more">Подробнее</div>
                       </div>
                     </div>
@@ -111,9 +139,53 @@
                       </div>
                     </div>
                   </div>
+                  <div class="services__item">
+                    <div class="services__header">
+                      <div class="services__header-half">
+                        <div class="services__name">Пункционная биопсия щитовидной железы под контролем УЗИ</div>
+                      </div>
+                      <div class="services__header-half">
+                        <div class="services__price">3 000 р.</div>
+                        <div class="services__more">Подробнее</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <div class="services__header">
+                      <div class="services__header-half">
+                        <div class="services__show"></div>
+                        <div class="services__name">Тиреоидэктомия</div>
+                      </div>
+                      <div class="services__header-half">
+                        <div class="services__price">от 36 960 р.</div>
+                        <div class="services__more">Подробнее</div>
+                      </div>
+                    </div>
+                    <div class="services__body">
+                      <div class="services__sub-item">
+                        <p>доброкачественные узлы</p>
+                        <p>22 523 р.</p>
+                      </div>
+                      <div class="services__sub-item">
+                        <p>видеоассистированная из минидоступа (доброкачественные узлы менее 3.0 см; с объемом железы менее 30 см3)</p>
+                        <p>28 875 р.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <div class="services__header">
+                      <div class="services__header-half">
+                        <div class="services__name">Чрескожная радиочастотная аблация узла щитовидной железы (1 узел)</div>
+                      </div>
+                      <div class="services__header-half">
+                        <div class="services__price">11 500 р.</div>
+                        <div class="services__more">Подробнее</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="services__title">Грудь</div>
-                <div class="services__table">
+                <div class="services__title" id="service-gryd">Грудь</div>
+                <div class="services__table js-container-breast">
                   <div class="services__item">
                     <div class="services__header">
                       <div class="services__header-half">
@@ -126,13 +198,42 @@
                     </div>
                   </div>
                 </div>
+                <div class="services__title" id="service-nadpod">Надпочечники</div>
+                <div class="services__table js-container-body">
+                  <div class="services__item">
+                    <div class="services__header">
+                      <div class="services__header-half">
+                        <div class="services__name">Лапароскопическая адреналэктомия  </div>
+                      </div>
+                      <div class="services__header-half">
+                        <div class="services__price">51 975 р.</div>
+                        <div class="services__more">Подробнее</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services__title" id="service-podshed">Поджелудочная железа</div>
+                <div class="services__table js-container-body">
+                  <div class="services__item">
+                    <div class="services__header">
+                      <div class="services__header-half">
+                        <div class="services__name">Лапароскопическая резекция хвоста поджелудочной железы</div>
+                      </div>
+                      <div class="services__header-half">
+                        <div class="services__price">80 875 р.</div>
+                        <div class="services__more">Подробнее</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <h2>Отправить заявку<br>на бесплатный прием<br>прямо сейчас</h2>
             <div class="b-main__request">
-              <div class="tablets tablets--three"></div>
-              <div class="tablets tablets--one"></div>
+              <h2>Отправить заявку<br>на бесплатный прием<br>прямо сейчас</h2>
               <div class="tablets tablets--two-up"></div>
+              <div class="tablets tablets--one"></div>
+              <div class="tablets tablets--three"></div>
+              <div class="tablets tablets--two-down"></div>
               <form class="b-form">
                 <div class="b-form__content">
                   <div class="b-form__item">
@@ -150,6 +251,59 @@
                   <button>Отправить</button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-popup mfp-hide" id="popup">
+        <div class="b-popup__wrap">
+          <div class="b-popup__header">
+            <div class="b-popup__title">
+              <h3>Гемитиреоидэктомия с перешейком</h3><span>доброкачественные узлы</span>
+            </div>
+            <div class="b-popup__price">
+              <p>25 140 р.</p><span>цена</span>
+            </div>
+          </div>
+          <div class="b-popup__body">
+            <div class="popup-slider js-popup-slider">
+              <div class="popup-slider__item"><img src="./images/services/slider-popup.jpg" alt=""></div>
+              <div class="popup-slider__item"><img src="./images/services/slider-popup.jpg" alt=""></div>
+            </div>
+            <div class="b-popup__content">
+              <h3>Описание операции</h3>
+              <p>Отопластика - пластическая операция, целью которой является устранение деформации, дефекта и улучшение формы ушей (ушных раковин).</p>
+              <h3>Показания</h3>
+              <ul>
+                <li>Устранение лопоухости или оттопыренности ушей;</li>
+                <li>Коррекция неправильной формы ушных раковин;</li>
+                <li>Коррекция асимметрии ушей;</li>
+                <li>Коррекция мочки уха;</li>
+                <li>Увеличение или уменьшение размеров ушной раковины;</li>
+                <li>Реконструкция (восстановление) ушной раковины вследствие врожденного или приобретенного дефекта или деформации</li>
+              </ul>
+              <h3>Противопоказания</h3>
+              <ul>
+                <li>Декомпенсированный сахарный диабет</li>
+                <li>Серьёзные сердечно-сосудистые заболевания</li>
+                <li>Серьезные кардиологические или психические проблемы</li>
+                <li>Злокачественные новообразования и восстановительный период после курсов химиотерапии</li>
+                <li>Острые и хронические инфекционные заболевания</li>
+                <li>Нарушение свертываемости крови</li>
+                <li>Обострение системных заболеваний соединительной ткани, таких как красная волчанка, ревматизм, гломерулонефрит и др.</li>
+                <li>Осложненная форма варикоза: тромбоз, тромбофлебит и др.</li>
+              </ul>
+              <h3>Методика</h3>
+              <p>Зависит от вида вмешательства. Разрез выполняются в складке сзади ушной раковины для того, чтобы затем он был невидимым после операции. В зависимости от вида коррекции производится или резекция хряща, или корригирующие надрезы или наложение моделирующих швов, или комбинация методик для создания ушных раковин желаемой формы.</p>
+              <h3>Длительность</h3>
+              <p>40 мин-1 час. Местная анестезия (±внутривенная седация).</p>
+              <h3>Противопоказания</h3>
+              <ul>
+                <li>Пребывание в стационаре – амбулаторно или 1 сутки;</li>
+                <li>снятие швов через 7-10 дней после операции;</li>
+                <li>постоянное ношение компрессионной повязки в течение от 1-2 до 7 суток после операции в зависимости от методики;</li>
+                <li>следует избегать травматизма ушных раковин в течение месяца после операции.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -183,9 +337,6 @@
       </div>
     </footer>
   </body>
-  <!--script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")-->
-  <!--script(src="//yastatic.net/share2/share.js")-->
-  <!--script(src='https://www.youtube.com/iframe_api')-->
-  <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIj4H-aE1sWZ3_QyLEN1X4mXp6pN5aPk")-->
+  <script async defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/bundle.js"></script>
 </html>
