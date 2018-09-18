@@ -2,8 +2,8 @@ extends _layout_with_lg_header
 block title
     title Главная страница
 block content
-    -var sliderFullpage = './images/main/slider/endocriniya_slider.png'
-    -var person = './images/endocrina_main/endocrina_doctor.png'
+    -var sliderFullpage = './images/main/slider/plasticheskay_slider.png'
+    -var person = './images/doctor/plasticha.png'
 
 
     -var cardSlider1 = './images/endocrina_main/top_slider/endocrina_news-1.jpg'
@@ -48,7 +48,7 @@ block content
                     p Нажимая на кнопку "Записаться на прием", вы принимаете условия
                         a(href='') Cоглашения об использовании сайта
 
-        .fullpage-top
+        .fullpage-top.fullpage-top--plastic
             .fullpage-top__img
                 img(src=sliderFullpage alt='')
             .container
@@ -58,13 +58,13 @@ block content
                             img(src=person alt='')
                     .fullpage-top__right
                         .fullpage-top__type
-                            .fullpage-top__type-icon.icon-girl
-                            .fullpage-top__type-text Эндокринная хирургия
-                        .fullpage-top__title Профессионально, надежно и доступно
+                            .fullpage-top__type-icon.icon-ears
+                            .fullpage-top__type-text Пластическая хирургия
+                        .fullpage-top__title Делаем профессиональную пластическую хирургию доступной!
                         .fullpage-top__container
                             .fullpage-top__doctor
-                                .fullpage-top__doctor-name Соловьев Николай Алексеевич
-                                .fullpage-top__doctor-desc Эндокринный хирург, доктор медицинских наук, профессор, хирург высшей категории
+                                .fullpage-top__doctor-name Шаробаро Валентин Ильич
+                                .fullpage-top__doctor-desc Пластический хирург, доктор медицинских наук, профессор, хирург высшей категории
 
 
         #scroll-more.b-main__content

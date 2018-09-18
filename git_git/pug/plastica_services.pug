@@ -1,0 +1,461 @@
+extends _layout_with_lg_header
+block title
+    title Услуги и цены
+block content
+
+    -var sliderFullpage = './images/main/slider/endocriniya_slider.png'
+    -var headerImg = './images/services/plastic/plastic-service.png'
+    -var popup_slider = './images/services/slider-popup.jpg'
+    -var human = './images/services/290@3x.png'
+
+    -var header = './images/services/plastic/plastic-header@3x.jpg'
+    -var headerMan = './images/services/plastic/plastic-header-man.jpg'
+    -var body = './images/services/plastic/plastic-body@3x.jpg'
+    -var bodyMan = './images/services/plastic/plastic-body-man.jpg'
+    -var breast = './images/services/plastic/plastic-breast@3x.jpg'
+    -var hand = './images/services/plastic/plastic-hand@3x.jpg'
+    -var intim = './images/services/plastic/plastic-intim@3x.jpg'
+
+
+
+
+    .b-main
+        .b-left-form
+            .b-left-form__label Запись на бесплатный прием
+            .b-left-form__wrap
+                .b-left-form__title Запись на бесплатный прием
+                .b-left-form__close
+                form.b-form
+                    .b-form__content
+                        .b-form__item
+                            input(type='text' placeholder='Ваше имя' required)
+                        .b-form__item
+                            input(type='tel' placeholder='Ваш телефон' required)
+                    .b-form__submit
+                        button Записаться на прием
+                    p Нажимая на кнопку "Записаться на прием", вы принимаете условия
+                        a(href='') Cоглашения об использовании сайта
+
+        .fullpage-top.fullpage-top--services
+            .fullpage-top__img
+                img(src=headerImg alt='')
+
+            .container
+                .fullpage-top__content
+                    .fullpage-top__center
+                        .fullpage-top__type
+                            .fullpage-top__type-icon.icon-ears
+                        .fullpage-top__title Услуги и цены
+                        .fullpage-top__sub-title Пластическая хирургия
+                        .fullpage-top__service.js-tab
+                            .fullpage-top__service-item.active Женщинам
+                            .fullpage-top__service-item Мужчинам
+
+
+        #scroll-more.b-main__content.b-main__content--services
+            .container
+                .js-tab-content
+                    .active
+                        .b-main__anchor.b-main__anchor--service
+                            .b-main__anchor-wrap
+                                a(href='#service-header').b-main__anchor-item.js-anchor-lg Лицо и шея
+                                a(href='#service-breast').b-main__anchor-item.js-anchor-lg Грудь
+                                a(href='#service-hand').b-main__anchor-item.js-anchor-lg Кисти
+                                a(href='#service-body').b-main__anchor-item.js-anchor-lg Тело
+                                a(href='#service-intim').b-main__anchor-item.js-anchor-lg Интимная пластика
+
+                        .services
+                            .services__row
+                                .services__wrap
+                                    .services__left
+                                        .services__plastic.services__plastic--header
+                                            img(src=header alt='')
+
+                                    .services__right
+                                        #service-header.services__title Лицо и шея
+                                        .services__table.js-container-head
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Эндоскопическая подтяжка лица
+                                                    .services__header-half
+                                                        .services__price от 25 140 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Малая пластика лица
+                                                    .services__header-half
+                                                        .services__price 17 325 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Пластика лица
+                                                    .services__header-half
+                                                        .services__price 17 325 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Реконструктивная пластика лица и шеи
+                                                    .services__header-half
+                                                        .services__price 3 000 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Пластика век
+                                                    .services__header-half
+                                                        .services__price от 36 960 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Липосакция подбородка и щек
+                                                    .services__header-half
+                                                        .services__price 11 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+
+
+
+                                .services__wrap
+                                    .services__left
+                                        .services__plastic.services__plastic--breast
+                                            img(src=breast alt='')
+                                    .services__right
+                                        #service-breast.services__title Грудь
+                                        .services__table.js-container-breast
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Коррекция груди липофилингом
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Подтяжка груди
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Увеличение груди
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Коррекция груди липофилингом
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Удаление или замена импланта(ов)
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Уменьшение груди
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+
+
+
+                                .services__wrap
+                                    .services__left
+                                        .services__plastic.services__plastic--hand
+                                            img(src=hand alt='')
+                                    .services__right
+                                        #service-hand.services__title Кисти
+                                        .services__table.js-container-body
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Армирование кистей золотыми нитями
+                                                    .services__header-half
+                                                        .services__price 51 975 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+                                .services__wrap
+                                    .services__left
+                                        .services__plastic.services__plastic--body
+                                            img(src=body alt='')
+                                    .services__right
+                                        #service-body.services__title Тело
+                                        .services__table.js-container-body
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Пластика плеч
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Коррекция липофилингом
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Коррекция пупка
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Липосакция живота
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Пластика живота
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Подтяжка бедер или ягодиц
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Эндопротезирование ягодиц
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Эндопротезирование голеней
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+
+                                .services__wrap
+                                    .services__left
+                                        .services__plastic.services__plastic--intim
+                                            img(src=intim alt='')
+                                    .services__right
+                                        #service-intim.services__title Интимная пластика
+                                        .services__table.js-container-body
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Лабиопластика
+                                                    .services__header-half
+                                                        .services__price 80 875 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+
+
+
+
+                    div
+                        .b-main__anchor.b-main__anchor--service
+                            .b-main__anchor-wrap
+                                a(href='#service-header-man').b-main__anchor-item.js-anchor-lg Лицо
+                                a(href='#service-body-man').b-main__anchor-item.js-anchor-lg Тело
+
+                        .services
+                            .services__row
+                                .services__wrap
+                                    .services__left
+                                        .services__plastic.services__plastic--header
+                                            img(src=headerMan alt='')
+
+                                    .services__right
+                                        #service-header-man.services__title Лицо
+                                        .services__table.js-container-head
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Пластика век
+                                                    .services__header-half
+                                                        .services__price от 25 140 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Пластика уха
+                                                    .services__header-half
+                                                        .services__price 17 325 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Пластика носа
+                                                    .services__header-half
+                                                        .services__price 17 325 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+                                .services__wrap
+                                    .services__left
+                                        .services__plastic.services__plastic--body-man
+                                            img(src=bodyMan alt='')
+                                    .services__right
+                                        #service-body-man.services__title Тело
+                                        .services__table.js-container-body
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Гинекомастия
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Липосакция
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Липофилинг
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                                            .services__item
+                                                .services__header
+                                                    .services__header-half
+                                                        .services__name Абдоминопластика
+                                                    .services__header-half
+                                                        .services__price 52 500 р.
+                                                        a(href='#popup').services__more.js-popup Подробнее
+
+                .b-main__request
+                    h2 Отправить заявку
+                        br
+                        | на бесплатный прием
+                        br
+                        | прямо сейчас
+
+                    .tablets.tablets--two-up
+                    .tablets.tablets--one
+                    .tablets.tablets--three
+                    .tablets.tablets--two-down
+
+                    form.b-form
+                        .b-form__content
+                            .b-form__item
+                                input(type='text' placeholder='Ваше имя' required)
+                            .b-form__item
+                                input(type='tel' placeholder='Ваш телефон' required)
+                            .b-form__item
+                                input(type='text' placeholder='Вид операции' required)
+                        p Нажимая на кнопку "Отправить", вы принимаете условия
+                            a(href='')  Cоглашения об использовании сайта
+                        .b-form__submit
+                            button Отправить
+
+    #popup.b-popup.mfp-hide
+        .b-popup__wrap
+            .b-popup__header
+                .b-popup__title
+                    h3 Гемитиреоидэктомия с перешейком
+                    span доброкачественные узлы
+                .b-popup__price
+                    p 25 140 р.
+                    span цена
+            .b-popup__body
+                .popup-slider.js-popup-slider
+                    .popup-slider__item
+                        img(src=popup_slider alt='')
+                    .popup-slider__item
+                        img(src=popup_slider alt='')
+                .b-popup__content
+                    h3 Описание операции
+                    p Отопластика - пластическая операция, целью которой является устранение деформации, дефекта и улучшение формы ушей (ушных раковин).
+
+                    h3 Показания
+                    ul
+                        li Устранение лопоухости или оттопыренности ушей;
+                        li Коррекция неправильной формы ушных раковин;
+                        li Коррекция асимметрии ушей;
+                        li Коррекция мочки уха;
+                        li Увеличение или уменьшение размеров ушной раковины;
+                        li Реконструкция (восстановление) ушной раковины вследствие врожденного или приобретенного дефекта или деформации
+
+                    h3 Противопоказания
+                    ul
+                        li Декомпенсированный сахарный диабет
+                        li Серьёзные сердечно-сосудистые заболевания
+                        li Серьезные кардиологические или психические проблемы
+                        li Злокачественные новообразования и восстановительный период после курсов химиотерапии
+                        li Острые и хронические инфекционные заболевания
+                        li Нарушение свертываемости крови
+                        li Обострение системных заболеваний соединительной ткани, таких как красная волчанка, ревматизм, гломерулонефрит и др.
+                        li Осложненная форма варикоза: тромбоз, тромбофлебит и др.
+
+                    h3 Методика
+                    p Зависит от вида вмешательства. Разрез выполняются в складке сзади ушной раковины для того, чтобы затем он был невидимым после операции. В зависимости от вида коррекции производится или резекция хряща, или корригирующие надрезы или наложение моделирующих швов, или комбинация методик для создания ушных раковин желаемой формы.
+
+                    h3 Длительность
+                    p 40 мин-1 час. Местная анестезия (±внутривенная седация).
+
+                    h3 Противопоказания
+                    ul
+                        li Пребывание в стационаре – амбулаторно или 1 сутки;
+                        li снятие швов через 7-10 дней после операции;
+                        li постоянное ношение компрессионной повязки в течение от 1-2 до 7 суток после операции в зависимости от методики;
+                        li следует избегать травматизма ушных раковин в течение месяца после операции.
+
+
+
+
+
+
+
+
+
+
+
+

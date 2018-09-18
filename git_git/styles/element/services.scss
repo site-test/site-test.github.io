@@ -246,7 +246,6 @@
   }
 }
 
-
 .services__body {
   display: none;
   margin-left: 94px;
@@ -263,7 +262,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid  $seafoam-blue;
+  border-bottom: 1px solid $seafoam-blue;
 
   @include bp($bp-480) {
     flex-direction: column;
@@ -273,7 +272,7 @@
   &:first-child {
     padding-top: 24px;
 
-    @include bp($bp-480){
+    @include bp($bp-480) {
       padding-top: 19px;
     }
   }
@@ -348,7 +347,7 @@
 
   & > img {
     display: block;
-    width: 296px;
+    width: 300px;
     height: 556px;
     object-fit: cover;
     margin: auto;
@@ -358,9 +357,10 @@
 .services__endocrina-head {
   position: absolute;
   top: 56px;
-  left: 0;
+  left: -2px;
   right: 0;
   margin: auto;
+  z-index: 10;
 
   img {
     display: block;
@@ -393,9 +393,10 @@
 .services__endocrina-breast {
   position: absolute;
   top: 79px;
-  left: 0;
+  left: -2px;
   right: 0;
   margin: auto;
+  z-index: 9;
 
   img {
     display: block;
@@ -457,7 +458,61 @@
       }
     }
   }
+}
 
+.services__wrap {
+  display: flex;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.services__row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .services__item {
+    @include bp($bp-1000) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.services__plastic {
+  margin-top: 45px;
+
+  img {
+    display: block;
+    object-fit: cover;
+    margin: auto;
+  }
+}
+
+
+
+.services__center {
+  width: 100%;
+  max-width: 780px;
+  margin: auto;
+
+  .services__item {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .services__table {
+    &:last-child {
+      margin-bottom: 40px;
+
+      @include bp($bp-ipad-768) {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 //
@@ -469,5 +524,47 @@
 
   &:after {
     @include svg-i-remove;
+  }
+}
+
+.services__plastic--header {
+  img {
+    width: 244px;
+    height: 306px;
+  }
+}
+
+.services__plastic--breast {
+  img {
+    width: 307px;
+    height: 257px;
+  }
+}
+
+.services__plastic--hand {
+  img {
+    width: 267px;
+    height: 241px;
+  }
+}
+
+.services__plastic--body {
+  img {
+    width: 347px;
+    height: 409px;
+  }
+}
+
+.services__plastic--body-man {
+  img {
+    width: 270px;
+    height: 310px;
+  }
+}
+
+.services__plastic--intim {
+  img {
+    width: 367px;
+    height: 241px;
   }
 }

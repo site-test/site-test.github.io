@@ -4,7 +4,7 @@ block title
 block content
 
     -var sliderFullpage = './images/main/slider/endocriniya_slider.png'
-    -var headerImg = './images/services/header_services.jpg'
+    -var headerImg = './images/services/serdechno/serdechno-services@2x.jpg'
     -var popup_slider = './images/services/slider-popup.jpg'
     -var human = './images/services/290@3x.png'
 
@@ -44,134 +44,221 @@ block content
                 .fullpage-top__content
                     .fullpage-top__center
                         .fullpage-top__type
-                            .fullpage-top__type-icon.icon-girl
+                            .fullpage-top__type-icon.icon-heart
                         .fullpage-top__title Услуги и цены
-                        .fullpage-top__sub-title Эндокринная хирургия
+                        .fullpage-top__sub-title Сердечно-сосудистая хирургия
 
         #scroll-more.b-main__content.b-main__content--services
             .container
                 .b-main__anchor.b-main__anchor--service
                     .b-main__anchor-wrap
-                        a(href='#service-golova').b-main__anchor-item.js-anchor-lg Голова и шея
-                        a(href='#service-gryd').b-main__anchor-item.js-anchor-lg Грудь
-                        a(href='#service-nadpod').b-main__anchor-item.js-anchor-lg Надпочечники
-                        a(href='#service-podshed').b-main__anchor-item.js-anchor-lg Поджелудочная железа копия
+                        a(href='#service-arterii').b-main__anchor-item.js-anchor-lg Операции на артерии и вены
+                        a(href='#service-rezekzia').b-main__anchor-item.js-anchor-lg Резекция
+                        a(href='#service-amputaz').b-main__anchor-item.js-anchor-lg Ампутация
+                        a(href='#service-protez').b-main__anchor-item.js-anchor-lg Протезирование (шунтирование)
+                        a(href='#service-rekon').b-main__anchor-item.js-anchor-lg Реконструктивные операции
+                        a(href='#service-tromb').b-main__anchor-item.js-anchor-lg Тромбэктомия
+                        a(href='#service-embol').b-main__anchor-item.js-anchor-lg Эмболэктомия
 
                 .services
-                    .services__left
-                        .services__endocrina
-                            .services__endocrina-human
-                                img(src=human alt='')
-                                a(href='#service-golova').services__endocrina-head.js-hover-head.js-anchor-lg
-                                    img(src=head alt='')
-                                    img(src=headActive alt='').js-hidden
-                                a(href='#service-gryd').services__endocrina-breast.js-hover-breast.js-anchor-lg
-                                    img(src=breast alt='')
-                                    img(src=breastActive alt='').js-hidden
-                                a(href='#service-nadpod').services__endocrina-body.js-hover-body.js-anchor-lg
-                                    img(src=body alt='')
-                                    img(src=bodyActive alt='').js-hidden
-
-                    .services__right
-                        #service-golova.services__title Голова и шея (щитовидка)
-                        .services__table.js-container-head
+                    .services__center
+                        #service-arterii.services__title Операции на артерии и вены
+                        .services__table
                             .services__item
                                 .services__header
                                     .services__header-half
-                                        .services__show
-                                        .services__name Латеральная
-                                    .services__header-half
-                                        .services__price от 25 140 р.
-                                        a(href='#popup').services__more.js-popup Подробнее
-                                .services__body
-                                    .services__sub-item
-                                        p доброкачественные узлы
-                                        p 22 523 р.
-                                    .services__sub-item
-                                        p видеоассистированная из минидоступа (доброкачественные узлы менее 3.0 см; с объемом железы менее 30 см3)
-                                        p 28 875 р.
-                            .services__item
-                                .services__header
-                                    .services__header-half
-                                        .services__show
-                                        .services__name Гемитиреоидэктомия с перешейком
-                                    .services__header-half
-                                        .services__price
-                                        a(href='#popup').services__more.js-popup Подробнее
-                                .services__body
-                                    .services__sub-item
-                                        p доброкачественные узлы
-                                        p 22 523 р.
-                                    .services__sub-item
-                                        p видеоассистированная из минидоступа (доброкачественные узлы менее 3.0 см; с объемом железы менее 30 см3)
-                                        p 28 875 р.
-                            .services__item
-                                .services__header
-                                    .services__header-half
-                                        .services__name Паратиреоидэктомия
+                                        .services__name Скаленотомия
                                     .services__header-half
                                         .services__price 17 325 р.
                                         a(href='#popup').services__more.js-popup Подробнее
                             .services__item
                                 .services__header
                                     .services__header-half
-                                        .services__name Пункционная биопсия щитовидной железы под контролем УЗИ
+                                        .services__name Артериализация вен стопы
                                     .services__header-half
-                                        .services__price 3 000 р.
-                                        a(href='#popup').services__more.js-popup Подробнее
-                            .services__item
-                                .services__header
-                                    .services__header-half
-                                        .services__show
-                                        .services__name Тиреоидэктомия
-                                    .services__header-half
-                                        .services__price от 36 960 р.
-                                        a(href='#popup').services__more.js-popup Подробнее
-                                .services__body
-                                    .services__sub-item
-                                        p доброкачественные узлы
-                                        p 22 523 р.
-                                    .services__sub-item
-                                        p видеоассистированная из минидоступа (доброкачественные узлы менее 3.0 см; с объемом железы менее 30 см3)
-                                        p 28 875 р.
-                            .services__item
-                                .services__header
-                                    .services__header-half
-                                        .services__name Чрескожная радиочастотная аблация узла щитовидной железы (1 узел)
-                                    .services__header-half
-                                        .services__price 11 500 р.
+                                        .services__price 57 750 р.
                                         a(href='#popup').services__more.js-popup Подробнее
 
-
-                        #service-gryd.services__title Грудь
-                        .services__table.js-container-breast
                             .services__item
                                 .services__header
                                     .services__header-half
-                                        .services__name Вакуумная аспирационная биопсия молочной железы
+                                        .services__name Баллонная вазодилятация
+                                    .services__header-half
+                                        .services__price 57 750 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Балонная ангиопластика при сочетанных операциях (без расходных материалов)    
+                                    .services__header-half
+                                        .services__price 28 875 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Балонная ангиопластика со стентированием при сочетанных операциях (без расходных материалов)      
+                                    .services__header-half
+                                        .services__price 40 425 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Грудная симпатэктомия
+                                    .services__header-half
+                                        .services__price 40 425 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+                        #service-rezekzia.services__title Резекция
+                        .services__table
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Коррекция груди липофилингом
                                     .services__header-half
                                         .services__price 52 500 р.
                                         a(href='#popup').services__more.js-popup Подробнее
 
-                        #service-nadpod.services__title Надпочечники
-                        .services__table.js-container-body
                             .services__item
                                 .services__header
                                     .services__header-half
-                                        .services__name Лапароскопическая адреналэктомия  
+                                        .services__name Подтяжка груди
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Увеличение груди
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Коррекция груди липофилингом
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Удаление или замена импланта(ов)
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Уменьшение груди
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+                        #service-amputaz.services__title Ампутация
+                        .services__table
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Армирование кистей золотыми нитями
                                     .services__header-half
                                         .services__price 51 975 р.
                                         a(href='#popup').services__more.js-popup Подробнее
 
-                        #service-podshed.services__title Поджелудочная железа
-                        .services__table.js-container-body
+
+                        #service-protez.services__title Протезирование (шунтирование)
+                        .services__table
                             .services__item
                                 .services__header
                                     .services__header-half
-                                        .services__name Лапароскопическая резекция хвоста поджелудочной железы
+                                        .services__name Пластика плеч
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Коррекция липофилингом
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Коррекция пупка
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+
+
+                        #service-rekon.services__title Реконструктивные операции
+                        .services__table
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Лабиопластика
                                     .services__header-half
                                         .services__price 80 875 р.
                                         a(href='#popup').services__more.js-popup Подробнее
+
+                        #service-tromb.services__title Тромбэктомия – удаление тромба из сосудов
+                        .services__table
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Пластика плеч
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Коррекция липофилингом
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Коррекция пупка
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
+
+
+
+                        #service-embol.services__title Эмболэктомия - хирургическое удаление эмбола для устранения закупорки артерии
+                        .services__table
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Пластика плеч
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Коррекция липофилингом
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+                            .services__item
+                                .services__header
+                                    .services__header-half
+                                        .services__name Коррекция пупка
+                                    .services__header-half
+                                        .services__price 52 500 р.
+                                        a(href='#popup').services__more.js-popup Подробнее
+
 
 
                 .b-main__request

@@ -16,6 +16,24 @@ html(lang='ru')
             block content
 
         include blocks/_b-footer
+        #main-popup.b-main-popup.mfp-hide
+            .b-main-popup__wrap
+                .b-main-popup__title Запись на консультацию
+                form.b-main-popup__formform.b-form
+                    .b-form__content
+                        .b-form__item
+                            input(type='text' placeholder='Ваше имя' required)
+                        .b-form__item
+                            input(type='tel' placeholder='Возраст' required)
+                        .b-form__item
+                            input(type='text' placeholder='Тип операции' required)
+                        .b-form__item
+                            textarea(placeholder='Описание' required)
+
+                    .b-form__submit
+                        button Записаться
+                    p Нажимая на кнопку "Записаться на прием", вы принимаете условия
+                        a(href='') Cоглашения об использовании сайта
 
     //script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
     //script(src="//yastatic.net/share2/share.js")

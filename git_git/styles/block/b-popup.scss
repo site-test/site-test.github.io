@@ -203,3 +203,86 @@
     }
   }
 }
+
+.b-main-popup {
+  position: relative;
+  width: 100%;
+  max-width: 378px;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px auto;
+
+  @include bp($bp-480) {
+    padding: 20px;
+  }
+
+  .mfp-close {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    font-size: 0;
+    @include svg-i-close-step;
+    opacity: 1;
+
+    @include bp($bp-640) {
+      top: 17px;
+      right: 20px;
+    }
+  }
+
+
+  .b-form {
+    & > p {
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  .b-form__content {
+    flex-direction: column;
+  }
+
+  .b-form__item {
+    border: solid 2px #64c9d4;
+    border-radius: 25px;
+    margin-bottom: 10px;
+
+    input {
+      padding: 15px 26px;
+    }
+
+    textarea {
+      height: 150px;
+    }
+  }
+
+  .b-form__submit {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 18px;
+
+    button {
+      padding: 16px 50px;
+    }
+  }
+}
+
+.b-main-popup__title  {
+  font-family: $Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #64c9d4;
+  margin-bottom: 20px;
+
+  @include bp($bp-640) {
+    font-size: 15px;
+  }
+}

@@ -1,16 +1,29 @@
 .installment-slider {
+  padding-top: 8px;
   margin-bottom: 48px;
 
   @include bp($bp-1000) {
     margin-bottom: 0;
   }
+
+  @include bp($bp-640) {
+    padding-top: 0;
+  }
+
+  @include bp($bp-480) {
+    margin-top: -14px;
+  }
 }
 
 .installment-slider__wrap {
-  padding: 0 105px;
+  padding: 0 20px;
 
   @include bp($bp-1000) {
     padding: 0 0 78px;
+  }
+
+  @include bp($bp-ipad-768) {
+    padding-bottom: 55px;
   }
 
   .slick-arrow {
@@ -24,6 +37,14 @@
     @include bp($bp-1000) {
       top: auto;
       bottom: 30px;
+    }
+
+    @include bp($bp-ipad-768) {
+      bottom: 20px;
+    }
+
+    @include bp($bp-480) {
+      bottom: 22px;
     }
 
     &:before {
@@ -51,7 +72,17 @@
 }
 
 .installment-slider__item {
+    img {
+      margin: auto;
 
+      @include bp($bp-ipad-768) {
+        height: 60px;
+      }
+
+      @include bp($bp-480) {
+        height: 40px;
+      }
+    }
 }
 
 .installment__content {

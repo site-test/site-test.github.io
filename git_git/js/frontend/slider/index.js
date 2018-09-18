@@ -150,6 +150,15 @@ let paramBankSlider = {
     slidesToScroll: 1,
     arrows        : true,
     infinite      : true,
+    responsive    : [
+        {
+            breakpoint: 640,
+            settings  : {
+                slidesToShow  : 2,
+                slidesToScroll: 1,
+            }
+        }
+    ]
 };
 
 let paramPopupSlider = {
@@ -217,7 +226,7 @@ let paramClinicSliderNav = {
                 slidesToShow  : 3,
                 slidesToScroll: 1
             }
-        },
+        }
     ]
 };
 

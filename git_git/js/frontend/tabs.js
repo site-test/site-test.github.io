@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let linkTab = $('.js-tab > button'),
+    let linkTab = $('.js-tab > div'),
         contentTab = $('.js-tab-content > div'),
         elClosest = '.b-main';
 
@@ -7,7 +7,7 @@ $(document).ready(function() {
         let $this = $(this),
             tabActive = $this.closest(elClosest).find('.js-tab');
 
-        tabActive.find('button').removeClass('active');
+        tabActive.find('div').removeClass('active');
         $this.addClass('active');
         let clickedTab = tabActive.find('.active');
 
