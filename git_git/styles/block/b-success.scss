@@ -1,0 +1,52 @@
+.b-success {
+  position: relative;
+  max-width: 380px;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: auto;
+
+  .mfp-close {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    font-size: 0;
+    @include svg-i-close-step_white;
+    opacity: 1;
+
+    @include bp($bp-640) {
+      right: -26px;
+    }
+  }
+}
+
+.b-success__wrap {
+
+}
+
+.b-success__text {
+  h3 {
+    font-family: $Gilroy;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #0c0c0c;
+    margin-bottom: 15px;
+  }
+  p {
+    font-family: $Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #0c0c0c;
+    margin-bottom: 0;
+  }
+}

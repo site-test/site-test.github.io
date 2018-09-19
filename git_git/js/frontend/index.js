@@ -12,6 +12,7 @@ import './videoYT'
 import './paralax'
 import './hoverHuman'
 import './map'
+import './form'
 
 
 import './header'

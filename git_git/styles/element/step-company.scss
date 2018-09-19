@@ -83,6 +83,24 @@
     }
   }
 
+  &.active {
+    box-shadow: 0px 5px 18px 0px rgba(64, 106, 111, 0.46);
+    overflow: visible;
+
+    span {
+      transform: translateY(8px);
+      color: rgb(66, 176, 189);
+    }
+
+    .step-company__bg {
+      opacity: 1;
+    }
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+
   span, strong {
     position: relative;
     font-family: $Gilroy;

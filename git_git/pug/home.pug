@@ -127,22 +127,23 @@ block content
                                         | докторов
             .select-category
                 .select-category__wrap.js-select-category-slider
-                    a(href='').select-category__item
+                    a(href='endocrina_main.html').select-category__item
                         span.icon-girl
                         p Эндокринная
                             br
                             | хирургия
-                    a(href='').select-category__item
+                    a(href='serdechno_main.html').select-category__item
                         span.icon-heart
                         p Сердечно-сосудистая
                             br
                             | хирургия
 
-                    a(href='').select-category__item
+                    a(href='plastica_main.html').select-category__item
                         span.icon-ears
                         p Пластическая
                             br
                             | хирургия
+
         #scroll-more.b-main__content
             .container
                 h1 Почему Doctor Proff?
@@ -152,7 +153,7 @@ block content
                 .b-main__2-col-show Читать полностью
                 .b-main__step-company
                     .step-company.js-step-company
-                        .step-company__item
+                        .step-company__item.active
                             .step-company__bg
                                 img(src=stepCompany1 alt='')
                             strong 01
@@ -240,7 +241,7 @@ block content
                                 .b-form__item
                                     input(type='text' placeholder='Ваше имя' required)
                                 .b-form__item
-                                    input(type='tel' placeholder='Ваш телефон' required)
+                                    input.phone-mask(type='tel' placeholder='Ваш телефон' required)
                                 .b-form__item
                                     input(type='text' placeholder='Вид операции' required)
                             p Нажимая на кнопку "Отправить", вы принимаете условия

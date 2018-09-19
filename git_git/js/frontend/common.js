@@ -97,4 +97,13 @@ $(document).ready(function() {
         var aid = $(this).attr('href');
         $('html,body').animate({scrollTop: $(aid).offset().top - 155}, 'slow');
     });
+
+    $('.step-company__item').hover(
+        function() {
+            $('.step-company__item').removeClass('active')
+        }, function() {
+            let $this = $(this);
+            $this.addClass('active')
+        });
+
 });
