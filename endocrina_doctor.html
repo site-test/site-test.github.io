@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/png" href="http://doctorproff.ru/local/templates/doctorproff/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Главная страница</title>
   </head>
@@ -11,11 +12,9 @@
     <div class="b-header b-header--size-lg">
       <div class="container">
         <div class="b-header__wrap">
-          <div class="b-header__part"><a class="b-header__logo" href=""></a>
-            <div class="b-header__hamburgers"></div>
-          </div>
+          <div class="b-header__part"><a class="b-header__logo" href="home.html"></a></div>
           <div class="b-header__social">
-            <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+            <div class="social"><a class="social__item social__item--insta" href="https://www.instagram.com/" target="_blank"></a><a class="social__item social__item--fb" href="https://www.facebook.com/" target="_blank"></a><a class="social__item social__item--vk" href="https://vk.com/" target="_blank"></a><a class="social__item social__item--ok" href="https://ok.ru/" target="_blank"></a></div>
           </div><a class="b-header__phone-mobile" href="tel:+74951182511"></a>
           <div class="b-header__phone"><a href="tel:+74951182511">+7 (495) 118 - 2511</a>
             <div class="b-header__phone-arrow"></div>
@@ -28,31 +27,30 @@
           </div>
         </div>
         <div class="b-header__menu">
-          <div class="b-header__menu-wrap"><a href="">Главная</a><a href="">Доктор</a><a href="">Клиника</a><a href="">Услуги и цены</a><a href="">Отзывы</a><a href="">Рассрочка</a><a href="">Контакты</a></div>
+          <div class="b-header__menu-wrap"><a href="endocrina_main.html">Главная</a><a class="active" href="endocrina_doctor.html">Доктор</a><a href="endocrina_clinic.html">Клиника</a><a href="endocrina_services.html">Услуги и цены</a><a href="endocrina_reviews.html">Отзывы</a><a href="endocrina_installment.html">Рассрочка</a><a href="endocrina_contacts.html">Контакты</a></div>
         </div>
       </div>
     </div>
-    <!--include blocks/_b-aside-->
     <div class="page">
       <div class="b-main">
-        <div class="b-left-form">
-          <div class="b-left-form__label">Запись на бесплатный прием</div>
+        <div class="b-left-form js-form-transform">
+          <div class="b-left-form__label js-label-form">Запись на бесплатный прием</div>
           <div class="b-left-form__wrap">
             <div class="b-left-form__title">Запись на бесплатный прием</div>
-            <div class="b-left-form__close"></div>
+            <div class="b-left-form__close js-close-form"></div>
             <form class="b-form">
               <div class="b-form__content">
                 <div class="b-form__item">
                   <input type="text" placeholder="Ваше имя" required>
                 </div>
                 <div class="b-form__item">
-                  <input type="tel" placeholder="Ваш телефон" required>
+                  <input class="phone-mask" type="tel" placeholder="Ваш телефон" required>
                 </div>
               </div>
               <div class="b-form__submit">
                 <button>Записаться на прием</button>
               </div>
-              <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="">Cоглашения об использовании сайта</a></p>
+              <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a></p>
             </form>
           </div>
         </div>
@@ -108,8 +106,10 @@
         <div class="b-main__content b-main__content--doctor" id="scroll-more">
           <div class="container">
             <h2>О докторе</h2>
-            <div class="b-main__anchor">
-              <div class="b-main__anchor-wrap"><a class="b-main__anchor-item js-anchor-lg" href="#section-doctor">Доктор</a><a class="b-main__anchor-item js-anchor-lg" href="#section-biograf">Биографий</a><a class="b-main__anchor-item js-anchor-lg" href="#section-education">Образование</a><a class="b-main__anchor-item js-anchor-lg" href="#section-diplom">Дипломы и сертификаты</a></div>
+            <div id="anchor-scroll">
+              <div class="b-main__anchor">
+                <div class="b-main__anchor-wrap"><a class="b-main__anchor-item js-anchor-lg" href="#section-doctor">Доктор</a><a class="b-main__anchor-item js-anchor-lg" href="#section-biograf">Биография</a><a class="b-main__anchor-item js-anchor-lg" href="#section-education">Образование</a><a class="b-main__anchor-item js-anchor-lg" href="#section-diplom">Дипломы и сертификаты</a></div>
+              </div>
             </div>
             <div class="b-main__container">
               <div class="share">
@@ -120,7 +120,10 @@
                   <div class="share__item share__item--ok"></div>
                 </div>
               </div>
-              <p id="section-doctor">Шаробаро Валентин Ильич - пластический хирург, хирург высшей категории, доктор медицинских наук, профессор, профессор кафедры пластической, реконструктивной хирургии, косметологии и клеточных технологий Российского национального исследовательского медицинского университета им. Н.И.Пирогова. Валентин Ильич имеет многолетний опыт работы, и является действующим членом Российского общества пластической, реконструктивной и эстетической хирургии (РОПРЭХ), членом комитета по этике и оценке профессиональной деятельности РОПРЭХ, Российской и Европейской Ассоциаций Эндоскопической Хирургии, Международной конфедерации пластической, реконструктивной и эстетической хирургии (IPRAS).</p><a class="b-main__video js-popup-youtube" href="https://www.youtube.com/watch?v=Jll0yqdQclw">
+              <p id="section-doctor">Шаробаро Валентин Ильич - пластический хирург, хирург высшей категории, доктор медицинских наук, профессор, профессор кафедры пластической, реконструктивной хирургии, косметологии и клеточных технологий Российского национального исследовательского медицинского университета им. Н.И.Пирогова. Валентин Ильич имеет многолетний опыт работы, и является действующим членом Российского общества пластической, реконструктивной и эстетической хирургии (РОПРЭХ), членом комитета по этике и оценке профессиональной деятельности РОПРЭХ, Российской и Европейской Ассоциаций Эндоскопической Хирургии, Международной конфедерации пластической, реконструктивной и эстетической хирургии (IPRAS).</p>
+              <div class="b-main__video-yt">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Jll0yqdQclw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div><a class="b-main__video js-popup-youtube" href="https://www.youtube.com/watch?v=Jll0yqdQclw">
                 <div class="b-main__video-play"></div><img src="./images/endocrina_doctor/doctor_video.jpg" alt=""></a>
               <hr>
               <h2 id="section-biograf">Биография</h2>
@@ -182,17 +185,7 @@
             <hr class="full">
             <h2 id="section-diplom">Дипломы и сертификаты</h2>
             <div class="b-main__certificates">
-              <div class="b-main__certificates-wrap js-certificates-slider">
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_1.jpg" alt=""></div>
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_2.jpg" alt=""></div>
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_3.jpg" alt=""></div>
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_1.jpg" alt=""></div>
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_2.jpg" alt=""></div>
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_3.jpg" alt=""></div>
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_1.jpg" alt=""></div>
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_2.jpg" alt=""></div>
-                <div class="card-certificates"><img src="./images/endocrina_doctor/certificates_3.jpg" alt=""></div>
-              </div>
+              <div class="b-main__certificates-wrap js-certificates-slider"><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/0505fffb53819aff0f14a69c59a101ff.jpg"><img src="./images/endocrina_doctor/certificates_1.jpg" alt=""></a><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/96b9d61d5e28e2d66e454f4df36cf335.jpg"><img src="./images/endocrina_doctor/certificates_2.jpg" alt=""></a><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/31911fed05d8984eb4f1b48abe16e487.jpg"><img src="./images/endocrina_doctor/certificates_3.jpg" alt=""></a><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/0505fffb53819aff0f14a69c59a101ff.jpg"><img src="./images/endocrina_doctor/certificates_1.jpg" alt=""></a><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/96b9d61d5e28e2d66e454f4df36cf335.jpg"><img src="./images/endocrina_doctor/certificates_2.jpg" alt=""></a><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/31911fed05d8984eb4f1b48abe16e487.jpg"><img src="./images/endocrina_doctor/certificates_3.jpg" alt=""></a><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/0505fffb53819aff0f14a69c59a101ff.jpg"><img src="./images/endocrina_doctor/certificates_1.jpg" alt=""></a><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/96b9d61d5e28e2d66e454f4df36cf335.jpg"><img src="./images/endocrina_doctor/certificates_2.jpg" alt=""></a><a class="card-certificates js-zoom-img" href="./images/endocrina_doctor/31911fed05d8984eb4f1b48abe16e487.jpg"><img src="./images/endocrina_doctor/certificates_3.jpg" alt=""></a></div>
             </div>
             <h2>Часто задаваемые вопросы</h2>
             <div class="b-main__question">
@@ -235,8 +228,7 @@
                 </div>
               </div>
               <div class="question__btn">
-                <div class="btn js-show-more">Показать еще</div>
-                <div class="btn btn--fill">Задать вопрос доктору</div>
+                <div class="btn js-show-more">Показать еще</div><a class="btn btn--fill js-popup" href="#main-doctor-popup">Задать вопрос доктору</a>
               </div>
             </div>
             <div class="b-main__request">
@@ -251,13 +243,13 @@
                     <input type="text" placeholder="Ваше имя" required>
                   </div>
                   <div class="b-form__item">
-                    <input type="tel" placeholder="Ваш телефон" required>
+                    <input class="phone-mask" type="tel" placeholder="Ваш телефон" required>
                   </div>
                   <div class="b-form__item">
                     <input type="text" placeholder="Вид операции" required>
                   </div>
                 </div>
-                <p>Нажимая на кнопку "Отправить", вы принимаете условия<a href=""> Cоглашения об использовании сайта</a></p>
+                <p>Нажимая на кнопку "Отправить", вы принимаете условия<a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a></p>
                 <div class="b-form__submit">
                   <button>Отправить</button>
                 </div>
@@ -266,25 +258,52 @@
           </div>
         </div>
       </div>
+      <div class="b-main-popup mfp-hide" id="main-doctor-popup">
+        <div class="b-main-popup__wrap">
+          <div class="b-main-popup__title">Вопрос к доктору</div>
+          <form class="b-main-popup__formform b-form">
+            <div class="b-form__content">
+              <div class="b-form__item">
+                <input type="text" placeholder="Ваше имя" required>
+              </div>
+              <div class="b-form__item">
+                <input type="tel" placeholder="Возраст" required>
+              </div>
+              <div class="b-form__item">
+                <input type="email" placeholder="Ваша почта" required>
+              </div>
+              <div class="b-form__item">
+                <textarea placeholder="Ваш вопрос" required></textarea>
+              </div>
+            </div>
+            <div class="b-form__submit">
+              <button>Отправить</button>
+            </div>
+            <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a></p>
+          </form>
+        </div>
+      </div>
     </div>
     <footer class="b-footer">
       <div class="container">
         <div class="b-footer__wrap">
           <div class="b-footer__top">
             <div class="b-footer__logo"></div>
-            <div class="b-footer__menu"><a href="">Доктор</a><a href="">Клиники</a><a href="">Женщинам</a><a href="">Мужчинам</a><a href="">Фото до и после</a><a href="">Отзывы</a><a href="">Расрочка</a><a href="">Контакты</a></div>
+            <div class="b-footer__menu">
+              <div class="b-footer__menu-wrap"><a href="endocrina_doctor.html">Доктор</a><a href="endocrina_clinic.html">Клиники</a><a href="endocrina_services.html">Женщинам</a><a href="endocrina_services.html">Мужчинам</a><a href="endocrina_reviews.html">Отзывы</a><a href="endocrina_installment.html">Расрочка</a><a href="endocrina_contacts.html">Контакты</a></div>
+            </div>
             <div class="b-footer__social">
-              <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+              <div class="social"><a class="social__item social__item--insta" href="https://www.instagram.com/" target="_blank"></a><a class="social__item social__item--fb" href="https://www.facebook.com/" target="_blank"></a><a class="social__item social__item--vk" href="https://vk.com/" target="_blank"></a><a class="social__item social__item--ok" href="https://ok.ru/" target="_blank"></a></div>
             </div>
           </div>
           <div class="b-footer__center">
             <div class="b-footer__sub-menu">
-              <p><a href="">Пластическая хирургия</a><a href="">Эндокринная хирургия</a><a href="">Сердечно-сосудистая хирургия</a></p>
-              <p><a href="">О нас</a><a href="">Новости клиники</a><a href="">Согласия  на обработку данных</a><a href="">Согласие на использование сайта</a></p>
+              <p><a href="plastica_main.html">Пластическая хирургия</a><a href="endocrina_main.html">Эндокринная хирургия</a><a href="serdechno_main.html">Сердечно-сосудистая хирургия</a></p>
+              <p><a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Согласия  на обработку данных</a><a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Согласие на использование сайта</a></p>
             </div>
             <div class="b-footer__center-right">
               <div class="b-footer__phone"><a href="tel:">+7 (495) 118 - 2511</a><a href="tel:">+7 (495) 118 - 2511</a></div>
-              <div class="b-footer__center-bottom"><a class="b-footer__call" href="">Запись на консультацию</a><a class="b-footer__email" href="mailto:info@doctorproff.ru">info@doctorproff.ru</a></div>
+              <div class="b-footer__center-bottom"><a class="b-footer__call js-popup" href="#main-popup">Запись на консультацию</a><a class="b-footer__email" href="mailto:info@doctorproff.ru">info@doctorproff.ru</a></div>
             </div>
           </div>
           <div class="b-footer__bottom">
@@ -315,8 +334,16 @@
           <div class="b-form__submit">
             <button>Записаться</button>
           </div>
-          <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="">Cоглашения об использовании сайта</a></p>
+          <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a></p>
         </form>
+      </div>
+    </div>
+    <div class="b-success mfp-hide" id="popup-success">
+      <div class="b-success__wrap">
+        <div class="b-success__text">
+          <h3>Спасибо за заявку</h3>
+          <p>Наш менеджер свяжется с вами в ближайшее время</p>
+        </div>
       </div>
     </div>
   </body>

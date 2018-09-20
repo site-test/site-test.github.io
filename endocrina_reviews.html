@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/png" href="http://doctorproff.ru/local/templates/doctorproff/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Отзывы</title>
   </head>
@@ -11,11 +12,9 @@
     <div class="b-header b-header--size-lg">
       <div class="container">
         <div class="b-header__wrap">
-          <div class="b-header__part"><a class="b-header__logo" href=""></a>
-            <div class="b-header__hamburgers"></div>
-          </div>
+          <div class="b-header__part"><a class="b-header__logo" href="home.html"></a></div>
           <div class="b-header__social">
-            <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+            <div class="social"><a class="social__item social__item--insta" href="https://www.instagram.com/" target="_blank"></a><a class="social__item social__item--fb" href="https://www.facebook.com/" target="_blank"></a><a class="social__item social__item--vk" href="https://vk.com/" target="_blank"></a><a class="social__item social__item--ok" href="https://ok.ru/" target="_blank"></a></div>
           </div><a class="b-header__phone-mobile" href="tel:+74951182511"></a>
           <div class="b-header__phone"><a href="tel:+74951182511">+7 (495) 118 - 2511</a>
             <div class="b-header__phone-arrow"></div>
@@ -28,11 +27,10 @@
           </div>
         </div>
         <div class="b-header__menu">
-          <div class="b-header__menu-wrap"><a href="">Главная</a><a href="">Доктор</a><a href="">Клиника</a><a href="">Услуги и цены</a><a href="">Отзывы</a><a href="">Рассрочка</a><a href="">Контакты</a></div>
+          <div class="b-header__menu-wrap"><a href="endocrina_main.html">Главная</a><a href="endocrina_doctor.html">Доктор</a><a href="endocrina_clinic.html">Клиника</a><a href="endocrina_services.html">Услуги и цены</a><a class="active" href="endocrina_reviews.html">Отзывы</a><a href="endocrina_installment.html">Рассрочка</a><a href="endocrina_contacts.html">Контакты</a></div>
         </div>
       </div>
     </div>
-    <!--include blocks/_b-aside-->
     <div class="page">
       <div class="b-main">
         <div class="b-right-form js-form-transform">
@@ -67,12 +65,12 @@
             <h2>Отзывы</h2>
             <h3>Эндокринная хирургия</h3>
             <div class="reviews">
-              <div class="reviews__filter">
+              <div class="reviews__filter reviews__filter--filter">
                 <h4>Выберите категории отзывов:</h4>
                 <div class="reviews__filter-wrap">
-                  <div class="filter-item active">Голова и шея</div>
-                  <div class="filter-item">Щитовидка</div>
-                  <div class="filter-item">Грудь</div>
+                  <div class="filter-item active js-1">Голова и шея</div>
+                  <div class="filter-item js-2">Щитовидка</div>
+                  <div class="filter-item js-3">Грудь</div>
                   <div class="filter-item">Надпочечники</div>
                   <div class="filter-item">Поджелудочная железа</div>
                 </div>
@@ -80,12 +78,12 @@
               <div class="reviews__filter reviews__filter--type">
                 <h4>Выберите вид отзывов:</h4>
                 <div class="reviews__filter-wrap">
-                  <div class="filter-item active">Все отзывы</div>
-                  <div class="filter-item">Отзывы с видео</div>
-                  <div class="filter-item">Отзывы с фото</div>
+                  <div class="filter-item active js-11">Все отзывы</div>
+                  <div class="filter-item js-22">Отзывы с видео</div>
+                  <div class="filter-item js-33">Отзывы с фото</div>
                 </div>
               </div>
-              <div class="reviews__content">
+              <div class="reviews__content" id="id-1">
                 <div class="reviews-item">
                   <div class="reviews-item__header"><img src="./images/reviews/header_services@2x.jpg" alt="">
                     <p><span>Алеся Ш.</span><span>23 года</span></p>
@@ -120,6 +118,76 @@
                   </div>
                 </div>
               </div>
+              <div class="reviews__content hidden" id="id-2">
+                <div class="reviews-item">
+                  <div class="reviews-item__header"><img src="./images/reviews/header_services@2x.jpg" alt="">
+                    <p><span>Алеся Ш.</span><span>23 года</span></p>
+                    <time>20.04.2018</time>
+                  </div>
+                  <div class="reviews-item__body">
+                    <h3>Пластика верхних век</h3><a class="reviews-item__video js-popup-youtube" href="https://www.youtube.com/watch?v=wQAMjVtAqCI">
+                      <div class="reviews-item__video-play"></div><img src="./images/reviews/reviews_1.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item__header"><img src="./images/reviews/header_services@2x.jpg" alt="">
+                    <p><span>Алеся Ш.</span><span>23 года</span></p>
+                    <time>20.04.2018</time>
+                  </div>
+                  <div class="reviews-item__body">
+                    <h3>Пластика верхних век</h3>
+                    <p>Хочу выразить благодарность пластическому хирургу Шаробаро Валентину Ильичуза внимание, тактичность и заботу. Я думала, что в 68 лет такую операцию делать поздно. Но доктор показал мне фотографии и убедил, что это не предел. Когда я пришла на операцию, страх отсутствовал. У меня было впечатление, что я знаю его давно и могу довериться. Операция прошла отлично. Я довольна результатом. Друзья и близкие даже не заметили, что я сделала операцию, сказали, что хорошо выглядишь.</p><a class="reviews-item__video js-popup-youtube" href="https://www.youtube.com/watch?v=wQAMjVtAqCI">
+                      <div class="reviews-item__video-play"></div><img src="./images/reviews/reviews_1.jpg" alt=""></a>
+                    <div class="reviews-item__gallery"><a class="reviews-item__gallery-item js-zoom-img" href="./images/reviews/reviews_1.jpg"><img src="./images/reviews/reviews_1.jpg"></a><a class="reviews-item__gallery-item js-zoom-img" href="./images/reviews/reviews_1.jpg"><img src="./images/reviews/reviews_1.jpg"></a><a class="reviews-item__gallery-item js-zoom-img" href="./images/reviews/reviews_1.jpg"><img src="./images/reviews/reviews_1.jpg"></a></div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item__header"><img src="./images/reviews/header_services@2x.jpg" alt="">
+                    <p><span>Алеся Ш.</span><span>23 года</span></p>
+                    <time>20.04.2018</time>
+                  </div>
+                  <div class="reviews-item__body">
+                    <h3>Пластика верхних век</h3>
+                    <p>Хочу выразить благодарность пластическому хирургу Шаробаро Валентину Ильичуза внимание, тактичность и заботу. Я думала, что в 68 лет такую операцию делать поздно. Но доктор показал мне фотографии и убедил, что это не предел. Когда я пришла на операцию, страх отсутствовал. У меня было впечатление, что я знаю его давно и могу довериться. Операция прошла отлично. Я довольна результатом. Друзья и близкие даже не заметили, что я сделала операцию, сказали, что хорошо выглядишь.</p>
+                    <p>Хочу выразить благодарность всем, кто принимал участие в операции, а также администратору Ксении, которая интересовалась моим здоровьем. Приятно!Светлана.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__content hidden" id="id-3">
+                <div class="reviews-item">
+                  <div class="reviews-item__header"><img src="./images/reviews/header_services@2x.jpg" alt="">
+                    <p><span>Алеся Ш.</span><span>23 года</span></p>
+                    <time>20.04.2018</time>
+                  </div>
+                  <div class="reviews-item__body">
+                    <h3>Пластика верхних век</h3>
+                    <p>Хочу выразить благодарность пластическому хирургу Шаробаро Валентину Ильичуза внимание, тактичность и заботу. Я думала, что в 68 лет такую операцию делать поздно. Но доктор показал мне фотографии и убедил, что это не предел. Когда я пришла на операцию, страх отсутствовал. У меня было впечатление, что я знаю его давно и могу довериться. Операция прошла отлично. Я довольна результатом. Друзья и близкие даже не заметили, что я сделала операцию, сказали, что хорошо выглядишь.</p>
+                    <p>Хочу выразить благодарность всем, кто принимал участие в операции, а также администратору Ксении, которая интересовалась моим здоровьем. Приятно!Светлана.</p>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item__header"><img src="./images/reviews/header_services@2x.jpg" alt="">
+                    <p><span>Алеся Ш.</span><span>23 года</span></p>
+                    <time>20.04.2018</time>
+                  </div>
+                  <div class="reviews-item__body">
+                    <h3>Пластика верхних век</h3>
+                    <p>Хочу выразить благодарность пластическому хирургу Шаробаро Валентину Ильичуза внимание, тактичность и заботу. Я думала, что в 68 лет такую операцию делать поздно. Но доктор показал мне фотографии и убедил, что это не предел. Когда я пришла на операцию, страх отсутствовал. У меня было впечатление, что я знаю его давно и могу довериться. Операция прошла отлично. Я довольна результатом. Друзья и близкие даже не заметили, что я сделала операцию, сказали, что хорошо выглядишь.</p><a class="reviews-item__video js-popup-youtube" href="https://www.youtube.com/watch?v=wQAMjVtAqCI">
+                      <div class="reviews-item__video-play"></div><img src="./images/reviews/reviews_1.jpg" alt=""></a>
+                    <div class="reviews-item__gallery"><a class="reviews-item__gallery-item js-zoom-img" href="./images/reviews/reviews_1.jpg"><img src="./images/reviews/reviews_1.jpg"></a><a class="reviews-item__gallery-item js-zoom-img" href="./images/reviews/reviews_1.jpg"><img src="./images/reviews/reviews_1.jpg"></a><a class="reviews-item__gallery-item js-zoom-img" href="./images/reviews/reviews_1.jpg"><img src="./images/reviews/reviews_1.jpg"></a></div>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item__header"><img src="./images/reviews/header_services@2x.jpg" alt="">
+                    <p><span>Алеся Ш.</span><span>23 года</span></p>
+                    <time>20.04.2018</time>
+                  </div>
+                  <div class="reviews-item__body">
+                    <h3>Пластика верхних век</h3><a class="reviews-item__video js-popup-youtube" href="https://www.youtube.com/watch?v=wQAMjVtAqCI">
+                      <div class="reviews-item__video-play"></div><img src="./images/reviews/reviews_1.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
               <div class="reviews__btn">Показать еще</div>
             </div>
             <div class="b-main__request">
@@ -134,13 +202,13 @@
                     <input type="text" placeholder="Ваше имя" required>
                   </div>
                   <div class="b-form__item">
-                    <input type="tel" placeholder="Ваш телефон" required>
+                    <input class="phone-mask" type="tel" placeholder="Ваш телефон" required>
                   </div>
                   <div class="b-form__item">
                     <input type="text" placeholder="Вид операции" required>
                   </div>
                 </div>
-                <p>Нажимая на кнопку "Отправить", вы принимаете условия<a href=""> Cоглашения об использовании сайта</a></p>
+                <p>Нажимая на кнопку "Отправить", вы принимаете условия<a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a></p>
                 <div class="b-form__submit">
                   <button>Отправить</button>
                 </div>
@@ -155,19 +223,21 @@
         <div class="b-footer__wrap">
           <div class="b-footer__top">
             <div class="b-footer__logo"></div>
-            <div class="b-footer__menu"><a href="">Доктор</a><a href="">Клиники</a><a href="">Женщинам</a><a href="">Мужчинам</a><a href="">Фото до и после</a><a href="">Отзывы</a><a href="">Расрочка</a><a href="">Контакты</a></div>
+            <div class="b-footer__menu">
+              <div class="b-footer__menu-wrap"><a href="endocrina_doctor.html">Доктор</a><a href="endocrina_clinic.html">Клиники</a><a href="endocrina_services.html">Женщинам</a><a href="endocrina_services.html">Мужчинам</a><a href="endocrina_reviews.html">Отзывы</a><a href="endocrina_installment.html">Расрочка</a><a href="endocrina_contacts.html">Контакты</a></div>
+            </div>
             <div class="b-footer__social">
-              <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+              <div class="social"><a class="social__item social__item--insta" href="https://www.instagram.com/" target="_blank"></a><a class="social__item social__item--fb" href="https://www.facebook.com/" target="_blank"></a><a class="social__item social__item--vk" href="https://vk.com/" target="_blank"></a><a class="social__item social__item--ok" href="https://ok.ru/" target="_blank"></a></div>
             </div>
           </div>
           <div class="b-footer__center">
             <div class="b-footer__sub-menu">
-              <p><a href="">Пластическая хирургия</a><a href="">Эндокринная хирургия</a><a href="">Сердечно-сосудистая хирургия</a></p>
-              <p><a href="">О нас</a><a href="">Новости клиники</a><a href="">Согласия  на обработку данных</a><a href="">Согласие на использование сайта</a></p>
+              <p><a href="plastica_main.html">Пластическая хирургия</a><a href="endocrina_main.html">Эндокринная хирургия</a><a href="serdechno_main.html">Сердечно-сосудистая хирургия</a></p>
+              <p><a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Согласия  на обработку данных</a><a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Согласие на использование сайта</a></p>
             </div>
             <div class="b-footer__center-right">
               <div class="b-footer__phone"><a href="tel:">+7 (495) 118 - 2511</a><a href="tel:">+7 (495) 118 - 2511</a></div>
-              <div class="b-footer__center-bottom"><a class="b-footer__call" href="">Запись на консультацию</a><a class="b-footer__email" href="mailto:info@doctorproff.ru">info@doctorproff.ru</a></div>
+              <div class="b-footer__center-bottom"><a class="b-footer__call js-popup" href="#main-popup">Запись на консультацию</a><a class="b-footer__email" href="mailto:info@doctorproff.ru">info@doctorproff.ru</a></div>
             </div>
           </div>
           <div class="b-footer__bottom">
@@ -198,8 +268,16 @@
           <div class="b-form__submit">
             <button>Записаться</button>
           </div>
-          <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="">Cоглашения об использовании сайта</a></p>
+          <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a></p>
         </form>
+      </div>
+    </div>
+    <div class="b-success mfp-hide" id="popup-success">
+      <div class="b-success__wrap">
+        <div class="b-success__text">
+          <h3>Спасибо за заявку</h3>
+          <p>Наш менеджер свяжется с вами в ближайшее время</p>
+        </div>
       </div>
     </div>
   </body>
