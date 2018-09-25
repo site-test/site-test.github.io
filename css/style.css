@@ -2082,7 +2082,7 @@ transform:translateZ(1px);
   width: 100%;
   padding-top: 13px;
   border-bottom: 1px solid #53c3d0;
-  transform:translateZ(1px);
+  
   -webkit-overflow-scrolling: touch;
   max-width: 1256px; }
   @media only screen and (max-width: 1000px) {
