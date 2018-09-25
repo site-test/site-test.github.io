@@ -1095,7 +1095,10 @@ BLOCKS
   height: 80px;
   z-index: 50;
   -webkit-transition: .3s ease-in-out all;
-  transition: .3s ease-in-out all; }
+  transition: .3s ease-in-out all;
+transform:translateZ(1px);
+  -webkit-overflow-scrolling: touch;
+}
   .b-header .container {
     position: relative;
     height: 100%; }
