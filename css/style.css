@@ -422,8 +422,7 @@ body {
 .anchor-scroll {
   height: 41px;
   margin-bottom: 38px;
-transform:translateZ(1px);
-  -webkit-overflow-scrolling: touch;}
+}
 
 .icon-girl {
   background: url("../images/sprite/sprite-5f055123.svg") no-repeat;
@@ -2076,8 +2075,7 @@ transform:translateZ(1px);
       margin-bottom: 35px; } }
 
 #anchor-scroll {
-  transform:translateZ(1px);
-  -webkit-overflow-scrolling: touch;
+ 
   height: 41px; }
 
 .b-main__anchor {
