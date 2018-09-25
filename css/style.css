@@ -2083,7 +2083,6 @@ transform:translateZ(1px);
   padding-top: 13px;
   border-bottom: 1px solid #53c3d0;
   
-  -webkit-overflow-scrolling: touch;
   max-width: 1256px; }
   @media only screen and (max-width: 1000px) {
     .b-main__anchor {
