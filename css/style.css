@@ -421,7 +421,9 @@ body {
 
 .anchor-scroll {
   height: 41px;
-  margin-bottom: 38px; }
+  margin-bottom: 38px;
+transform:translateZ(1px);
+  -webkit-overflow-scrolling: touch;}
 
 .icon-girl {
   background: url("../images/sprite/sprite-5f055123.svg") no-repeat;
@@ -2074,12 +2076,16 @@ transform:translateZ(1px);
       margin-bottom: 35px; } }
 
 #anchor-scroll {
+  transform:translateZ(1px);
+  -webkit-overflow-scrolling: touch;
   height: 41px; }
 
 .b-main__anchor {
   width: 100%;
   padding-top: 13px;
   border-bottom: 1px solid #53c3d0;
+  transform:translateZ(1px);
+  -webkit-overflow-scrolling: touch;
   max-width: 1256px; }
   @media only screen and (max-width: 1000px) {
     .b-main__anchor {
