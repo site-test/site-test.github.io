@@ -1,312 +1,855 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head><link >
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <link rel="shortcut icon" type="image/png" href="http://doctorproff.ru/local/templates/doctorproff/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Главная страница</title>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
-  <body id="top">
-    <div class="b-header">
-      <div class="container">
-        <div class="b-header__wrap">
-          <div class="b-header__part"><a class="b-header__logo" href="/home.html"></a></div>
-          <div class="b-header__social">
-            <div class="social"><a class="social__item social__item--insta" href="https://www.instagram.com/" target="_blank"></a><a class="social__item social__item--fb" href="https://www.facebook.com/" target="_blank"></a><a class="social__item social__item--vk" href="https://vk.com/" target="_blank"></a><a class="social__item social__item--ok" href="https://ok.ru/" target="_blank"></a><a class="social__item social__item--yt" href="https://www.youtube.com/" target="_blank"></a></div>
-          </div><a class="b-header__phone-mobile" href="tel:+74951182511"></a>
-          <div class="b-header__phone"><a href="tel:+74951182511">+7 (495) 118 - 2511</a>
-            <div class="b-header__phone-arrow"></div>
-            <p><a href="tel:+79169906297">+7 (916) 990 - 6297</a><span>(what’s app / viber)</span></p>
+  <title>Главная страница</title>
+  <body>
+    <div class="b-wrapper">
+      <!-- include blocks/_b-header-->
+      <div class="page">
+        <div class="b-main">
+          <div class="b-main__fullpage">
+            <!--.b-main__fullpage-scroll-->
+            <div class="b-main__fullpage-img"><img src="./images/main/bckg.png"></div>
+            <div class="container">
+              <div class="b-main__top-title">
+                <div class="sale"></div>
+                <div class="title">Большая распродажа</div>
+                <div class="desc">немецкой клинкерной плитки и ступеней</div>
+                <div class="button js-slide">смотреть</div>
+              </div>
+            </div>
           </div>
-          <div class="b-header__part"><a class="b-header__email" href="mailto:"></a>
-            <div class="b-header__lang"><a class="b-header__lang-item" href="">En</a>
-              <!--a(href='').b-header__lang-item.b-header__lang-item--active En-->
-            </div><a class="b-header__button js-popup" href="#main-popup">Запись на консультацию</a>
+          <div class="b-main__content">
+            <div class="container">
+              <h1>Клинкерная продукция<br>из Германии</h1>
+            </div>
+          </div>
+          <div class="b-main__tile" id="scroll">
+            <div class="container">
+              <h2>Облицовочная плитка</h2>
+              <div class="b-main__list">
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-main__btn">Показать все позиции</div>
+            </div>
+          </div>
+          <div class="b-main__tile">
+            <div class="container">
+              <h2>Ступени рядовые лофт и флорентинер</h2>
+              <div class="b-main__list">
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-main__btn">Показать все позиции</div>
+            </div>
+          </div>
+          <div class="b-main__tile b-main__tile--withoutmore">
+            <div class="container">
+              <h2>Ступени балконные</h2>
+              <div class="b-main__list">
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-main__tile">
+            <div class="container">
+              <h2>Напольная клинкерная плитка</h2>
+              <div class="b-main__list">
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-main__btn">Показать все позиции</div>
+            </div>
+          </div>
+          <div class="b-main__email">
+            <div class="container">
+              <div class="b-main__email-wrap">
+                <div class="b-main__email-title">Подпишитесь на рассылку</div>
+                <div class="b-main__email-subtitle">Введите здесь свой email, чтобы подписаться на рассылку<br>и всегда быть в курсе лучших новинок и ценовых предложений!</div>
+                <div class="b-main__email-box">
+                  <form>
+                    <p>
+                      <label>
+                        <input type="email" placeholder="Email" required>
+                      </label>
+                    </p>
+                    <button type="submit"></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-main__tile b-main__tile--withoutmore">
+            <div class="container">
+              <h2>Керамогранит напольный</h2>
+              <div class="b-main__list">
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-main__tile b-main__tile--withoutmore">
+            <div class="container">
+              <h2>Керамогранит настенный</h2>
+              <div class="b-main__list">
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img"><img src="http://2018.ceramicgroup.ru/img/catalog_item/big/66.jpg"/><a class="card__img-zoom js-popup" href="#popup-zoom"></a>
+                    <div class="card__img-sale">-15%</div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__header">
+                      <div class="title">Облицовочная плитка</div>
+                      <div class="name">Stroeher Kontur 3217 Beige</div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="rest">Остаток: <span>424 кв.м</span>
+                      </div>
+                      <div class="card__footer-center">
+                        <div class="price-section">
+                          <div class="old-price">2 400 ₽</div>
+                          <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                          </div>
+                        </div>
+                        <div class="btn">Забронировать</div>
+                      </div>
+                      <div class="card__footer-bottom">
+                        <div class="size">Размер: <span>240х71х10 мм</span>
+                        </div>
+                        <div class="article">Артикул: <span>CERBH2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-main__information b-main__information--bg-white">
+            <div class="container">
+              <h2>Сертификаты качества</h2>
+              <div class="b-main__certificate js-gallery"><a class="certificate-item" href="https://3d-m.ru/wp-content/uploads/2016/08/xShining-Cert-3DMALL.jpg.pagespeed.ic.aEjLVms7pi.jpg"><img src="./images/cer/image 6.svg"></a><a class="certificate-item" href="https://3d-m.ru/wp-content/uploads/2016/08/xShining-Cert-3DMALL.jpg.pagespeed.ic.aEjLVms7pi.jpg"><img src="./images/cer/image 6.svg"></a><a class="certificate-item" href="https://3d-m.ru/wp-content/uploads/2016/08/xShining-Cert-3DMALL.jpg.pagespeed.ic.aEjLVms7pi.jpg"><img src="./images/cer/image 6.svg"></a><a class="certificate-item" href="https://3d-m.ru/wp-content/uploads/2016/08/xShining-Cert-3DMALL.jpg.pagespeed.ic.aEjLVms7pi.jpg"><img src="./images/cer/image 6.svg"></a><a class="certificate-item" href="https://3d-m.ru/wp-content/uploads/2016/08/xShining-Cert-3DMALL.jpg.pagespeed.ic.aEjLVms7pi.jpg"><img src="./images/cer/image 6.svg"></a><a class="certificate-item" href="https://3d-m.ru/wp-content/uploads/2016/08/xShining-Cert-3DMALL.jpg.pagespeed.ic.aEjLVms7pi.jpg"><img src="./images/cer/image 6.svg"></a><a class="certificate-item" href="https://3d-m.ru/wp-content/uploads/2016/08/xShining-Cert-3DMALL.jpg.pagespeed.ic.aEjLVms7pi.jpg"><img src="./images/cer/image 6.svg"></a></div>
+            </div>
+          </div>
+          <div class="b-main__information">
+            <div class="container">
+              <h2>Как заказать</h2>
+              <div class="b-main__order">
+                <div class="order-item">
+                  <div class="order-item__number">1</div>
+                  <div class="order-item__title">Оставьте<br>заявку</div>
+                  <div class="order-item__desc">На сайте или позвоните</div>
+                </div>
+                <div class="order-item">
+                  <div class="order-item__number">2</div>
+                  <div class="order-item__title">Сделайте<br>заказ</div>
+                  <div class="order-item__desc">Нужного товара</div>
+                </div>
+                <div class="order-item">
+                  <div class="order-item__number">3</div>
+                  <div class="order-item__title">Бесплатный<br>расчет</div>
+                  <div class="order-item__desc">По чертежам делаем мы сами</div>
+                </div>
+                <div class="order-item">
+                  <div class="order-item__number">4</div>
+                  <div class="order-item__title">Оплатите<br>заказ</div>
+                  <div class="order-item__desc">и получите товар на складе или закажите доставку</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-main__information b-main__information--bg-white">
+            <div class="container">
+              <h2>Преимущества клинкера</h2>
+              <div class="b-main__advantages">
+                <div class="advantages-item"><img src="./images/klinker/1.svg">
+                  <p>Гарантия 25 лет<br>на морозоустойчивость</p>
+                </div>
+                <div class="advantages-item"><img src="./images/klinker/2.svg">
+                  <p>Высочайшая<br>износоустойчивость</p>
+                </div>
+                <div class="advantages-item"><img src="./images/klinker/3.svg">
+                  <p>Немецкое<br>качество</p>
+                </div>
+                <div class="advantages-item"><img src="./images/klinker/4.svg">
+                  <p>Абсолютная<br>экологичность</p>
+                </div>
+                <div class="advantages-item"><img src="./images/klinker/5.svg">
+                  <p>Стойкость<br>к загрязнению</p>
+                </div>
+                <div class="advantages-item"><img src="./images/klinker/6.svg">
+                  <p>Не требует<br>специального ухода</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-main__contacts" id="contacts">
+            <div class="container">
+              <h2>Контакты</h2>
+              <div class="b-block__contacts-slider">
+                <div class="select-city">
+                  <div class="select-city__region">
+                    <p>Центральный ФО</p><a class="select-city__item js-select-city active" href="" data-reg_id="1">Москва</a><a class="select-city__item js-select-city" href="" data-reg_id="8">Белгород</a><a class="select-city__item js-select-city" href="" data-reg_id="9">Воронеж</a><a class="select-city__item js-select-city" href="" data-reg_id="10">Курск</a><a class="select-city__item js-select-city" href="" data-reg_id="3">Тамбов</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Сев.запад. ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="11">Санкт-Петербург</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Южный ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="7">Краснодар</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Уральский ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="2">Екатеринбург</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Сибирский ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="4">Новосибирск</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Дальневосточный ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="6">Владивосток</a>
+                  </div>
+                </div>
+              </div>
+              <div class="b-block__map">
+                <div class="b-block__map-left">
+                  <h3>Адреса шоу-румов</h3>
+                  <div id="map-left"></div>
+                  <div class="b-block__map-contacts" id="contact_map_office_list">
+                    <div>
+                      <h4>Шоу-рум в БЦ «Норд Хаус»</h4>Москва, Дмитровское ш., д. 100 стр. 2, оф. 2401.<a href="#" data-coord_map="55.881911, 37.547652" data-coord_marker="">ПОКАЗАТЬ НА КАРТЕ</a>
+                    </div>
+                    <div>
+                      <h4>Шоу-рум на Твардовского</h4>Москва, Дмитровское ш., д. 100 стр. 2, оф. 2401. <a href="#" data-coord_map="55.794128, 37.400378" data-coord_marker="">ПОКАЗАТЬ НА КАРТЕ</a>
+                    </div>
+                    <div>Телефон: <span class="rst_stroeher_msk">+7 (499) 348-85-59</span><br>E-mail: <a href="mailto:info@ceramicgroup.ru">info@ceramicgroup.ru</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-block__map-right">
+                  <h3>Адрес регионального склада</h3>
+                  <div id="map-right"></div>
+                  <div class="b-block__map-contacts" id="contact_map_stock_list">
+                    <h4>Центральный склад</h4><span>МО, Красногорский р-н, с. Петрово-Дальнее, вл.1, стр. 1</span><a href="#" data-coord_map="55.881911, 37.547652" data-coord_marker="">ПОКАЗАТЬ НА КАРТЕ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-popup mfp-hide" id="popup-zoom"><span class="b-popup__close"></span>
+            <div class="b-popup__content">
+              <div class="b-popup__img"><img src="https://www.stroeher.ru/photo/big/58dcb15848f32.jpeg"></div>
+              <div class="b-popup__bottom-block">
+                <div class="bottom-block__left">
+                  <div class="title">Облицовочная плитка</div>
+                  <div class="name">Stroeher Kontur 3217 Beige</div>
+                </div>
+                <div class="bottom-block__center_v1">
+                  <div class="article">остаток: <span>654 кв.м</span>
+                  </div>
+                  <div class="size">Размер: <span>240х71х10 мм</span>
+                  </div>
+                </div>
+                <div class="bottom-block__center_v2">
+                  <div class="article">Артикул: <span>CERBH2</span>
+                  </div>
+                </div>
+                <div class="bottom-block__right">
+                  <div class="old-price">2 400 ₽</div>
+                  <div class="price"><span>2 052 ₽</span><span>/</span> кв.м
+                  </div>
+                </div>
+                <div class="bottom-block__btn">
+                  <div class="btn">Забронировать</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="page page--home">
-      <div class="b-main">
-        <div class="b-left-form js-form-transform">
-          <div class="b-left-form__label js-label-form">Запись на бесплатный прием</div>
-          <div class="b-left-form__wrap">
-            <div class="b-left-form__title">Запись на бесплатный прием</div>
-            <div class="b-left-form__close js-close-form"></div>
-            <form class="b-form">
-              <div class="b-form__content">
-                <div class="b-form__item">
-                  <input type="text" placeholder="Ваше имя" required>
-                </div>
-                <div class="b-form__item">
-                  <input class="phone-mask" type="tel" placeholder="Ваш телефон" required>
-                </div>
-              </div>
-              <div class="b-form__submit">
-                <button>Записаться на прием</button>
-              </div>
-              <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия <a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a>
-              </p>
-            </form>
+      <footer class="b-footer">
+        <div class="container">
+          <div class="b-footer__wrap">
+            <div class="b-footer__copy">ООО «ТД «Керамик Груп» 2014-2018</div><a class="b-footer__link" href="" target="_black">Положение о политике конфиденциальности</a>
           </div>
         </div>
-        <div class="fullpage-slider">
-          <div class="fullpage-slider__more">Подробнее</div>
-          <div class="fullpage-slider__wrap js-fullpage-slider">
-            <div class="fullpage-slider__item">
-              <div class="fullpage-slider__img"><img src="./images/main/slider/main_slider_header@2x.jpg" alt=""></div>
-              <div class="container">
-                <div class="fullpage-slider__content">
-                  <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
-                  <div class="fullpage-slider__numbers">
-                    <div class="fullpage-slider__numbers-item">
-                      <p>1 800</p><span>операций<br>в год</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>5 000</p><span>благодарных<br>пациентов</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>20</p><span>лет стаж работы<br>докторов</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fullpage-slider__item">
-              <div class="fullpage-slider__img"><img src="./images/main/slider/endocriniya_slider.png" alt=""></div>
-              <div class="container">
-                <div class="fullpage-slider__content">
-                  <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
-                  <div class="fullpage-slider__numbers">
-                    <div class="fullpage-slider__numbers-item">
-                      <p>1 800</p><span>операций<br>в год</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>5 000</p><span>благодарных<br>пациентов</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>20</p><span>лет стаж работы<br>докторов</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fullpage-slider__item">
-              <div class="fullpage-slider__img"><img src="./images/main/slider/plasticheskay_slider.png" alt=""></div>
-              <div class="container">
-                <div class="fullpage-slider__content">
-                  <div class="fullpage-slider__title">Делаем<br>профессиональную<br>хирургию доступной!</div>
-                  <div class="fullpage-slider__numbers">
-                    <div class="fullpage-slider__numbers-item">
-                      <p>1 800</p><span>операций<br>в год</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>5 000</p><span>благодарных<br>пациентов</span>
-                    </div>
-                    <div class="fullpage-slider__numbers-item">
-                      <p>20</p><span>лет стаж работы<br>докторов</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="select-category">
-            <div class="select-category__wrap js-select-category-slider"><a class="select-category__item" href="plastica_main.html"><span class="icon-ears"></span>
-                <p>Пластическая<br>хирургия</p></a><a class="select-category__item" href="endocrina_main.html"><span class="icon-girl"></span>
-                <p>Эндокринная<br>хирургия</p></a><a class="select-category__item" href="serdechno_main.html"><span class="icon-heart"></span>
-                <p>Сердечно-сосудистая<br>хирургия</p></a></div>
-          </div>
-        </div>
-        <div class="b-main__content" id="scroll-more">
-          <div class="container">
-            <h1>Почему Doctor Proff?</h1>
-            <div class="b-main__2-col">
-              <p>«Доктор Профф» обеспечивает профессиональное медицинское обслуживание пациентов на базе ведущих клиник. Команда врачей «Доктор Профф» по праву является одной из лучших в России. Это специалисты со степенью «доктор медицинских наук», с большим опытом врачебной практики, признанные среди своих коллег и пациентов.</p>
-              <p>Идея «Доктор Профф» не нова, однако есть одно существенное отличие – это доступность. «Доктор Профф» позволяет решить давно наболевший вопрос: «Как и где найти отличного доктора, причем срочно, да еще и за очень разумные деньги?». Все просто. теперь есть «Доктор Профф».</p>
-            </div>
-            <div class="b-main__2-col-show">Читать полностью</div>
-            <div class="b-main__step-company">
-              <div class="step-company js-step-company">
-                <div class="step-company__item active">
-                  <div class="step-company__bg"><img src="./images/main/step_company/1.jpg" alt=""></div><strong>01</strong>
-                  <p>Наши доктора - лучшие хирурги России</p><span>01</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/2.jpg" alt=""></div><strong>02</strong>
-                  <p>Стаж работы более 20 лет</p><span>02</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/3.jpg" alt=""></div><strong>03</strong>
-                  <p>Все доктора со степенью “доктор медицинских наук”</p><span>03</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/4.jpg" alt=""></div><strong>04</strong>
-                  <p>Государственная клиническая база</p><span>04</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/5.jpg" alt=""></div><strong>05</strong>
-                  <p>Современные методики и технологии</p><span>05</span>
-                </div>
-                <div class="step-company__item">
-                  <div class="step-company__bg"><img src="./images/main/step_company/6.jpg" alt=""></div><strong>06</strong>
-                  <p>Рассрочка 0% на любую операцию</p><span>06</span>
-                </div>
-              </div>
-            </div>
-            <h2>4 шага к красоте<br>и здоровью</h2>
-            <div class="health-step">
-              <div class="health-step__bg"></div>
-              <div class="health-step__wrap">
-                <div class="health-step__item">
-                  <div class="health-step__close"></div><span>Шаг 1</span>
-                  <p>Консультация</p>
-                  <div class="icon-hl icon-comm"></div>
-                  <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших пластических хирургов России.</div>
-                </div>
-                <div class="health-step__item">
-                  <div class="health-step__close"></div><span>Шаг 2</span>
-                  <p>План лечения</p>
-                  <div class="icon-hl icon-plan"></div>
-                  <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших пластических хирургов России.</div>
-                </div>
-                <div class="health-step__item">
-                  <div class="health-step__close"></div><span>Шаг 3</span>
-                  <p>Операции</p>
-                  <div class="icon-hl icon-operation"></div>
-                  <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших пластических хирургов России.</div>
-                </div>
-                <div class="health-step__item">
-                  <div class="health-step__close"></div><span>Шаг 4</span>
-                  <p>Наблюдение</p>
-                  <div class="icon-hl icon-spy"></div>
-                  <div class="health-step__desc">проводится на базе федерального клинического центра одним из лучших пластических хирургов России.</div>
-                </div>
-              </div>
-            </div>
-            <div class="b-main__request">
-              <h2>Отправить заявку<br>на бесплатный прием<br>прямо сейчас</h2>
-              <div class="tablets tablets--two-up"></div>
-              <div class="tablets tablets--one"></div>
-              <div class="tablets tablets--three"></div>
-              <div class="tablets tablets--two-down"></div>
-              <form class="b-form">
-                <div class="b-form__content">
-                  <div class="b-form__item">
-                    <input type="text" placeholder="Ваше имя" required>
-                  </div>
-                  <div class="b-form__item">
-                    <input class="phone-mask" type="tel" placeholder="Ваш телефон" required>
-                  </div>
-                  <div class="b-form__item">
-                    <input type="text" placeholder="Вид операции" required>
-                  </div>
-                </div>
-                <p>Нажимая на кнопку "Отправить", вы принимаете условия <a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a>
-                </p>
-                <div class="b-form__submit">
-                  <button>Отправить</button>
-                </div>
-              </form>
-            </div>
-            <h2>Новости и акции</h2>
-            <div class="b-main__news">
-              <div class="news">
-                <div class="news__wrap js-slider-news"><a class="news__item js-ajax-popup" href="ajax/popup-news.html">
-                    <div class="news__img"><img src="./images/main/news/main_news-1@2x.jpg" alt=""></div>
-                    <div class="news__title">Пять поразительных фактов о пластической хирургии</div>
-                    <div class="news__desc">«Многим из нас кажется, что мы знаем о пластической хирургии практически всё»</div></a><a class="news__item js-ajax-popup" href="ajax/popup-news.html">
-                    <div class="news__img"><img src="./images/main/news/main_news-2@2x.jpg" alt=""></div>
-                    <div class="news__title">Интервью с врачом</div>
-                    <div class="news__desc">Какой размер груди предпочитают россиянки, европейки и американки? Почему пластическому хирургу иногда приходится отказывать пациенту в операции? Что такое липоскульптура?</div></a><a class="news__item js-ajax-popup" href="ajax/popup-news.html">
-                    <div class="news__img"><img src="./images/main/news/main_news-3@2x.jpg" alt=""></div>
-                    <div class="news__title">Скидка в день рождения!</div>
-                    <div class="news__desc">В день Вашего рождения и в течение недели после него, клиника дарит Вам скидку в размере 5% на коррекцию морщин биосовместимыми наполнителями или препаратами ботуллотоксина.</div></a><a class="news__item js-ajax-popup" href="ajax/popup-news.html">
-                    <div class="news__img"><img src="./images/main/news/main_news-1@2x.jpg" alt=""></div>
-                    <div class="news__title">Пять поразительных фактов о пластической хирургии</div>
-                    <div class="news__desc">«Многим из нас кажется, что мы знаем о пластической хирургии практически всё»</div></a><a class="news__item js-ajax-popup" href="ajax/popup-news.html">
-                    <div class="news__img"><img src="./images/main/news/main_news-2@2x.jpg" alt=""></div>
-                    <div class="news__title">Интервью с врачом</div>
-                    <div class="news__desc">Какой размер груди предпочитают россиянки, европейки и американки? Почему пластическому хирургу иногда приходится отказывать пациенту в операции? Что такое липоскульптура?</div></a><a class="news__item js-ajax-popup" href="ajax/popup-news.html">
-                    <div class="news__img"><img src="./images/main/news/main_news-3@2x.jpg" alt=""></div>
-                    <div class="news__title">Скидка в день рождения!</div>
-                    <div class="news__desc">В день Вашего рождения и в течение недели после него, клиника дарит Вам скидку в размере 5% на коррекцию морщин биосовместимыми наполнителями или препаратами ботуллотоксина.</div></a></div>
-              </div>
-            </div>
-            <h2>Наши партнеры</h2>
-            <div class="b-main__partners">
-              <div class="partners">
-                <div class="partners__wrap"><a class="partners__item" href="https://www.lenovo.com/ru/ru/" target="blank"><img src="./images/main/partners/i-lenovo.png" alt=""></a><a class="partners__item" href="https://www.juniper.net/us/en/" target="blank"><img src="./images/main/partners/i-juniper.png" alt=""></a><a class="partners__item" href="http://www.xerox.ru/" target="blank"><img src="./images/main/partners/i-xerox.png" alt=""></a><a class="partners__item" href="https://www.schneider-electric.ru/ru/" target="blank"><img src="./images/main/partners/i-schneider.png" alt=""></a><a class="partners__item" href="http://www.dell.ru/" target="blank"><img src="./images/main/partners/i-dell.png" alt=""></a><a class="partners__item" href="" target="blank"><img src="./images/main/partners/i-aruba.png" alt=""></a><a class="partners__item" href="http://www.apc.ru/" target="blank"><img src="./images/main/partners/i-apc.png" alt=""></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="b-footer">
-      <div class="container">
-        <div class="b-footer__wrap">
-          <div class="b-footer__top"><a class="b-footer__logo" href="home.html"></a>
-            <div class="b-footer__social">
-              <div class="social"><a class="social__item social__item--insta" href="https://www.instagram.com/" target="_blank"></a><a class="social__item social__item--fb" href="https://www.facebook.com/" target="_blank"></a><a class="social__item social__item--vk" href="https://vk.com/" target="_blank"></a><a class="social__item social__item--ok" href="https://ok.ru/" target="_blank"></a><a class="social__item social__item--yt" href="https://www.youtube.com/" target="_blank"></a></div>
-            </div>
-          </div>
-          <div class="b-footer__center">
-            <div class="b-footer__sub-menu">
-              <p><a href="plastica_main.html">Пластическая хирургия</a><a href="endocrina_main.html">Эндокринная хирургия</a><a href="serdechno_main.html">Сердечно-сосудистая хирургия</a></p>
-              <p><a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Согласия  на обработку данных</a><a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Согласие на использование сайта</a></p>
-            </div>
-            <div class="b-footer__center-right">
-              <div class="b-footer__phone"><a href="tel:">+7 (495) 118 - 2511</a><a href="tel:">+7 (495) 118 - 2511</a></div>
-              <div class="b-footer__center-bottom"><a class="b-footer__call js-popup" href="#main-popup">Запись на консультацию</a><a class="b-footer__email" href="mailto:info@doctorproff.ru">info@doctorproff.ru</a></div>
-            </div>
-          </div>
-          <div class="b-footer__bottom">
-            <div class="b-footer__copy">doctorproff © 2018</div>
-            <div class="b-footer__city">г. Москва</div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="b-main-popup mfp-hide" id="main-popup">
-      <div class="b-main-popup__wrap">
-        <div class="b-main-popup__title">Запись на консультацию</div>
-        <form class="b-main-popup__formform b-form">
-          <div class="b-form__content">
-            <div class="b-form__item">
-              <input type="text" placeholder="Ваше имя" required>
-            </div>
-            <div class="b-form__item">
-              <input type="tel" placeholder="Возраст" required>
-            </div>
-            <div class="b-form__item">
-              <input type="text" placeholder="Тип операции" required>
-            </div>
-            <div class="b-form__item">
-              <textarea placeholder="Описание" required></textarea>
-            </div>
-          </div>
-          <div class="b-form__submit">
-            <button>Записаться</button>
-          </div>
-          <p>Нажимая на кнопку "Записаться на прием", вы принимаете условия<a href="http://doctorproff.ru/upload/files/AGREEMENT-ON-USE-SITE.pdf" target="blank">Cоглашения об использовании сайта</a></p>
-        </form>
-      </div>
-    </div>
-    <div class="b-success mfp-hide" id="popup-success">
-      <div class="b-success__wrap">
-        <div class="b-success__text">
-          <h3>Спасибо за заявку</h3>
-          <p>Наш менеджер свяжется с вами в ближайшее время</p>
-        </div>
-      </div>
+      </footer>
     </div>
   </body>
-  <!--script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")-->
-  <!--script(src="//yastatic.net/share2/share.js")-->
-  <!--script(src='https://www.youtube.com/iframe_api')-->
-  <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIj4H-aE1sWZ3_QyLEN1X4mXp6pN5aPk")-->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/bundle.js"></script>
 </html>
