@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/favicons/apple-touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/favicons/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicons/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/favicons/apple-touch-icon-180x180-precomposed.png">
+    <link rel="icon" sizes="192x192" href="/favicons/touch-icon-192x192.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--link(rel='stylesheet' href="/styles/print.css" media="print")-->
+    <!--script(src="./js/preloader.js")-->
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <div class="b-wrapper">
+      <!--.whereami-->
+      <header class="b-header">
+        <div class="container"><a class="b-header__logo" href="/"></a>
+          <div class="b-header__top">
+            <ul class="b-header__list">
+              <li><a href="/">О компании</a></li>
+              <li><a href="/">Как купить?</a></li>
+              <li><a href="/">Сервис</a></li>
+              <li><a href="/">Журнал</a></li>
+              <li><a href="/">Контакты</a></li>
+            </ul>
+            <div class="b-header__city js-show-city">Москва</div>
+            <div class="b-header__divider"></div>
+          </div>
+          <div class="b-header__bottom">
+            <div class="b-header__menu">
+              <div class="b-header__item b-header__item--active b-header__item--arrow"><a class="js-modal-catalog" href="#modal-catalog">Каталог</a>
+                <ul class="b-header__dropdown">
+                  <li><a class="b-header__subitem arrow" href="">Клинкер</a>
+                    <div class="b-header__subdropdown"><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a>
+                      <hr><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a>
+                    </div>
+                  </li>
+                  <li><a class="b-header__subitem arrow" href="">Кирпич ручной формовки</a></li>
+                  <li><a class="b-header__subitem arrow" href="">Брусчатка</a>
+                    <div class="b-header__subdropdown"><a class="b-header__subitem" href="">qqqq</a><a class="b-header__subitem" href="">wwqqwwwww</a><a class="b-header__subitem" href="">wwqqwwwww</a><a class="b-header__subitem" href="">wwwwqqwww</a></div>
+                  </li>
+                  <li><a class="b-header__subitem arrow" href="">Строительные  смеси и химия</a></li>
+                  <li><a class="b-header__subitem arrow" href="">и еще</a></li>
+                </ul>
+              </div><a class="b-header__item" href="">Готовые объекты</a><a class="b-header__item" href="">Визуализации</a><a class="b-header__item" href="">Прайсы</a>
+            </div><a class="b-header__burger js-modal-tb-menu" href="#modal-tb-menu"><span></span></a>
+            <div class="b-header__list-phone"><span class="b-header__phone b-header__phone--main">+7 (499) 348-85-65</span><span class="b-header__phone b-header__phone--child"></span></div>
+          </div>
+          <div class="b-header__select-city" data-display_flag="false">
+            <div class="b-header__select-city-bg"></div>
+            <div class="b-header__select-city-wrap">
+              <div class="select-city__sub">Выбран шоу-рум</div>
+              <div class="select-city__name">в <span>Москве</span>
+              </div>
+              <div class="select-city__title">Указать другой город:</div>
+              <div class="select-city">
+                <div class="select-city__column">
+                  <div class="select-city__region">
+                    <p>Центральный ФО </p><a class="select-city__item js-select-city active" href="" data-reg_id="1">Москва</a><a class="select-city__item js-select-city" href="" data-reg_id="8">Белгород</a><a class="select-city__item js-select-city" href="" data-reg_id="9">Воронеж</a><a class="select-city__item js-select-city" href="" data-reg_id="10">Курск</a><a class="select-city__item js-select-city" href="" data-reg_id="3">Тамбов</a>
+                  </div>
+                </div>
+                <div class="select-city__column">
+                  <div class="select-city__region">
+                    <p>Сев.запад. ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="11">Санкт-Петербург</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Южный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="7">Краснодар</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Уральский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="2">Екатеринбург</a>
+                  </div>
+                </div>
+                <div class="select-city__column">
+                  <div class="select-city__region">
+                    <p>Сибирский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="4">Новосибирск</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Дальневосточный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="6">Владивосток</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="b-main b-main--short">
+        <div class="b-main__bg" style="background-image: url(&quot;./images/gallery_list/STROEHER Riegel50@1,5x.jpg&quot;)"></div>
+        <div class="b-main__content">
+          <div class="container">
+            <h1>Кирпич ручной формовки</h1>
+          </div>
+        </div>
+      </div>
+      <div class="b-content">
+        <div class="container">
+          <div class="b-content__wrap">
+            <div class="b-content__column b-content__column--4">
+              <div class="b-content-left">
+                <h2>Фильтр</h2>
+                <div class="b-filter js-filter-select js-filter-select--photo">
+                  <form name="_form" method="GET">
+                    <div class="b-filter__item">
+                      <div class="b-filter__title">Применение</div>
+                      <div class="b-filter__choice">
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_14" name="catalog_parent_id[]" value="11">
+                          <label for="_14">Плитка для стен и фасадов</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_24" name="catalog_parent_id[]" value="12">
+                          <label for="_24">Напольная плитка и ступени</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_224" name="catalog_parent_id[]" value="13">
+                          <label for="_224">Тротуарная плитка</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_234" name="catalog_parent_id[]" value="14">
+                          <label for="_234">Промышленная плитка</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-filter__item">
+                      <div class="b-filter__title">Коллекции</div>
+                      <div class="b-filter__choice">
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_1`" name="catalog_id[]" value="16">
+                          <label for="_1`">Riegel 50</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_2`" name="catalog_id[]" value="17">
+                          <label for="_2`">Handstrich</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_22`" name="catalog_id[]" value="18">
+                          <label for="_22`">Steinlinge</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_1`d" name="catalog_id[]" value="27">
+                          <label for="_1`d">Duro</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_2s`" name="catalog_id[]" value="19">
+                          <label for="_2s`">Glanzstucke</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_1`1" name="catalog_id[]" value="28">
+                          <label for="_1`1">Roccia X</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="q_2`2" name="catalog_id[]" value="20">
+                          <label for="q_2`2">Zeitlos</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="a_2`2" name="catalog_id[]" value="29">
+                          <label for="a_2`2">Asar</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="s_2`2" name="catalog_id[]" value="21">
+                          <label for="s_2`2">Keraprotect</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="d_2`2" name="catalog_id[]" value="30">
+                          <label for="d_2`2">Epos</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="d_34" name="catalog_id[]" value="51">
+                          <label for="d_34">Terio Tec</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-filter__item">
+                      <div class="b-filter__title">Цвета</div>
+                      <div class="b-filter__choice">
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_1у" name="color_id[]" value="1">
+                          <label for="_1у">бежевый</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_2у" name="color_id[]" value="3">
+                          <label for="_2у">белый</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_223у" name="color_id[]" value="4">
+                          <label for="_223у">красный</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_22у" name="color_id[]" value="2">
+                          <label for="_22у">желтый</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_23у" name="color_id[]" value="5">
+                          <label for="_23у">коричневый</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_1уq" name="color_id[]" value="8">
+                          <label for="_1уq">черный</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_2уq" name="color_id[]" value="9">
+                          <label for="_2уq">серый</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_22уq" name="color_id[]" value="6">
+                          <label for="_22уq">голубой</label>
+                        </div>
+                        <div class="b-filter__checkbox">
+                          <input type="checkbox" id="_23уq" name="color_id[]" value="7">
+                          <label for="_23уq">оранжевый</label>
+                        </div>
+                      </div>
+                    </div>
+                    <input class="js-hidden-input" type="hidden" name="last" value="">
+                    <div class="b-filter__item">
+                      <button class="b-filter__btn btn btn--submit">Применить</button>
+                      <div class="b-filter__reset js-reset-filter">Сбросить фильтр</div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="b-content__column b-content__column--8">
+              <div class="b-content-right">
+                <div class="b-gallery">
+                  <!--a(href='').card.card--info-left-->
+                  <!--    +img(img_1)-->
+                  <!--    .card__info-->
+                  <!--        h4 Университет Бакингемшир-->
+                  <!--        p Эйлсбери, Англия-->
+                  <!--a(href='').card.card--info-left-->
+                  <!--    +img(img_2)-->
+                  <!--    .card__info-->
+                  <!--        h4 Строительство башни-->
+                  <!--        p Лейпциг, Германия-->
+                  <!--a(href='').card.card--info-left-->
+                  <!--    +img(img_3)-->
+                  <!--    .card__info-->
+                  <!--        h4 Центр плавания-->
+                  <!--        p Лустенау, Австрия-->
+                </div>
+                <div class="btn btn--more js-button-more" style="visibility: hidden;">Показать еще</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="b-footer">
+        <div class="container">
+          <div class="b-footer__top"><a class="b-footer__logo" href="/"></a>
+            <div class="b-footer__list">
+              <div class="b-footer__column">
+                <div class="b-footer__address">
+                  <p>БЕЛГОРОД</p>
+                  <p>ул. Пугачёва д. 5б (2 этаж)</p>
+                  <p>ул. Благодатная, 5б.</p>
+                  <p><a href="mailto:dekorator-stone@mail.ru">dekorator-stone@mail.ru</a></p>
+                </div>
+                <div class="b-footer__address">
+                  <p>КРАСНОДАР</p>
+                  <p>ул.Бабушкина, 289.</p>
+                  <p><a href="mailto:info@ceramicgroup-krd.ru">info@ceramicgroup-krd.ru</a></p>
+                </div>
+              </div>
+              <div class="b-footer__column">
+                <div class="b-footer__address">
+                  <p>ВЛАДИВОСТОК</p>
+                  <p>Ильичева ул., 22а, оф. 4. 1п., 2 этаж</p>
+                  <p><a href="mailto:cgdv@ceramicgroup.ru">cgdv@ceramicgroup.ru</a></p>
+                </div>
+                <div class="b-footer__address">
+                  <p>курск</p>
+                  <p>1-я Кожевенная ул., 31.</p>
+                  <p><a href="mailto:dekorator-kursk@mail.ru">dekorator-kursk@mail.ru</a></p>
+                </div>
+              </div>
+              <div class="b-footer__column">
+                <div class="b-footer__address">
+                  <p>Санкт-Петербург</p>
+                  <p>ул. Химиков, д. 28 к. АС, оф. 1210.</p>
+                  <p><a href="mailto:toptun.rv@ceramicgroup.ru">toptun.rv@ceramicgroup.ru</a></p>
+                </div>
+                <div class="b-footer__address">
+                  <p>воронеж</p>
+                  <p>Донбасская ул., 16в.</p>
+                  <p><a href="mailto:dekorator-voronezh@mail.ru">dekorator-voronezh@mail.ru</a></p>
+                </div>
+                <div class="b-footer__address">
+                  <p>ТАМБОВ</p>
+                  <p>Мичуринская ул., д. 215.</p>
+                  <p><a href="mailto:info@klinkerstore.ru">info@klinkerstore.ru</a></p>
+                </div>
+              </div>
+              <div class="b-footer__column">
+                <div class="b-footer__address">
+                  <p>Москва</p>
+                  <p>Дмитровское ш., 100 с. 2, оф. 2401. Твардовского ул., 12, корп. 1.</p>
+                  <p><a href="mailto:info@ceramicgroup.ru ">info@ceramicgroup.ru</a></p>
+                </div>
+                <div class="b-footer__address">
+                  <p>ЕКАТЕРИНБУРГ</p>
+                  <p>Сибирский тр, 12/1, оф. 202.</p>
+                  <p><a href="mailto:zyryanova@ceramicgroup.ru">zyryanova@ceramicgroup.ru</a></p>
+                </div>
+                <div class="b-footer__address">
+                  <p>Новосибирск</p>
+                  <p>ул. Дуси Ковальчук,  д. 238, 1-этаж.</p>
+                  <p><a href="mailto:cgsib@ceramicgroup.ru">cgsib@ceramicgroup.ru</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-footer__middle">
+            <div class="b-footer__list">
+              <div class="b-footer__column">
+                <h4>Сервис</h4>
+                <ul>
+                  <li><a href="">Выезд на объект</a></li>
+                  <li><a href="">Расчет материалов</a></li>
+                  <li><a href="">Резка кирпича</a></li>
+                  <li><a href="">Доставка</a></li>
+                  <li><a href="">Шеф-монтаж</a></li>
+                  <li><a href="">Обучение</a></li>
+                </ul>
+              </div>
+              <div class="b-footer__column">
+                <h4>О компании</h4>
+                <ul>
+                  <li><a href="">Описание брендов</a></li>
+                  <li><a href="">История</a></li>
+                  <li><a href="">Аккредитация</a></li>
+                  <li><a href="">Дилерская сеть</a></li>
+                  <li><a href="">Офисы и экспозиции</a></li>
+                  <li><a href="">Преимущества</a></li>
+                  <li><a href="">Наши знаменитые клиенты</a></li>
+                  <li><a href="">Новым партнерам</a></li>
+                  <li><a href="">Реквизиты</a></li>
+                  <li><a href="">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="b-footer__column">
+                <h4>Блог</h4>
+                <ul>
+                  <li><a href="">Материал</a></li>
+                  <li><a href="">Объект</a></li>
+                  <li><a href="">Технология</a></li>
+                </ul>
+              </div>
+              <div class="b-footer__column">
+                <h4>Как купить</h4>
+                <ul>
+                  <li><a href="">Оплата</a></li>
+                  <li><a href="">Гарантия производителя</a></li>
+                  <li><a href="">Оформление заказ</a></li>
+                  <li><a href="">Возврат</a></li>
+                  <li><a href="">Договор-оферта</a></li>
+                  <li><a href="">Скидки</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="b-footer__bottom">
+            <div class="b-footer__copy">2005-2017 © ООО«ТД«Керамик Груп</div>
+            <div class="b-footer__social"><a href="/ds">facebook</a><a href="">Vkontakte</a><a href="">instagram</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--.b-landscape-->
+    <!--    .b-landscape__img-->
+    <!---->
+    <!--    .b-landscape__text Для более комфортного просмотра нашего сайта мы рекомендуем вам перевернуть ваше устройство в портретное положение. Спасибо!-->
+    <!---->
+    <!--include blocks/b-preloader-->
+    <!---->
+    <!--include blocks/header-->
+    <!--include blocks/nav-left-->
+    <!--include blocks/load-page-->
+    <!---->
+    <!--// мобильная версия - о компании-->
+    <!--include blocks/mobile/b-company-single-->
+    <!--// мобильная версия - продукция-->
+    <!--include blocks/mobile/b-product-single-->
+    <!--// мобильная версия - о компании-->
+    <!--include blocks/mobile/b-company-single-->
+    <!--// мобильная версия - кейсы-->
+    <!--include blocks/mobile/b-case-single-->
+    <!--// мобильная версия - о компании-->
+    <!--include blocks/mobile/b-company-single-->
+    <!---->
+    <!--include blocks/mobile/b-partners-->
+    <!---->
+    <!--#fullpage.block-wrapper-->
+    <!---->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-single='компания'-->
+    <!--    data-title-show='true')-->
+    <!--        include blocks/screen/company-slider--swiper-->
+    <!--        // блоки для мобильной версии-->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-double-left='Продукция'-->
+    <!--    data-title-header-double-right='Зимние сады'-->
+    <!--    data-title-show='false')-->
+    <!--        include blocks/screen/producte-slider-->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-double-left='Продукция'-->
+    <!--    data-title-header-double-right='Раздвижные системы'-->
+    <!--    data-title-show='false')-->
+    <!--        include blocks/screen/producte-single-->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-double-left='Продукция'-->
+    <!--    data-title-header-double-right='окна'-->
+    <!--    data-title-show='false')-->
+    <!--        include blocks/screen/producte-slider-->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-double-left='Продукция'-->
+    <!--    data-title-header-double-right='Двери'-->
+    <!--    data-title-show='false')-->
+    <!--        include blocks/screen/producte-single-->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-single='кейсы'-->
+    <!--    data-title-center-show='true'-->
+    <!--    data-title-show='true')-->
+    <!--        include blocks/screen/case-slider-->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-double-left='Продукция'-->
+    <!--    data-title-header-double-right='Двери'-->
+    <!--    data-title-show='false')-->
+    <!--        include blocks/screen/producte-single-->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-double-left='Контакты'-->
+    <!--    data-title-header-double-right='Как с нами связаться'-->
+    <!--    data-title-show='false')-->
+    <!--        include blocks/screen/contacts-->
+    <!---->
+    <!--    .section(-->
+    <!--    data-title-header-double-left='Контакты'-->
+    <!--    data-title-header-double-right='Карта наших партнеров'-->
+    <!--    data-title-show='false')-->
+    <!--        include blocks/screen/map-->
+    <!---->
+    <!---->
+    <!--include blocks/b-popup--menu-->
+    <!--include blocks/b-popup--callback-->
+    <!--include blocks/b-mobile-menu-->
+    <!--include blocks/footer-->
+  </body>
+  <div class="mfp-hide b-modal b-modal--catalog" id="modal-catalog">
+    <button class="b-modal__close js-modal-close" aria-label="Закрыть"><span class="b-modal__close-wrapper">Каталог</span></button>
+    <ul class="b-modal__list">
+      <li> Галерея
+        <ul class="b-modal__sublist">
+          <li><a href="#">Плитка для стен и фасадов</a></li>
+          <li> <a href="#">Напольная плитка и ступени</a></li>
+          <li><a href="#">Тротуарная плитка</a></li>
+          <li> <a href="#">Промышленная плитка</a></li>
+          <li><a href="#">Подбор по параметрам</a></li>
+        </ul>
+      </li>
+      <li class="b-modal__item"><a href="#">Клинкерная плитка и ступени Stroeher</a></li>
+      <li class="b-modal__item"><a href="#">Кирпич ручной формовки S.Anselmo</a></li>
+      <li class="b-modal__item"><a href="#">Строительные смеси и химия</a></li>
+      <li class="b-modal__item"><a href="#">Системные решения</a></li>
+      <li class="b-modal__item"><a href="#">и еще</a></li>
+    </ul>
+  </div>
+  <div class="mfp-hide b-modal b-modal--tb-menu" id="modal-tb-menu">
+    <div class="b-modal__head">
+      <div class="b-header__city js-show-city">Москва</div>
+      <div class="b-header__list-phone"><span class="b-header__phone b-header__phone--main">+7 (499) 348-85-65</span><span class="b-header__phone b-header__phone--child"></span></div>
+    </div>
+    <nav class="b-modal__nav">
+      <ul class="b-modal__nav-list">
+        <li class="b-modal__nav-item"><a href="#">О компании</a></li>
+        <li class="b-modal__nav-item"><a href="#">Как купить?</a></li>
+        <li class="b-modal__nav-item"><a href="#">Сервис</a></li>
+        <li class="b-modal__nav-item"><a href="#">Журнал</a></li>
+        <li class="b-modal__nav-item"><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="b-modal__foot"></div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="./js/bundle.js"></script>
+</html>
