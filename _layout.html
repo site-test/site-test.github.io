@@ -55,4 +55,21 @@
   </div>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/bundle.js"></script>
+  <script>
+    (function (w, d, s, h, id) {
+      w.roistatProjectId = id;
+      w.roistatHost = h;
+      var p = d.location.protocol == "https:" ? "https://" : "http://";
+      var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+      var js = d.createElement(s);
+      js.async = 1;
+      js.src = p + h + u;
+      var js2 = d.getElementsByTagName(s)[0];
+      js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', '23f87af9b1d010fea664b08bf9560f12');
+    window.marker_office = [55.881911, 37.547652];
+    window.map_office = [55.881911, 37.547652];
+    window.marker_stock = [55.759994, 37.167845];
+    window.map_stock = [55.759994, 37.167845];
+  </script>
 </html>
