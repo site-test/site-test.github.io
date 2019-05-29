@@ -287,10 +287,6 @@
     </ul>
   </div>
   <div class="mfp-hide b-modal b-modal--tb-menu" id="modal-tb-menu">
-    <div class="b-modal__head">
-      <div class="b-header__city js-show-city">Москва</div>
-      <div class="b-header__list-phone"><span class="b-header__phone b-header__phone--main">+7 (499) 348-85-65</span><span class="b-header__phone b-header__phone--child"></span></div>
-    </div>
     <nav class="b-modal__nav">
       <ul class="b-modal__nav-list">
         <li class="b-modal__nav-item"><a href="#">О компании</a></li>
@@ -300,7 +296,40 @@
         <li class="b-modal__nav-item"><a href="#">Контакты</a></li>
       </ul>
     </nav>
-    <div class="b-modal__foot"></div>
+    <div class="b-modal__head">
+      <div class="b-modal__head-city b-header__city">Москва</div>
+      <div class="b-header__list-phone"><span class="b-header__phone b-header__phone--main">+7 (499) 348-85-65</span><span class="b-header__phone b-header__phone--child"></span></div>
+    </div>
+    <div class="b-modal__foot">
+      <div class="b-header__select-city-wrap">
+        <div class="select-city__title">Другой город?</div>
+        <div class="select-city__map"><img src="./images/map-menu-mini.png"></div>
+        <div class="select-city">
+          <div class="select-city__column">
+            <div class="select-city__region">
+              <p>Центральный ФО </p><a class="select-city__item js-select-city active" href="" data-reg_id="1">Москва</a><a class="select-city__item js-select-city" href="" data-reg_id="8">Белгород</a><a class="select-city__item js-select-city" href="" data-reg_id="9">Воронеж</a><a class="select-city__item js-select-city" href="" data-reg_id="10">Курск</a><a class="select-city__item js-select-city" href="" data-reg_id="3">Тамбов</a>
+            </div>
+            <div class="select-city__region">
+              <p>Сев.запад. ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="11">Санкт-Петербург</a>
+            </div>
+            <div class="select-city__region">
+              <p>Южный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="7">Краснодар</a>
+            </div>
+          </div>
+          <div class="select-city__column">
+            <div class="select-city__region">
+              <p>Уральский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="2">Екатеринбург</a>
+            </div>
+            <div class="select-city__region">
+              <p>Сибирский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="4">Новосибирск</a>
+            </div>
+            <div class="select-city__region">
+              <p>Дальневосточный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="6">Владивосток</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/bundle.js"></script>

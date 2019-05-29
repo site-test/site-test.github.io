@@ -54,6 +54,7 @@
           </div>
           <div class="b-header__select-city" data-display_flag="false">
             <div class="b-header__select-city-bg"></div>
+            <div class="b-header__select-city-map"></div>
             <div class="b-header__select-city-wrap">
               <div class="select-city__sub">Выбран шоу-рум</div>
               <div class="select-city__name">в <span>Москве</span>
@@ -552,8 +553,8 @@
           </div>
           <div class="b-product-table b-product-table--tb">
             <h2>Характеристики</h2>
-            <section class="b-product-table__dropdown js-dropdown">
-              <h3 class="js-dropdown-head">7753 Плитка фасадная</h3>
+            <section class="b-product-table__dropdown js-dropdown" id="111">
+              <h3 class="js-dropdown-head"><a href="#111">7753 Плитка фасадная</a></h3>
               <div class="js-dropdown-content b-product-table__content">
                 <table>
                   <tr>
@@ -615,8 +616,8 @@
                 </table>
               </div>
             </section>
-            <section class="b-product-table__dropdown js-dropdown">
-              <h3 class="js-dropdown-head">7750 Плитка фасадная</h3>
+            <section class="b-product-table__dropdown js-dropdown" id="333">
+              <h3 class="js-dropdown-head"><a href="#333">7750 Плитка фасадная</a></h3>
               <div class="js-dropdown-content b-product-table__content">
                 <table>
                   <tr>
@@ -678,8 +679,8 @@
                 </table>
               </div>
             </section>
-            <section class="b-product-table__dropdown js-dropdown">
-              <h3 class="js-dropdown-head">7754 Плитка угловая</h3>
+            <section class="b-product-table__dropdown js-dropdown" id="222">
+              <h3 class="js-dropdown-head"><a href="#222">7754 Плитка угловая</a></h3>
               <div class="js-dropdown-content b-product-table__content">
                 <table>
                   <tr>
@@ -741,8 +742,8 @@
                 </table>
               </div>
             </section>
-            <section class="b-product-table__dropdown js-dropdown">
-              <h3 class="js-dropdown-head">7751 Плитка угловая</h3>
+            <section class="b-product-table__dropdown js-dropdown" id="444">
+              <h3 class="js-dropdown-head"><a href="#444">7751 Плитка угловая</a></h3>
               <div class="js-dropdown-content b-product-table__content">
                 <table>
                   <tr>
@@ -816,9 +817,10 @@
           <!--            img(src='./images/home_page/29@2x.jpg')-->
           <!--            h3 Университет Бакингемшир-->
           <!--            span Эйлсбери, Англия-->
-          <div class="b-product-gallery js-ajax-gallery" data-catalog-id="16" data-last>
+          <div class="b-product-gallery js-ajax-gallery" data-catalog-id="30" data-last="4">
             <h2>Фотогалерея</h2>
             <div class="b-product-gallery__content"><a class="js-gallery b-product-gallery__item" href="./images/catalog_item/small/1.jpg"><img src="./images/catalog_item/small/1.jpg"></a><a class="js-gallery b-product-gallery__item" href="./images/catalog_item/small/2.jpg"><img src="./images/catalog_item/small/2.jpg"></a><a class="js-gallery b-product-gallery__item" href="./images/catalog_item/small/3.jpg"><img src="./images/catalog_item/small/3.jpg"></a><a class="js-gallery b-product-gallery__item" href="./images/catalog_item/small/4.jpg"><img src="./images/catalog_item/small/4.jpg"></a></div>
+            <button class="btn btn--more js-button-gallery-more">Показать еще</button>
           </div>
           <div class="b-product-more b-product-more--hidden-mobile">
             <h2>Вам также могут потребоваться</h2>
@@ -1118,10 +1120,6 @@
     </ul>
   </div>
   <div class="mfp-hide b-modal b-modal--tb-menu" id="modal-tb-menu">
-    <div class="b-modal__head">
-      <div class="b-header__city js-show-city">Москва</div>
-      <div class="b-header__list-phone"><span class="b-header__phone b-header__phone--main">+7 (499) 348-85-65</span><span class="b-header__phone b-header__phone--child"></span></div>
-    </div>
     <nav class="b-modal__nav">
       <ul class="b-modal__nav-list">
         <li class="b-modal__nav-item"><a href="#">О компании</a></li>
@@ -1131,7 +1129,40 @@
         <li class="b-modal__nav-item"><a href="#">Контакты</a></li>
       </ul>
     </nav>
-    <div class="b-modal__foot"></div>
+    <div class="b-modal__head">
+      <div class="b-modal__head-city b-header__city">Москва</div>
+      <div class="b-header__list-phone"><span class="b-header__phone b-header__phone--main">+7 (499) 348-85-65</span><span class="b-header__phone b-header__phone--child"></span></div>
+    </div>
+    <div class="b-modal__foot">
+      <div class="b-header__select-city-wrap">
+        <div class="select-city__title">Другой город?</div>
+        <div class="select-city__map"><img src="./images/map-menu-mini.png"></div>
+        <div class="select-city">
+          <div class="select-city__column">
+            <div class="select-city__region">
+              <p>Центральный ФО </p><a class="select-city__item js-select-city active" href="" data-reg_id="1">Москва</a><a class="select-city__item js-select-city" href="" data-reg_id="8">Белгород</a><a class="select-city__item js-select-city" href="" data-reg_id="9">Воронеж</a><a class="select-city__item js-select-city" href="" data-reg_id="10">Курск</a><a class="select-city__item js-select-city" href="" data-reg_id="3">Тамбов</a>
+            </div>
+            <div class="select-city__region">
+              <p>Сев.запад. ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="11">Санкт-Петербург</a>
+            </div>
+            <div class="select-city__region">
+              <p>Южный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="7">Краснодар</a>
+            </div>
+          </div>
+          <div class="select-city__column">
+            <div class="select-city__region">
+              <p>Уральский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="2">Екатеринбург</a>
+            </div>
+            <div class="select-city__region">
+              <p>Сибирский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="4">Новосибирск</a>
+            </div>
+            <div class="select-city__region">
+              <p>Дальневосточный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="6">Владивосток</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/bundle.js"></script>
