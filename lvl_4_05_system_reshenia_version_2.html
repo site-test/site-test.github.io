@@ -110,20 +110,6 @@
                       </li>
                     </ol>
                   </div><img src="./images/detail/Group3-sys.png">
-                  <div class="b-detail__system-scheme-list b-detail__system-scheme-list--desktop">
-                    <ul>
-                      <li>ПРЕИМУЩЕСТВА:</li>
-                      <li>Срок безремонтной эксплуатации не менее 10 лет.</li>
-                      <li>Возможность уборки подметальными машинами и мойками высого давления.</li>
-                      <li>Устойчивость к снеготаятельным реагентам.</li>
-                      <li>Защита от появления пятен на натуральном камне.</li>
-                      <li>Защита от появления высолов.</li>
-                      <li>Защита от прорастания сорняков.</li>
-                      <li>Возможность укладки на свежие бетоны.</li>
-                      <li>Большой выбор клеевых составов для приклеивания различных материалов мощения.</li>
-                      <li>Высокая скорость монтажа.</li>
-                    </ul>
-                  </div>
                   <div class="b-detail__system-list-all b-detail__system-list-all--mobile">
                     <div class="b-detail__system-list-dropdown js-dropdown">
                       <h3 class="js-dropdown-head">Преимущества</h3>
@@ -160,6 +146,20 @@
                       <p>Применяя профессиональную систему для мощения Ardex Вы можете избежать всех этих негативных последствий. В клеевых составах применена запатентованная технология Ardurapid, позволяющая затирать швы уже через 2-3 часа после укладки и технология Microtec</p>
                       <p>– позволяющая укладывать на средний и толстый слоя клея без усадки и снижающая риск образования трещин.</p>
                     </div>
+                  </div>
+                  <div class="b-detail__system-scheme-list b-detail__system-scheme-list--desktop">
+                    <ul>
+                      <li>ПРЕИМУЩЕСТВА:</li>
+                      <li>Срок безремонтной эксплуатации не менее 10 лет.</li>
+                      <li>Возможность уборки подметальными машинами и мойками высого давления.</li>
+                      <li>Устойчивость к снеготаятельным реагентам.</li>
+                      <li>Защита от появления пятен на натуральном камне.</li>
+                      <li>Защита от появления высолов.</li>
+                      <li>Защита от прорастания сорняков.</li>
+                      <li>Возможность укладки на свежие бетоны.</li>
+                      <li>Большой выбор клеевых составов для приклеивания различных материалов мощения.</li>
+                      <li>Высокая скорость монтажа.</li>
+                    </ul>
                   </div>
                   <div class="b-detail__system-list-all b-detail__system-list-all--mobile">
                     <div class="b-detail__system-list-dropdown js-dropdown">
@@ -500,23 +500,28 @@
     <!--include blocks/b-popup--callback-->
     <!--include blocks/b-mobile-menu-->
     <!--include blocks/footer-->
-  </body>
+  </body><a class="mobile-fixed-phone js-modal-tb-menu" href="#modal-tb-menu"></a>
   <div class="mfp-hide b-modal b-modal--catalog" id="modal-catalog">
     <button class="b-modal__close js-modal-close" aria-label="Закрыть"><span class="b-modal__close-wrapper">Каталог</span></button>
     <ul class="b-modal__list">
       <li> Галерея
         <ul class="b-modal__sublist">
           <li><a href="#">Плитка для стен и фасадов</a></li>
-          <li> <a href="#">Напольная плитка и ступени</a></li>
+          <li><a href="#">Напольная плитка и ступени</a></li>
           <li><a href="#">Тротуарная плитка</a></li>
-          <li> <a href="#">Промышленная плитка</a></li>
+          <li><a href="#">Промышленная плитка</a></li>
           <li><a href="#">Подбор по параметрам</a></li>
         </ul>
       </li>
       <li class="b-modal__item"><a href="#">Клинкерная плитка и ступени Stroeher</a></li>
       <li class="b-modal__item"><a href="#">Кирпич ручной формовки S.Anselmo</a></li>
       <li class="b-modal__item"><a href="#">Строительные смеси и химия</a></li>
-      <li class="b-modal__item"><a href="#">Системные решения</a></li>
+      <li>Системные решения
+        <ul class="b-modal__sublist">
+          <li><a class="js-anchor-accordion" href="#resh1">resh1</a></li>
+          <li><a class="js-anchor-accordion" href="#resh2">resh2</a></li>
+        </ul>
+      </li>
       <li class="b-modal__item"><a href="#">и еще</a></li>
     </ul>
   </div>
@@ -527,7 +532,7 @@
         <li class="b-modal__nav-item"><a href="#">Как купить?</a></li>
         <li class="b-modal__nav-item"><a href="#">Сервис</a></li>
         <li class="b-modal__nav-item"><a href="#">Журнал</a></li>
-        <li class="b-modal__nav-item"><a href="#">Контакты</a></li>
+        <li class="b-modal__nav-item"><a class="js-anchor-single" href="#contacts">Контакты</a></li>
       </ul>
     </nav>
     <div class="b-modal__head">
@@ -564,6 +569,7 @@
         </div>
       </div>
     </div>
+    <div class="b-modal__close-bg"></div>
   </div>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/bundle.js"></script>
