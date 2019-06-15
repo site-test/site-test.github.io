@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/favicons/apple-touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/favicons/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicons/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/favicons/apple-touch-icon-180x180-precomposed.png">
+    <link rel="icon" sizes="192x192" href="/favicons/touch-icon-192x192.png">
+    <link rel="stylesheet" href="./css/style.css?ver=911">
+    <!--link(rel='stylesheet' href="/styles/print.css" media="print")-->
+    <!--script(src="./js/preloader.js")-->
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <div class="b-wrapper">
+      <!--.whereami-->
+      <header class="b-header">
+        <div class="container"><a class="b-header__logo" href="/"></a>
+          <div class="b-header__top">
+            <ul class="b-header__list">
+              <li><a href="/">О компании</a></li>
+              <li><a href="/">Как купить?</a></li>
+              <li><a href="/">Сервис</a></li>
+              <li><a href="/">Журнал</a></li>
+              <li><a href="/">Контакты</a></li>
+            </ul>
+            <div class="b-header__city js-show-city">Москва</div>
+            <div class="b-header__divider"></div>
+          </div>
+          <div class="b-header__bottom">
+            <div class="b-header__menu">
+              <div class="b-header__item b-header__item--active b-header__item--arrow"><a class="show-desktop" href="/catalog">Каталог</a><a class="js-modal-catalog show-mobile" href="#modal-catalog">Каталог</a>
+                <ul class="b-header__dropdown">
+                  <li><a class="b-header__subitem arrow" href="">Клинкер</a>
+                    <div class="b-header__subdropdown"><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a>
+                      <hr><a class="b-header__subitem" href="">wwwwwww</a><a class="b-header__subitem" href="">wwwwwww</a>
+                    </div>
+                  </li>
+                  <li><a class="b-header__subitem arrow" href="">Кирпич ручной формовки</a></li>
+                  <li><a class="b-header__subitem arrow" href="">Брусчатка</a>
+                    <div class="b-header__subdropdown"><a class="b-header__subitem" href="">qqqq</a><a class="b-header__subitem" href="">wwqqwwwww</a><a class="b-header__subitem" href="">wwqqwwwww</a><a class="b-header__subitem" href="">wwwwqqwww</a></div>
+                  </li>
+                  <li><a class="b-header__subitem arrow" href="">Строительные  смеси и химия</a></li>
+                  <li><a class="b-header__subitem arrow" href="">и еще</a></li>
+                </ul>
+              </div><a class="b-header__item" href="">Готовые объекты</a><a class="b-header__item" href="">Визуализации</a><a class="b-header__item" href="">Прайсы</a>
+            </div><a class="b-header__burger js-modal-tb-menu" href="#modal-tb-menu"><span></span></a>
+            <div class="b-header__list-phone"><span class="b-header__phone b-header__phone--main">+7 (499) 348-85-65</span><span class="b-header__phone b-header__phone--child"></span></div>
+          </div>
+          <div class="b-header__select-city" data-display_flag="false">
+            <div class="b-header__select-city-bg"></div>
+            <div class="b-header__select-city-map"></div>
+            <div class="b-header__select-city-wrap">
+              <div class="select-city__sub">Выбран шоу-рум</div>
+              <div class="select-city__name">в <span>Москве</span>
+              </div>
+              <div class="select-city__title">Указать другой город:</div>
+              <div class="select-city">
+                <div class="select-city__column">
+                  <div class="select-city__region">
+                    <p>Центральный ФО </p><a class="select-city__item js-select-city active" href="" data-reg_id="1">Москва</a><a class="select-city__item js-select-city" href="" data-reg_id="8">Белгород</a><a class="select-city__item js-select-city" href="" data-reg_id="9">Воронеж</a><a class="select-city__item js-select-city" href="" data-reg_id="10">Курск</a><a class="select-city__item js-select-city" href="" data-reg_id="3">Тамбов</a>
+                  </div>
+                </div>
+                <div class="select-city__column">
+                  <div class="select-city__region">
+                    <p>Сев.запад. ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="11">Санкт-Петербург</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Южный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="7">Краснодар</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Уральский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="2">Екатеринбург</a>
+                  </div>
+                </div>
+                <div class="select-city__column">
+                  <div class="select-city__region">
+                    <p>Сибирский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="4">Новосибирск</a>
+                  </div>
+                  <div class="select-city__region">
+                    <p>Дальневосточный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="6">Владивосток</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="b-main b-main--long b-main--no-margin">
+        <div class="b-main__bg" style="background-image: url(&quot;./images/stroeher/header.png&quot;)"></div>
+        <div class="b-main__content">
+          <div class="container">
+            <div class="b-breadcrumbs"><a href="">Главная</a><a href="">Каталог</a></div>
+            <h1>КЛИНКЕРНАЯ ПЛИТКА STROEHER</h1>
+            <div class="b-main__desc">Клинкер. Керамика. Мастерство.</div>
+          </div>
+        </div>
+      </div>
+      <div class="b-blog b-blog--stroeher">
+        <div class="b-blog__body">
+          <div class="container">
+            <div class="b-blog__bg-ligh-blue">
+              <p>Клинкерная плитка — это красивый и долговечный отделочный материал, получаемый методом экструзии и высокотемпературного обжига заготовки из смеси сланцевых глин специальных сортов из Северо-Западной Германии. Готовый материал обладает выдающимися характеристиками: износостойкий, устойчивый к солнечным лучам, перепадам температуры, жаро- и морозостойкий. Не боится агрессивной химической среды, не поглощает воду и легко чистится.</p>
+              <div class="b-blog__slider js-blog-slider">
+                <div class="b-blog__slider-item"><img src="./images/stroeher/slider_1.png"><span>Клинкерная плитка Stroeher напольной программы Aera в цвете 710 Crio.</span></div>
+                <div class="b-blog__slider-item"><img src="./images/stroeher/slider_1.png"><span>Клинкерная плитка Stroeher напольной программы Aera в цвете 710 Crio. @2@</span></div>
+              </div>
+            </div>
+            <div class="b-blog__stroeher">
+              <div class="b-blog__list-firms">
+                <div class="b-blog__company"><a class="b-blog__right-link js-popup-block" href="./images/sertific/STO интерьер.jpg"><span>Сертификат официального</span><span>дистрибьютора Stroeher.</span></a></div>
+              </div>
+              <p class="b-blog__paragraph-tb">Клинкерная плитка — это красивый и долговечный отделочный материал, получаемый методом экструзии и высокотемпературного обжига заготовки из смеси сланцевых глин специальных сортов из Северо-Западной Германии. Готовый материал обладает выдающимися характеристиками: износостойкий, устойчивый к солнечным лучам, перепадам температуры, жаро- и морозостойкий. Не боится агрессивной химической среды, не поглощает воду и легко чистится.</p>
+              <div class="b-blog__title-lg">Мы готовы биться об заклад, что никто не делает клинкер лучше, чем мастера старинной немецкой фабрики Ströher.</div>
+              <p>Как у большинства известных европейских компаний, история марки берет свое начало в XIX веке, от скромной семейной мастерской. Однако по последним данным таможенной статистики Евросоюза, в наши дни немецкий завод Ströher GmbH является крупнейшим специализированным производителем и экспортером клинкера в мире.</p>
+              <div class="b-product-yt">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qjay7v8PE_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p>Наиболее впечатляющие архитектурные объекты на мировом рынке отделаны знаменитым клинкером из Германии, клинкер набирает свою популярность и в России. И не удивительно.</p>
+              <div class="b-blog__title-lg">Очарование, которое приобретает фасад дома, отделанный клинкером Ströher, оценивается в скорости, с которой начинают идти продажи квартир в новостройке.</div>
+              <p>Клинкерный фасад частного дома становится неотъемлемой составляющей респектабельной архитектуры, подчеркивающей взыскательность и чувство прекрасного владельца. А мода на клинкер не противоречит его изысканности: богатый ассортимент позволяет подобрать эффектное решение в отделке для любого дизайна. Клинкерная плитка выпускается более чем в 200 различных цветах, форматах и фактурах поверхности.</p>
+              <div class="b-blog__single-img"><img src="./images/stroeher/single_img.png">
+                <div class="b-blog__mobile-desc-img"><span>Фасадная клинкерная плитка</span> <span>Stroeher Zeitlos в цвете 355 Sandschmelz.</span>
+                </div>
+              </div>
+              <p>Такое изобилие многократно превосходит аналогичные производства по всему миру. В этом ключевое отличие Ströher – беспрестанные инженерные разработки открывают новые высокотехнологичные методы очистки, формовки, обжига и сушки, позволяя добиваться идеальных параметров итоговой продукции с точки зрения геометрии, прочности и морозостойкости.</p>
+              <div class="b-blog__single-img"><img src="./images/stroeher/single_img_2.png"></div>
+              <p>Среди технологических достижений, в которых Ströher стал основоположником, можно выделить сверхдлинные форматы фасадной плитки, искуссное комбинирование новейших разработок с классической технологией производства клинкера, что позволяет мастерам получить рисунок любой текстуры. Многие профессиональные достижения компании Ströher до сих пор остаются не повторенными, а продукция – уникальной.</p>
+              <div class="b-blog__slider js-blog-slider">
+                <div class="b-blog__slider-item"><img src="./images/stroeher/slider_2.png"><span>Текстура поверхности клинкерной плитки, сформированная современными цифроврыми технологиями</span></div>
+                <div class="b-blog__slider-item"><img src="./images/stroeher/slider_2.png"><span>Текстура поверхности клинкерной плитки, сформированная современными цифроврыми технологиями @2@</span></div>
+              </div>
+              <p>Разнообразие форматов и спецэлементов позволяет применять благородный клинкерный материал на любых фасадных системных решениях, применяемых на российском рынке: как для мокрых, так и вентилируемых фасадах, под затирку и без шва.</p>
+            </div>
+          </div>
+        </div>
+        <!--#contacts.b-blog__contacts-->
+        <!--    .container-->
+        <!--        .b-block__contacts-slider-->
+        <!--            .select-city-->
+        <!--                .select-city__region.active-->
+        <!--                    p Центральный ФО-->
+        <!--                    a.select-city__item.js-select-city.active(href="#" data-reg_id="1")-->
+        <!--                        span Москва-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="8")-->
+        <!--                        span Белгород-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="9")-->
+        <!--                        span Воронеж-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="10")-->
+        <!--                        span Курск-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="3")-->
+        <!--                        span Тамбов-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="5")-->
+        <!--                        span Тула-->
+        <!--                .select-city__region-->
+        <!--                    p Сев.запад. ФО-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="11")-->
+        <!--                        span Санкт-Петербург-->
+        <!--                .select-city__region-->
+        <!--                    p Южный ФО-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="7")-->
+        <!--                        span Краснодар-->
+        <!--                .select-city__region-->
+        <!--                    p Уральский ФО-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="2")-->
+        <!--                        span Екатеринбург-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="12")-->
+        <!--                        span Тюмень-->
+        <!--                .select-city__region.active-->
+        <!--                    p Сибирский ФО-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="4")-->
+        <!--                        span Новосибирск-->
+        <!--                .select-city__region-->
+        <!--                    p Дальневосточный ФО-->
+        <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="6")-->
+        <!--                        span Владивосток-->
+        <!---->
+        <!--        .b-block__mobile-select-->
+        <!--            select.js-change-city-->
+        <!--                optgroup(label="ЦЕНТРАЛЬНЫЙ ФО")-->
+        <!--                    option(value='1') Москва-->
+        <!--                    option(value='8') Белгород-->
+        <!--                    option(value='9') Воронеж-->
+        <!--                    option(value='10') Курск-->
+        <!--                    option(value='3') Тамбов-->
+        <!--                optgroup(label="СЕВ.ЗАПАД. ФО")-->
+        <!--                    option(value='11') Санкт-Петербург-->
+        <!--                optgroup(label="Южный ФО")-->
+        <!--                    option(value='7') Краснодар-->
+        <!--                optgroup(label="УРАЛЬСКИЙ ФО")-->
+        <!--                    option(value='2') Екатеринбург-->
+        <!--                optgroup(label="СИБИРСКИЙ ФО")-->
+        <!--                    option(value='4') Новосибирск-->
+        <!--                optgroup(label="ДАЛЬНЕВОСТОЧНЫЙ ФО")-->
+        <!--                    option(value='6') Владивосток-->
+        <!--        .b-block__map-->
+        <!--            .b-block__map-top-->
+        <!--                .b-block__map-city Москва-->
+        <!--            .b-block__map-center-->
+        <!--                .b-block__map-phone.rst_stroeher +7 (499) 348-84-91-->
+        <!--                a.b-block__map-email(href="mailto:info@ceramicgroup.ru") info@ceramicgroup.ru-->
+        <!--            .b-block__map-left-->
+        <!--                h3 Адреса шоу-румов-->
+        <!--                #map-left-->
+        <!--                .b-block__map-top.b-block__map-top--mobile-->
+        <!--                    .b-block__map-city Москва-->
+        <!--                #contact_map_office_list.b-block__map-contacts-->
+        <!--                    div-->
+        <!--                        | Москва, Дмитровское ш., д. 100 стр. 2, оф. 2401.-->
+        <!--                        a(href="#" data-coord_map="55.881911, 37.547652" data-coord_marker="") ПОКАЗАТЬ НА КАРТЕ-->
+        <!--                    div-->
+        <!--                        | Москва, ул. Твардовского, д. 12, корп. 1.-->
+        <!--                        a(href="#" data-coord_map="55.794128, 37.400378" data-coord_marker="") ПОКАЗАТЬ НА КАРТЕ-->
+        <!--                    // div-->
+        <!--                    // | Телефон:-->
+        <!--                    // = " "-->
+        <!--                    // span.rst_stroeher_msk +7 (499) 348-85-59-->
+        <!--                    // br-->
+        <!--                    // | E-mail:-->
+        <!--                    // = " "-->
+        <!--                    // a(href='mailto:info@ceramicgroup.ru') info@ceramicgroup.ru-->
+        <!--                .b-block__map-center.b-block__map-center--mobile-->
+        <!--                    .b-block__map-mobile-con-->
+        <!--                        span Телефон:-->
+        <!--                        .b-block__map-phone.rst_stroeher +7 (499) 348-84-91-->
+        <!--                    .b-block__map-mobile-con-->
+        <!--                        span E-mail:-->
+        <!--                        a.b-block__map-email(href="mailto:info@ceramicgroup.ru") info@ceramicgroup.ru-->
+        <!---->
+        <!--            .b-block__map-right-->
+        <!--                h3 Адрес регионального склада-->
+        <!--                #map-right-->
+        <!--                #contact_map_stock_list.b-block__map-contacts-->
+        <!--                    span МО, Красногорский р-н, с. Петрово-Дальнее, вл.1, стр. 1-->
+        <!--                    a(href="#" data-coord_map="55.085743, 82.976316" data-coord_marker="55.085743, 82.976316") [ПОКАЗАТЬ НА КАРТЕ]-->
+        <!--        .b-block__copy-->
+        <!--            p CeramicGroup 2004-2019-->
+        <!--            a(href="https://www.ceramicgroup.ru/confident_politics.html") Положение о политике конфиденциальности-->
+        <!--#contacts.b-block__contacts-->
+        <!--    .container-->
+        <!--        h2 Контакты-->
+        <!--        .b-block__contacts-slider-->
+        <!--            .select-city-->
+        <!--                .select-city__region-->
+        <!--                    p ЦЕНТРАЛЬНЫЙ ФО-->
+        <!--                    a.select-city__item.js-select-city.active(href='', data-reg_id='1') Москва-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='8') Белгород-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='9') Воронеж-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='10') Курск-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='3') Тамбов-->
+        <!--                .select-city__region-->
+        <!--                    p СЕВ.ЗАПАД. ФО-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='11') Санкт-Петербург-->
+        <!--                .select-city__region-->
+        <!--                    p Южный ФО-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='7') Краснодар-->
+        <!--                .select-city__region-->
+        <!--                    p УРАЛЬСКИЙ ФО-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='2') Екатеринбург-->
+        <!--                .select-city__region-->
+        <!--                    p СИБИРСКИЙ ФО-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='4') Новосибирск-->
+        <!--                .select-city__region-->
+        <!--                    p ДАЛЬНЕВОСТОЧНЫЙ ФО-->
+        <!--                    a.select-city__item.js-select-city(href='', data-reg_id='6') Владивосток-->
+        <!---->
+        <!--        .b-block__mobile-select-->
+        <!--            select-->
+        <!--                optgroup(label="ЦЕНТРАЛЬНЫЙ ФО")-->
+        <!--                    option(value='1') Москва-->
+        <!--                    option(value='8') Белгород-->
+        <!--                    option(value='9') Воронеж-->
+        <!--                    option(value='10') Курск-->
+        <!--                    option(value='3') Тамбов-->
+        <!--                optgroup(label="СЕВ.ЗАПАД. ФО")-->
+        <!--                    option(value='11') Санкт-Петербург-->
+        <!--                optgroup(label="Южный ФО")-->
+        <!--                    option(value='7') Краснодар-->
+        <!--                optgroup(label="УРАЛЬСКИЙ ФО")-->
+        <!--                    option(value='2') Екатеринбург-->
+        <!--                optgroup(label="СИБИРСКИЙ ФО")-->
+        <!--                    option(value='4') Новосибирск-->
+        <!--                optgroup(label="ДАЛЬНЕВОСТОЧНЫЙ ФО")-->
+        <!--                    option(value='6') Владивосток-->
+        <!---->
+        <!--        .b-block__map-->
+        <!--            .b-block__map-left-->
+        <!--                h3 Адрес офиса-->
+        <!--                #map-left-->
+        <!--                #contact_map_office_list.b-block__map-contacts-->
+        <!--                    div-->
+        <!--                        h4 Шоу-рум в БЦ «Норд Хаус»-->
+        <!--                        | Москва, Дмитровское ш., д. 100 стр. 2, оф. 2401.-->
+        <!--                        a(href='#', data-coord_map='55.881911, 37.547652', data-coord_marker='') [ПОКАЗАТЬ НА КАРТЕ]-->
+        <!--                    div-->
+        <!--                        h4 Шоу-рум на Твардовского-->
+        <!--                        | Москва, Дмитровское ш., д. 100 стр. 2, оф. 2401.-->
+        <!--                        a(href='#', data-coord_map='55.794128, 37.400378', data-coord_marker='') [ПОКАЗАТЬ НА КАРТЕ]-->
+        <!--                    div-->
+        <!--                        | Телефон:-->
+        <!--                        span.rst_stroeher_msk +7 (499) 348-85-59-->
+        <!--                        br-->
+        <!--                        | E-mail:-->
+        <!--                        a(href='mailto:info@ceramicgroup.ru') info@ceramicgroup.ru-->
+        <!--            .b-block__map-right-->
+        <!--                h3 Адрес регионального склада-->
+        <!--                #map-right-->
+        <!--                #contact_map_stock_list.b-block__map-contacts-->
+        <!--                    h4 Центральный склад-->
+        <!--                    span МО, Красногорский р-н, с. Петрово-Дальнее, вл.1, стр. 1-->
+        <!--                    a(href='#', data-coord_map='55.881911, 37.547652', data-coord_marker='') [ПОКАЗАТЬ НА КАРТЕ]-->
+      </div>
+      <!--footer#contacts.b-footer-->
+      <!--    .container-->
+      <!--        .b-block__contacts-slider-->
+      <!--            .select-city-->
+      <!--                .select-city__region.active-->
+      <!--                    p Центральный ФО-->
+      <!--                    a.select-city__item.js-select-city.active(href="#" data-reg_id="1")-->
+      <!--                        span Москва-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="8")-->
+      <!--                        span Белгород-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="9")-->
+      <!--                        span Воронеж-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="10")-->
+      <!--                        span Курск-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="3")-->
+      <!--                        span Тамбов-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="5")-->
+      <!--                        span Тула-->
+      <!--                .select-city__region-->
+      <!--                    p Сев.запад. ФО-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="11")-->
+      <!--                        span Санкт-Петербург-->
+      <!--                .select-city__region-->
+      <!--                    p Южный ФО-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="7")-->
+      <!--                        span Краснодар-->
+      <!--                .select-city__region-->
+      <!--                    p Уральский ФО-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="2")-->
+      <!--                        span Екатеринбург-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="12")-->
+      <!--                        span Тюмень-->
+      <!--                .select-city__region-->
+      <!--                    p Сибирский ФО-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="4")-->
+      <!--                        span Новосибирск-->
+      <!--                .select-city__region-->
+      <!--                    p Дальневосточный ФО-->
+      <!--                    a.select-city__item.js-select-city(href="#" data-reg_id="6")-->
+      <!--                        span Владивосток-->
+      <!--        .b-block__mobile-select-->
+      <!--            select-->
+      <!--                optgroup(label="ЦЕНТРАЛЬНЫЙ ФО")-->
+      <!--                    option(value='1') Москва-->
+      <!--                    option(value='8') Белгород-->
+      <!--                    option(value='9') Воронеж-->
+      <!--                    option(value='10') Курск-->
+      <!--                    option(value='3') Тамбов-->
+      <!--                optgroup(label="СЕВ.ЗАПАД. ФО")-->
+      <!--                    option(value='11') Санкт-Петербург-->
+      <!--                optgroup(label="Южный ФО")-->
+      <!--                    option(value='7') Краснодар-->
+      <!--                optgroup(label="УРАЛЬСКИЙ ФО")-->
+      <!--                    option(value='2') Екатеринбург-->
+      <!--                optgroup(label="СИБИРСКИЙ ФО")-->
+      <!--                    option(value='4') Новосибирск-->
+      <!--                optgroup(label="ДАЛЬНЕВОСТОЧНЫЙ ФО")-->
+      <!--                    option(value='6') Владивосток-->
+      <!--        .b-block__map-->
+      <!--            .b-block__map-top-->
+      <!--                .b-block__map-city Новосибирск-->
+      <!--            .b-block__map-center-->
+      <!--                .b-block__map-phone.rst_stroeher +7 (383) 227-85-12-->
+      <!--                a.b-block__map-email(href="mailto:cgsib@ceramicgroup.ru") cgsib@ceramicgroup.ru-->
+      <!--            .b-block__map-left-->
+      <!--                h3 Адреса шоу-румов-->
+      <!--                #map-left-->
+      <!--                #contact_map_office_list.b-block__map-contacts-->
+      <!--                    div-->
+      <!--                        | Новосибирск, ул. Дуси Ковальчук,  д. 238, 1-этаж.-->
+      <!--                        a(href="#" data-coord_map="55.052998, 82.897502" data-coord_marker="") ПОКАЗАТЬ НА КАРТЕ-->
+      <!--                    // div-->
+      <!--                    // | Телефон:-->
+      <!--                    // = " "-->
+      <!--                    // span.rst_stroeher_msk +7 (499) 348-85-59-->
+      <!--                    // br-->
+      <!--                    // | E-mail:-->
+      <!--                    // = " "-->
+      <!--                    // a(href='mailto:info@ceramicgroup.ru') info@ceramicgroup.ru-->
+      <!--            .b-block__map-right-->
+      <!--                h3 Адрес регионального склада-->
+      <!--                #map-right-->
+      <!--                #contact_map_stock_list.b-block__map-contacts-->
+      <!--                    span Новосибирск, ул. Богдана Хмельницкого, 90к1-->
+      <!--                    a(href="#" data-coord_map="55.085743, 82.976316" data-coord_marker="55.085743, 82.976316") [ПОКАЗАТЬ НА КАРТЕ]-->
+      <!--        .b-block__copy-->
+      <!--            p CeramicGroup 2004-2019-->
+      <!--            a(href="https://www.ceramicgroup.ru/confident_politics.html") Положение о политике конфиденциальности-->
+      <footer class="b-footer b-footer--mobile-map" id="contacts">
+        <div class="container">
+          <div class="b-block__contacts-slider">
+            <div class="select-city">
+              <div class="select-city__region active">
+                <p>Центральный ФО</p><a class="select-city__item js-select-city active" href="#" data-reg_id="1"><span>Москва</span></a><a class="select-city__item js-select-city" href="#" data-reg_id="8"><span>Белгород</span></a><a class="select-city__item js-select-city" href="#" data-reg_id="9"><span>Воронеж</span></a><a class="select-city__item js-select-city" href="#" data-reg_id="10"><span>Курск</span></a><a class="select-city__item js-select-city" href="#" data-reg_id="3"><span>Тамбов</span></a><a class="select-city__item js-select-city" href="#" data-reg_id="5"><span>Тула</span></a>
+              </div>
+              <div class="select-city__region">
+                <p>Сев.запад. ФО</p><a class="select-city__item js-select-city" href="#" data-reg_id="11"><span>Санкт-Петербург</span></a>
+              </div>
+              <div class="select-city__region">
+                <p>Южный ФО</p><a class="select-city__item js-select-city" href="#" data-reg_id="7"><span>Краснодар</span></a>
+              </div>
+              <div class="select-city__region">
+                <p>Уральский ФО</p><a class="select-city__item js-select-city" href="#" data-reg_id="2"><span>Екатеринбург</span></a><a class="select-city__item js-select-city" href="#" data-reg_id="12"><span>Тюмень</span></a>
+              </div>
+              <div class="select-city__region active">
+                <p>Сибирский ФО</p><a class="select-city__item js-select-city" href="#" data-reg_id="4"><span>Новосибирск</span></a>
+              </div>
+              <div class="select-city__region">
+                <p>Дальневосточный ФО</p><a class="select-city__item js-select-city" href="#" data-reg_id="6"><span>Владивосток</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="b-block__mobile-select">
+            <select class="js-change-city">
+              <optgroup label="ЦЕНТРАЛЬНЫЙ ФО">
+                <option value="1">Москва</option>
+                <option value="8">Белгород</option>
+                <option value="9">Воронеж</option>
+                <option value="10">Курск</option>
+                <option value="3">Тамбов</option>
+              </optgroup>
+              <optgroup label="СЕВ.ЗАПАД. ФО">
+                <option value="11">Санкт-Петербург</option>
+              </optgroup>
+              <optgroup label="Южный ФО">
+                <option value="7">Краснодар</option>
+              </optgroup>
+              <optgroup label="УРАЛЬСКИЙ ФО">
+                <option value="2">Екатеринбург</option>
+              </optgroup>
+              <optgroup label="СИБИРСКИЙ ФО">
+                <option value="4">Новосибирск</option>
+              </optgroup>
+              <optgroup label="ДАЛЬНЕВОСТОЧНЫЙ ФО">
+                <option value="6">Владивосток</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="b-block__map">
+            <div class="b-block__map-top">
+              <div class="b-block__map-city">Москва</div>
+            </div>
+            <div class="b-block__map-center">
+              <div class="b-block__map-phone rst_stroeher">+7 (499) 348-84-91</div><a class="b-block__map-email" href="mailto:info@ceramicgroup.ru">info@ceramicgroup.ru</a>
+            </div>
+            <div class="b-block__map-left">
+              <h3>Адреса шоу-румов</h3>
+              <div id="map-left"></div>
+              <div class="b-block__map-top b-block__map-top--mobile">
+                <div class="b-block__map-city">Москва</div>
+              </div>
+              <div class="b-block__map-contacts" id="contact_map_office_list">
+                <div>Москва, Дмитровское ш., д. 100 стр. 2, оф. 2401.<a href="#" data-coord_map="55.881911, 37.547652" data-coord_marker="">ПОКАЗАТЬ НА КАРТЕ</a></div>
+                <div>Москва, ул. Твардовского, д. 12, корп. 1.<a href="#" data-coord_map="55.794128, 37.400378" data-coord_marker="">ПОКАЗАТЬ НА КАРТЕ</a></div>
+              </div>
+              <div class="b-block__map-center b-block__map-center--mobile">
+                <div class="b-block__map-mobile-con"><span>Телефон:</span>
+                  <div class="b-block__map-phone rst_stroeher">+7 (499) 348-84-91</div>
+                </div>
+                <div class="b-block__map-mobile-con"><span>E-mail:</span><a class="b-block__map-email" href="mailto:info@ceramicgroup.ru">info@ceramicgroup.ru</a></div>
+              </div>
+            </div>
+            <div class="b-block__map-right">
+              <h3>Адрес регионального склада</h3>
+              <div id="map-right"></div>
+              <div class="b-block__map-contacts" id="contact_map_stock_list"><span>МО, Красногорский р-н, с. Петрово-Дальнее, вл.1, стр. 1</span><a href="#" data-coord_map="55.085743, 82.976316" data-coord_marker="55.085743, 82.976316">[ПОКАЗАТЬ НА КАРТЕ]</a></div>
+            </div>
+          </div>
+          <div class="b-block__copy">
+            <p>CeramicGroup 2004-2019</p><a href="https://www.ceramicgroup.ru/confident_politics.html">Положение о политике конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
+      <div class="b-footer b-footer--tb">
+        <div class="container">
+          <div class="b-footer__wrapper">
+            <div class="b-footer__copy">
+              <p>2004-2019, CeramicGroup</p>
+            </div>
+            <ul class="b-footer__social">
+              <li class="b-footer__social-item b-footer__social-item--inst"><a href="" aria-label="Инстаграм"></a></li>
+              <li class="b-footer__social-item b-footer__social-item--fb"><a href="" aria-label="Фэйсбук"></a></li>
+              <li class="b-footer__social-item b-footer__social-item--vk"><a href="" aria-label="ВКонтакте"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body><a class="mobile-fixed-phone js-modal-tb-menu" href="#modal-tb-menu"></a>
+  <div class="mfp-hide b-modal b-modal--catalog" id="modal-catalog">
+    <button class="b-modal__close js-modal-close" aria-label="Закрыть"><span class="b-modal__close-wrapper">Каталог</span></button>
+    <ul class="b-modal__list">
+      <li> Галерея
+        <ul class="b-modal__sublist">
+          <li><a href="#">Плитка для стен и фасадов</a></li>
+          <li><a href="#">Напольная плитка и ступени</a></li>
+          <li><a href="#">Тротуарная плитка</a></li>
+          <li><a href="#">Промышленная плитка</a></li>
+          <li><a href="#">Подбор по параметрам</a></li>
+        </ul>
+      </li>
+      <li class="b-modal__item"><a href="#">Клинкерная плитка и ступени Stroeher</a></li>
+      <li class="b-modal__item"><a href="#">Кирпич ручной формовки S.Anselmo</a></li>
+      <li class="b-modal__item"><a href="#">Строительные смеси и химия</a></li>
+      <li>Системные решения
+        <ul class="b-modal__sublist">
+          <li><a class="js-anchor-accordion" href="#resh1">resh1</a></li>
+          <li><a class="js-anchor-accordion" href="#resh2">resh2</a></li>
+        </ul>
+      </li>
+      <li class="b-modal__item"><a href="#">и еще</a></li>
+    </ul>
+  </div>
+  <div class="mfp-hide b-modal b-modal--tb-menu" id="modal-tb-menu">
+    <nav class="b-modal__nav">
+      <ul class="b-modal__nav-list">
+        <li class="b-modal__nav-item"><a href="#">О компании</a></li>
+        <li class="b-modal__nav-item"><a href="#">Как купить?</a></li>
+        <li class="b-modal__nav-item"><a href="#">Сервис</a></li>
+        <li class="b-modal__nav-item"><a href="#">Журнал</a></li>
+        <li class="b-modal__nav-item"><a class="js-anchor-single" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="b-modal__head">
+      <div class="b-modal__head-city b-header__city">Москва</div>
+      <div class="b-header__list-phone"><span class="b-header__phone b-header__phone--main">+7 (499) 348-85-65</span><span class="b-header__phone b-header__phone--child"></span></div>
+    </div>
+    <div class="b-modal__foot">
+      <div class="b-header__select-city-wrap">
+        <div class="select-city__title">Другой город?</div>
+        <div class="select-city__map"><img src="./images/map-menu-mini.png"></div>
+        <div class="select-city">
+          <div class="select-city__column">
+            <div class="select-city__region">
+              <p>Центральный ФО </p><a class="select-city__item js-select-city active" href="" data-reg_id="1">Москва</a><a class="select-city__item js-select-city" href="" data-reg_id="8">Белгород</a><a class="select-city__item js-select-city" href="" data-reg_id="9">Воронеж</a><a class="select-city__item js-select-city" href="" data-reg_id="10">Курск</a><a class="select-city__item js-select-city" href="" data-reg_id="3">Тамбов</a>
+            </div>
+            <div class="select-city__region">
+              <p>Сев.запад. ФО</p><a class="select-city__item js-select-city" href="" data-reg_id="11">Санкт-Петербург</a>
+            </div>
+            <div class="select-city__region">
+              <p>Южный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="7">Краснодар</a>
+            </div>
+          </div>
+          <div class="select-city__column">
+            <div class="select-city__region">
+              <p>Уральский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="2">Екатеринбург</a>
+            </div>
+            <div class="select-city__region">
+              <p>Сибирский ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="4">Новосибирск</a>
+            </div>
+            <div class="select-city__region">
+              <p>Дальневосточный ФО </p><a class="select-city__item js-select-city" href="" data-reg_id="6">Владивосток</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-modal__close-bg"></div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="./js/bundle.js"></script>
+  <script>
+    (function (w, d, s, h, id) {
+      w.roistatProjectId = id;
+      w.roistatHost = h;
+      var p = d.location.protocol == "https:" ? "https://" : "http://";
+      var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+      var js = d.createElement(s);
+      js.async = 1;
+      js.src = p + h + u;
+      var js2 = d.getElementsByTagName(s)[0];
+      js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', '23f87af9b1d010fea664b08bf9560f12');
+    window.marker_office = [55.881911, 37.547652];
+    window.map_office = [55.881911, 37.547652];
+    window.marker_stock = [55.759994, 37.167845];
+    window.map_stock = [55.759994, 37.167845];
+  </script>
+</html>
