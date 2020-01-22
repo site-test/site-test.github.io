@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <div class="admin-page">
+      <div class="container">
+        <div class="b-add-goal">
+          <div class="b-add-goal__box js-tab">
+            <div class="b-add-goal__tabs b-add-goal__tabs--long">
+              <div class="tab js-tab-item">
+                <div class="tab__item tab__item--active">СКИФ</div>
+                <div class="tab__item">ПРАЙ</div>
+              </div>
+            </div>
+            <div class="b-add-goal__content js-tab-content">
+              <div class="tab-content active">
+                <div class="b-add-goal__form">
+                  <select class="selectbox js-choice">
+                    <option placeholder>Выберите игрока</option>
+                    <option>Игрок 1</option>
+                    <option>Игрок 2</option>
+                    <option>Игрок 3</option>
+                    <option>Игрок 4</option>
+                  </select>
+                  <select class="selectbox js-choice">
+                    <option>Пас</option>
+                    <option>Пас</option>
+                    <option>Пас</option>
+                  </select>
+                  <div class="b-form__item"><span>Время события</span>
+                    <input type="text" placeholder="00:00">
+                  </div>
+                  <div class="b-add-goal__control">
+                    <h3>Период</h3>
+                    <div class="b-add-goal__tabs b-add-goal__tabs--radio">
+                      <div class="tab">
+                        <input id="p-1" type="radio" name="period" checked>
+                        <label class="tab__item" for="p-1">1й</label>
+                        <input id="p-2" type="radio" name="period">
+                        <label class="tab__item" for="p-2">2й</label>
+                        <input id="p-3" type="radio" name="period">
+                        <label class="tab__item" for="p-3">3й</label>
+                        <input id="p-4" type="radio" name="period">
+                        <label class="tab__item" for="p-4">ОТ</label>
+                        <input id="p-5" type="radio" name="period">
+                        <label class="tab__item" for="p-5">Б</label>
+                      </div>
+                    </div>
+                    <h3>Игровая ситуация</h3>
+                    <div class="b-add-goal__tabs b-add-goal__tabs--radio">
+                      <div class="tab">
+                        <input id="c-1" type="radio" name="count" checked>
+                        <label class="tab__item" for="c-1">-2</label>
+                        <input id="c-2" type="radio" name="count">
+                        <label class="tab__item" for="c-2">-1</label>
+                        <input id="c-3" type="radio" name="count">
+                        <label class="tab__item" for="c-3">0</label>
+                        <input id="c-4" type="radio" name="count">
+                        <label class="tab__item" for="c-4">+1</label>
+                        <input id="c-5" type="radio" name="count">
+                        <label class="tab__item" for="c-5">+2</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content__item"></div>
+              </div>
+              <div class="tab-content">
+                <div class="b-add-goal__form">
+                  <select class="selectbox js-choice">
+                    <option placeholder>Выберите игрока(2)</option>
+                    <option>Игрок 1</option>
+                    <option>Игрок 2</option>
+                    <option>Игрок 3</option>
+                    <option>Игрок 4</option>
+                    <option>Игрок 5</option>
+                  </select>
+                  <select class="selectbox js-choice">
+                    <option>Пас</option>
+                    <option>Пас</option>
+                    <option>Пас</option>
+                  </select>
+                  <div class="b-form__item"><span>Время события</span>
+                    <input type="text" placeholder="00:00">
+                  </div>
+                  <div class="b-add-goal__control">
+                    <h3>Период</h3>
+                    <div class="b-add-goal__tabs b-add-goal__tabs--radio">
+                      <div class="tab">
+                        <input id="p-1_2" type="radio" name="period1">
+                        <label class="tab__item" for="p-1_2">1й</label>
+                        <input id="p-2_2" type="radio" name="period1" checked>
+                        <label class="tab__item" for="p-2_2">2й</label>
+                        <input id="p-3_2" type="radio" name="period1">
+                        <label class="tab__item" for="p-3_2">3й</label>
+                        <input id="p-4_2" type="radio" name="period1">
+                        <label class="tab__item" for="p-4_2">ОТ</label>
+                        <input id="p-5_2" type="radio" name="period1">
+                        <label class="tab__item" for="p-5_2">Б</label>
+                      </div>
+                    </div>
+                    <h3>Игровая ситуация</h3>
+                    <div class="b-add-goal__tabs b-add-goal__tabs--radio">
+                      <div class="tab">
+                        <input id="c-1_2" type="radio" name="count2">
+                        <label class="tab__item" for="c-1_2">-2</label>
+                        <input id="c-2_2" type="radio" name="count2" checked>
+                        <label class="tab__item" for="c-2_2">-1</label>
+                        <input id="c-3_2" type="radio" name="count2">
+                        <label class="tab__item" for="c-3_2">0</label>
+                        <input id="c-4_2" type="radio" name="count2">
+                        <label class="tab__item" for="c-4_2">+1</label>
+                        <input id="c-5_2" type="radio" name="count2">
+                        <label class="tab__item" for="c-5_2">+2</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b-add-goal__checkbox">
+              <input id="penalty" type="checkbox">
+              <label for="penalty">Штрафной бросок</label>
+            </div>
+            <div class="b-add-goal__btn">
+              <button class="btn btn--blue btn--border">Отмена</button>
+              <button class="btn btn--yellow">Добавить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- script(src='https://www.youtube.com/iframe_api')-->
+  <!-- script(async defer src="https://maps.googleapis.com/maps/api/js?key=")-->
+  <!-- script(async defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")-->
+  <script src="./js/bundle.js"></script>
+</html>
