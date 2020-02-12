@@ -87,11 +87,15 @@
       <div class="field">
         <div class="field__title">
           <h3>Затраты</h3>
-          <div class="field__title-buttons"><a class="button-icon button-icon--green-plus js-show-popup" href="#popup-green-plus"></a><a class="button-icon button-icon--equal js-show-popup" href="#popup-equal"></a><a class="button-icon button-icon--delete js-show-popup" href="#popup-delete"></a><a class="button-icon button-icon--refresh-gradient js-show-popup" href="#popup-refresh-gradient"></a>
+          <div class="field__title-buttons">
+            <div class="button-icon button-icon--green-plus js-show-tooltip"></div>
+            <div class="button-icon button-icon--equal js-show-tooltip"></div>
+            <div class="button-icon button-icon--delete"></div>
+            <div class="button-icon button-icon--refresh-gradient"></div>
           </div>
         </div>
         <div class="field__box">
-          <input type="text" placeholder=""/>
+          <input type="text"/>
         </div>
       </div>
     </div>
@@ -99,6 +103,47 @@
   <div class="popup__footer">
     <div class="popup__footer-control">
       <div class="button button--max button--control button--turquoise">Сохранить</div>
+    </div>
+  </div>
+  <div class="b-tooltip">
+    <div class="b-tooltip__close js-close-tooltip"></div>
+    <div class="b-tooltip__header">
+      <h3>Затраты</h3>
+    </div>
+    <div class="b-tooltip__body">
+      <div class="field">
+        <div class="field__title">
+          <h3>Тип</h3>
+          <div class="field__title-buttons">
+            <div class="button-icon button-icon--green-plus"></div>
+            <div class="button-icon button-icon--equal"></div>
+          </div>
+        </div>
+        <div class="field__box">
+          <div class="field__box-select">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field__title">
+          <h3>Сумма затрат</h3>
+          <div class="field__title-buttons">
+          </div>
+        </div>
+        <div class="field__box">
+          <input type="text"/>
+        </div>
+      </div>
+    </div>
+    <div class="b-tooltip__footer">
+      <div class="button button--min button--blue">Сохранить</div>
     </div>
   </div>
 </div>
