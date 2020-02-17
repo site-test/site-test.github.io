@@ -74,7 +74,7 @@
                     <div class="button-icon button-icon--add-inner-app"></div>
                     <div class="button-icon button-icon--add-out-app"></div>
                     <div class="button-icon button-icon--edit-app"></div>
-                    <div class="button-icon button-icon--delete-app"></div>
+                    <div class="button-icon button-icon--delete-app js-show-tooltip" data-type="remove"></div>
                   </div>
                 </div>
                 <div class="applications__request-bottom">
@@ -114,7 +114,6 @@
           <div class="row">
             <div class="col-md-9 col-lg-9">
               <div class="applications__description">
-                <div class="applications__description-control"><a class="button-icon button-icon--phone-call js-show-popup" href="#popup-test-call"></a><a class="button-icon button-icon--history-call js-show-popup" href="#popup-history-call"></a></div>
                 <div class="applications__description-col">
                   <div class="box-text box-text--lg box-text--short-text">
                     <h3>Объект</h3>
@@ -137,15 +136,15 @@
                       <p class="box-text__icon"><i class="button-icon button-icon--phone-client"></i>ЗУО Лилия (89604564536)</p>
                     </div>
                   </div>
-                  <div class="box-text box-text--lg box-text--short-text">
+                  <div class="box-text box-text--lg">
                     <h3>Текст заявки</h3>
                     <div class="box-text__scroll js-custom-scroll-y">
-                      <p>Не можем закрыть смену на кассе, сломался автоотрез. Чеки не печатаются. Не получается вернуть алкоголь, пробитый после 22:00. Дисплей покупателя показывает артефакты.</p>
-                      <p>Не можем закрыть смену на кассе, сломался автоотрез. Чеки не печатаются. Не получается вернуть алкоголь, пробитый после 22:00. Дисплей покупателя показывает артефакты.</p>
-                      <p>Не можем закрыть смену на кассе, сломался автоотрез. Чеки не печатаются. Не получается вернуть алкоголь, пробитый после 22:00. Дисплей покупателя показывает артефакты.</p>
+                      <p>Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массового участия. Таким образом реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
+                      <p>Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массового участия. Таким образом реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
                     </div>
                   </div>
                 </div>
+                <div class="applications__description-control"><a class="button-icon button-icon--phone-call js-show-popup" href="#popup-test-call"></a><a class="button-icon button-icon--history-call js-show-popup" href="#popup-history-call"></a></div>
               </div>
               <div class="applications__body">
                 <div class="applications__body-aside js-custom-scroll-y">
@@ -241,7 +240,7 @@
                               <div class="button-icon button-icon--mess-plus-red"></div>
                               <div class="button-icon button-icon--mess-plus-blue"></div>
                               <div class="button-icon button-icon--mess-flag"></div>
-                              <div class="button-icon button-icon--mess-ring"></div>
+                              <div class="button-icon button-icon--mess-ring js-show-tooltip" data-type="confirm"></div>
                               <div class="button-icon button-icon--mess-plus-green"></div>
                               <div class="button-icon button-icon--mess-time"></div>
                             </div>
@@ -274,7 +273,13 @@
                             </div>
                             <div class="b-messages__item">
                               <div class="b-messages__item-wrap">
-                                <div class="b-messages__item-more"></div>
+                                <div class="b-messages__item-more">
+                                  <div class="b-messages__item-more-icon js-show-mess-control"></div>
+                                  <div class="b-messages__item-more-list">
+                                    <div class="b-messages__item-more-text">Удалить</div>
+                                    <div class="b-messages__item-more-text">Редактировать</div>
+                                  </div>
+                                </div>
                                 <p>Заявка принята в обработку. Уже завтра нужно подъехать на объект и посмотреть все.</p>
                               </div>
                               <div class="b-messages__item-signature">shilov.a@gk.ru
@@ -308,7 +313,13 @@
                             </div>
                             <div class="b-messages__item">
                               <div class="b-messages__item-wrap">
-                                <div class="b-messages__item-more"></div>
+                                <div class="b-messages__item-more">
+                                  <div class="b-messages__item-more-icon js-show-mess-control"></div>
+                                  <div class="b-messages__item-more-list">
+                                    <div class="b-messages__item-more-text">Удалить</div>
+                                    <div class="b-messages__item-more-text">Редактировать</div>
+                                  </div>
+                                </div>
                                 <p>Заявка принята в обработку. Уже завтра нужно подъехать на объект и посмотреть все.</p>
                               </div>
                               <div class="b-messages__item-signature">shilov.a@gk.ru
@@ -317,7 +328,7 @@
                             </div>
                           </div>
                           <div class="b-messages__footer">
-                            <input type="text" placeholder="">
+                            <textarea class="js-textarea-mess" placeholder=""></textarea>
                             <div class="b-messages__files">
                               <input id="files" type="file">
                               <label for="files"></label>
@@ -333,13 +344,13 @@
                             <h3>389-ЦТО/18</h3>
                             <h3>№889665 - Щедрый вечер-13 (Усть-Кокса)</h3>
                             <div class="button-icon button-icon--state-phone"></div><a class="button-icon button-icon--edit-zip js-show-popup" href="#popup-new-action"></a>
-                            <div class="button-icon button-icon--delete-zip"></div><a class="button-icon button-icon--mess-plus-green js-show-popup" href="#popup-new-work"></a>
+                            <div class="button-icon button-icon--delete-zip js-show-tooltip" data-type="remove"></div><a class="button-icon button-icon--mess-plus-green js-show-popup" href="#popup-new-work"></a>
                           </div>
                           <div class="b-actions__body js-custom-scroll-y">
                             <div class="b-actions__item">
                               <div class="b-actions__item-row">
                                 <div class="b-actions__item-control"><a class="button-icon button-icon--edit-zip js-show-popup" href="#popup-new-work"></a>
-                                  <div class="button-icon button-icon--delete-zip"></div>
+                                  <div class="button-icon button-icon--delete-zip js-show-tooltip" data-type="remove"></div>
                                 </div>
                                 <div class="b-actions__item-text">
                                   <div class="b-actions__item-data">
@@ -365,7 +376,7 @@
                             <div class="b-actions__item">
                               <div class="b-actions__item-row">
                                 <div class="b-actions__item-control"><a class="button-icon button-icon--edit-zip js-show-popup" href="#popup-new-work"></a>
-                                  <div class="button-icon button-icon--delete-zip"></div>
+                                  <div class="button-icon button-icon--delete-zip js-show-tooltip" data-type="remove"></div>
                                 </div>
                                 <div class="b-actions__item-text">
                                   <div class="b-actions__item-data">
@@ -391,7 +402,7 @@
                             <div class="b-actions__item">
                               <div class="b-actions__item-row">
                                 <div class="b-actions__item-control"><a class="button-icon button-icon--edit-zip js-show-popup" href="#popup-new-work"></a>
-                                  <div class="button-icon button-icon--delete-zip"></div>
+                                  <div class="button-icon button-icon--delete-zip js-show-tooltip" data-type="remove"></div>
                                 </div>
                                 <div class="b-actions__item-text">
                                   <div class="b-actions__item-data">
@@ -757,27 +768,24 @@
                         <div class="field__list-item">1</div>
                         <div class="field__list-item">Блок питания FJ-SW0902000E 9V 2A</div>
                         <div class="field__list-item">2</div>
-                        <div class="field__list-item">
-                          <div class="button-icon button-icon--edit-zip"></div>
-                          <div class="button-icon button-icon--delete-zip"></div>
+                        <div class="field__list-item"><a class="button-icon button-icon--edit-zip js-show-popup" href="#popup-add-zip"></a>
+                          <div class="button-icon button-icon--delete-zip js-show-tooltip" data-type="remove"></div>
                         </div>
                       </div>
                       <div class="field__list-row">
                         <div class="field__list-item">2</div>
                         <div class="field__list-item">Печатающий механизм SIL LTP01-245-12 с датчиком открытия крышки</div>
                         <div class="field__list-item">2</div>
-                        <div class="field__list-item">
-                          <div class="button-icon button-icon--edit-zip"></div>
-                          <div class="button-icon button-icon--delete-zip"></div>
+                        <div class="field__list-item"><a class="button-icon button-icon--edit-zip js-show-popup" href="#popup-add-zip"></a>
+                          <div class="button-icon button-icon--delete-zip js-show-tooltip" data-type="remove"></div>
                         </div>
                       </div>
                       <div class="field__list-row">
                         <div class="field__list-item">3</div>
                         <div class="field__list-item">Блок питания FJ-SW0902000E 9V 2A</div>
                         <div class="field__list-item">2</div>
-                        <div class="field__list-item">
-                          <div class="button-icon button-icon--edit-zip"></div>
-                          <div class="button-icon button-icon--delete-zip"></div>
+                        <div class="field__list-item"><a class="button-icon button-icon--edit-zip js-show-popup" href="#popup-add-zip"></a>
+                          <div class="button-icon button-icon--delete-zip js-show-tooltip" data-type="remove"></div>
                         </div>
                       </div>
                     </div>
@@ -883,11 +891,22 @@
           </div>
           <div class="b-tooltip">
             <div class="b-tooltip__close js-close-tooltip"></div>
-            <div class="b-tooltip__wrap">
-              <h3>Вы действительно хотите удалить затраты?</h3>
-              <div class="b-tooltip__control">
-                <div class="button button--blue">Удалить</div>
-                <div class="button button--light-blue js-close-tooltip">Отмена</div>
+            <div class="b-tooltip__template-remove">
+              <div class="b-tooltip__wrap">
+                <h3>Вы действительно хотите удалить?</h3>
+                <div class="b-tooltip__control">
+                  <div class="button button--blue">Удалить</div>
+                  <div class="button button--light-blue js-close-tooltip">Отмена</div>
+                </div>
+              </div>
+            </div>
+            <div class="b-tooltip__template-confirm">
+              <div class="b-tooltip__wrap">
+                <h3>Подтвердить действие?</h3>
+                <div class="b-tooltip__control">
+                  <div class="button button--blue">Да</div>
+                  <div class="button button--light-blue js-close-tooltip">Нет</div>
+                </div>
               </div>
             </div>
           </div>
@@ -900,153 +919,155 @@
         <h3>Печатная форма - заявка №8475643</h3>
         <div class="popup__header-close js-close-popup"></div>
       </div>
-      <div class="popup__body js-custom-scroll-y">
-        <div class="popup__body-wrap">
-              <div class="field">
-                <div class="field__title">
-                  <h3>Шаблон</h3>
-                  <div class="field__title-buttons">
+      <div class="popup__body">
+        <div class="popup__body-scroll js-custom-scroll-y">
+          <div class="popup__body-wrap">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Шаблон</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text" placeholder="Акт передачи оборудования.doc">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text" placeholder="Акт передачи оборудования.doc">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>KE</h3>
-                </div>
-                <div class="field__box">
-                  <div class="field__box-table">
-                    <div class="custom-table custom-table--collapsed custom-table--single">
-                      <table class="js-table-collapsed">
-                        <tbody>
-                          <tr data-node-id="1">
-                            <td>Договоры IT - SD - #АТОЛ от 01.11.2018</td>
-                          </tr>
-                          <tr data-node-id="1.1" data-node-pid="1">
-                            <td>POS - Система с ФР</td>
-                          </tr>
-                          <tr data-node-id="1.1.1" data-node-pid="1.1">
-                            <td>POS - Система с ФР</td>
-                          </tr>
-                          <tr data-node-id="1.1.2" data-node-pid="1.1">
-                            <td>POS - Система с ФР</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                <div class="field">
+                  <div class="field__title">
+                    <h3>KE</h3>
+                  </div>
+                  <div class="field__box">
+                    <div class="field__box-table">
+                      <div class="custom-table custom-table--collapsed custom-table--single">
+                        <table class="js-table-collapsed">
+                          <tbody>
+                            <tr data-node-id="1">
+                              <td>Договоры IT - SD - #АТОЛ от 01.11.2018</td>
+                            </tr>
+                            <tr data-node-id="1.1" data-node-pid="1">
+                              <td>POS - Система с ФР</td>
+                            </tr>
+                            <tr data-node-id="1.1.1" data-node-pid="1.1">
+                              <td>POS - Система с ФР</td>
+                            </tr>
+                            <tr data-node-id="1.1.2" data-node-pid="1.1">
+                              <td>POS - Система с ФР</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Номер заявки</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Номер заявки</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Объект заявки</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Объект заявки</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Организация заявки</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Организация заявки</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Тип КЕ заявки</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Тип КЕ заявки</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Серийный номер КЕ</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Серийный номер КЕ</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Дата заявки</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Дата заявки</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Текст заявки</h3>
-                </div>
-                <div class="field__box">
-                  <textarea></textarea>
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Ответственный по заявке</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Текст заявки</h3>
+                  </div>
+                  <div class="field__box">
+                    <textarea></textarea>
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Должность ответственного по заявке</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Ответственный по заявке</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Заказчик заявки</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Должность ответственного по заявке</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Должность заказчика заявки</h3>
-                  <div class="field__title-buttons">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Заказчик заявки</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
                   </div>
                 </div>
-                <div class="field__box">
-                  <input type="text">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Должность заказчика заявки</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
+                  </div>
                 </div>
-              </div>
+          </div>
         </div>
       </div>
       <div class="popup__footer">
@@ -1103,7 +1124,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1124,7 +1145,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1145,7 +1166,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1166,7 +1187,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1187,7 +1208,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1208,7 +1229,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1229,7 +1250,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1250,7 +1271,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1271,7 +1292,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1292,7 +1313,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1313,7 +1334,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1334,7 +1355,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1355,7 +1376,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1376,7 +1397,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1397,7 +1418,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1418,7 +1439,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1439,7 +1460,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1460,7 +1481,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1481,7 +1502,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1502,7 +1523,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1523,7 +1544,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1544,7 +1565,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1565,7 +1586,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1586,7 +1607,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1607,7 +1628,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1628,7 +1649,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1649,7 +1670,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1670,7 +1691,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1691,7 +1712,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1712,7 +1733,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1733,7 +1754,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1754,7 +1775,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1775,7 +1796,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1796,7 +1817,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1817,7 +1838,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1838,7 +1859,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1859,7 +1880,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1880,7 +1901,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1901,7 +1922,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                   <tr>
@@ -1922,7 +1943,7 @@
                     <td>Изменение ответственного</td>
                     <td>32642</td>
                     <td>
-                      <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                      <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                     </td>
                   </tr>
                 </tbody>
@@ -1933,11 +1954,13 @@
       </div>
       <div class="b-tooltip">
         <div class="b-tooltip__close js-close-tooltip"></div>
-        <div class="b-tooltip__wrap">
-          <h3>Вы действительно хотите удалить затраты?</h3>
-          <div class="b-tooltip__control">
-            <div class="button button--blue">Удалить</div>
-            <div class="button button--light-blue js-close-tooltip">Отмена</div>
+        <div class="b-tooltip__template-remove">
+          <div class="b-tooltip__wrap">
+            <h3>Вы действительно хотите удалить?</h3>
+            <div class="b-tooltip__control">
+              <div class="button button--blue">Удалить</div>
+              <div class="button button--light-blue js-close-tooltip">Отмена</div>
+            </div>
           </div>
         </div>
       </div>
@@ -2429,9 +2452,9 @@
                     <div class="field__title">
                       <h3>Затраты</h3>
                       <div class="field__title-buttons">
-                        <div class="button-icon button-icon--green-plus js-show-tooltip"></div>
-                        <div class="button-icon button-icon--equal js-show-tooltip"></div>
-                        <div class="button-icon button-icon--delete"></div>
+                        <div class="button-icon button-icon--green-plus js-show-tooltip" data-type="add"></div>
+                        <div class="button-icon button-icon--equal js-show-tooltip" data-type="add"></div>
+                        <div class="button-icon button-icon--delete js-show-tooltip" data-type="remove"></div>
                       </div>
                     </div>
                     <div class="field__box">
@@ -2582,9 +2605,29 @@
                     <div class="field__title">
                       <h3>Затраты</h3>
                       <div class="field__title-buttons">
-                        <div class="button-icon button-icon--green-plus js-show-tooltip"></div>
-                        <div class="button-icon button-icon--equal js-show-tooltip"></div>
-                        <div class="button-icon button-icon--delete"></div>
+                        <div class="button-icon button-icon--green-plus js-show-tooltip" data-type="add"></div>
+                        <div class="button-icon button-icon--equal js-show-tooltip" data-type="add"></div>
+                        <div class="button-icon button-icon--delete js-show-tooltip" data-type="remove"></div>
+                      </div>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field__title">
+                      <h3>Комментарий</h3>
+                      <div class="field__title-buttons">
+                      </div>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field__title">
+                      <h3>Комментарий</h3>
+                      <div class="field__title-buttons">
                       </div>
                     </div>
                     <div class="field__box">
@@ -2614,53 +2657,65 @@
       </div>
       <div class="b-tooltip">
         <div class="b-tooltip__close js-close-tooltip"></div>
-        <div class="b-tooltip__header">
-          <h3>Затраты</h3>
+        <div class="b-tooltip__template-add">
+          <div class="b-tooltip__header">
+            <h3>Затраты</h3>
+          </div>
+          <div class="b-tooltip__body">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Тип</h3>
+                    <div class="field__title-buttons">
+                      <div class="button-icon button-icon--green-plus"></div>
+                      <div class="button-icon button-icon--equal"></div>
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <div class="field__box-select">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Сумма затрат</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
+                  </div>
+                </div>
+          </div>
+          <div class="b-tooltip__footer">
+            <div class="button button--min button--blue">Сохранить</div>
+          </div>
         </div>
-        <div class="b-tooltip__body">
-              <div class="field">
-                <div class="field__title">
-                  <h3>Тип</h3>
-                  <div class="field__title-buttons">
-                    <div class="button-icon button-icon--green-plus"></div>
-                    <div class="button-icon button-icon--equal"></div>
-                  </div>
-                </div>
-                <div class="field__box">
-                  <div class="field__box-select">
-                    <select>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Сумма затрат</h3>
-                  <div class="field__title-buttons">
-                  </div>
-                </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-        </div>
-        <div class="b-tooltip__footer">
-          <div class="button button--min button--blue">Сохранить</div>
+        <div class="b-tooltip__template-remove">
+          <div class="b-tooltip__wrap">
+            <h3>Вы действительно хотите удалить?</h3>
+            <div class="b-tooltip__control">
+              <div class="button button--blue">Удалить</div>
+              <div class="button button--light-blue js-close-tooltip">Отмена</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="popup mfp-hide" id="popup-ke">
       <div class="popup__header popup__header--light">
-        <h3>Конфигурационная единица (КЕ)</h3><a href="">Перейти в справочник</a>
+        <h3>Конфигурационная единица (КЕ)</h3>
+        <div class="popup__header-links"><a href="">Перейти к отчету "История КЕ"</a><a href="">Перейти в справочник</a></div>
         <div class="popup__header-close js-close-popup"></div>
       </div>
       <div class="popup__body">
-        <div class="popup__body-scroll popup__body-scroll--table js-custom-scroll-y">
+        <div class="popup__body-scroll popup__body-scroll--table js-custom-scroll-xy">
           <div class="popup__body-wrap">
             <div class="custom-table custom-table--light custom-table--collapsed">
               <table class="js-table-collapsed">
@@ -2673,17 +2728,27 @@
                     <th>СК</th>
                     <th>Зона</th>
                     <th>Прошивка</th>
+                    <th>Прошивка2</th>
+                    <th>Прошивка3 - Прошивка4</th>
+                    <th>Прошивка4</th>
+                    <th>Прошивка5</th>
+                    <th>Прошивка6</th>
                   </tr>
                 </thead>
                 <tbody>
                       <tr data-node-id="1">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1" data-node-pid="1">
                         <td>POS - Система с ФР</td>
@@ -2695,6 +2760,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1.1" data-node-pid="1.1">
                         <td>POS - Система с ФР</td>
@@ -2706,6 +2776,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2">
                         <td>Касса 02 {2 КЕ}</td>
@@ -2715,6 +2790,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>POS - Система с ФР</td>
@@ -2726,6 +2806,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>IT-инфраструктура</td>
@@ -2737,15 +2822,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1" data-node-pid="3">
                         <td>POS - Система с ФР</td>
@@ -2757,6 +2852,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1.1" data-node-pid="3.1">
                         <td>POS - Система с ФР</td>
@@ -2768,15 +2868,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1" data-node-pid="4">
                         <td>POS - Система с ФР</td>
@@ -2788,6 +2898,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1.1" data-node-pid="4.1">
                         <td>POS - Система с ФР</td>
@@ -2799,15 +2914,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1" data-node-pid="5">
                         <td>POS - Система с ФР</td>
@@ -2819,6 +2944,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1.1" data-node-pid="5.1">
                         <td>POS - Система с ФР</td>
@@ -2830,15 +2960,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1" data-node-pid="1">
                         <td>POS - Система с ФР</td>
@@ -2850,6 +2990,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1.1" data-node-pid="1.1">
                         <td>POS - Система с ФР</td>
@@ -2861,6 +3006,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2">
                         <td>Касса 02 {2 КЕ}</td>
@@ -2870,6 +3020,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>POS - Система с ФР</td>
@@ -2881,6 +3036,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>IT-инфраструктура</td>
@@ -2892,15 +3052,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1" data-node-pid="3">
                         <td>POS - Система с ФР</td>
@@ -2912,6 +3082,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1.1" data-node-pid="3.1">
                         <td>POS - Система с ФР</td>
@@ -2923,15 +3098,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1" data-node-pid="4">
                         <td>POS - Система с ФР</td>
@@ -2943,6 +3128,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1.1" data-node-pid="4.1">
                         <td>POS - Система с ФР</td>
@@ -2954,15 +3144,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1" data-node-pid="5">
                         <td>POS - Система с ФР</td>
@@ -2974,6 +3174,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1.1" data-node-pid="5.1">
                         <td>POS - Система с ФР</td>
@@ -2985,15 +3190,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1" data-node-pid="1">
                         <td>POS - Система с ФР</td>
@@ -3005,6 +3220,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1.1" data-node-pid="1.1">
                         <td>POS - Система с ФР</td>
@@ -3016,6 +3236,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2">
                         <td>Касса 02 {2 КЕ}</td>
@@ -3025,6 +3250,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>POS - Система с ФР</td>
@@ -3036,6 +3266,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>IT-инфраструктура</td>
@@ -3047,15 +3282,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1" data-node-pid="3">
                         <td>POS - Система с ФР</td>
@@ -3067,6 +3312,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1.1" data-node-pid="3.1">
                         <td>POS - Система с ФР</td>
@@ -3078,15 +3328,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1" data-node-pid="4">
                         <td>POS - Система с ФР</td>
@@ -3098,6 +3358,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1.1" data-node-pid="4.1">
                         <td>POS - Система с ФР</td>
@@ -3109,15 +3374,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1" data-node-pid="5">
                         <td>POS - Система с ФР</td>
@@ -3129,6 +3404,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1.1" data-node-pid="5.1">
                         <td>POS - Система с ФР</td>
@@ -3140,15 +3420,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1" data-node-pid="1">
                         <td>POS - Система с ФР</td>
@@ -3160,6 +3450,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1.1" data-node-pid="1.1">
                         <td>POS - Система с ФР</td>
@@ -3171,6 +3466,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2">
                         <td>Касса 02 {2 КЕ}</td>
@@ -3180,6 +3480,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>POS - Система с ФР</td>
@@ -3191,6 +3496,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>IT-инфраструктура</td>
@@ -3202,15 +3512,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1" data-node-pid="3">
                         <td>POS - Система с ФР</td>
@@ -3222,6 +3542,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1.1" data-node-pid="3.1">
                         <td>POS - Система с ФР</td>
@@ -3233,15 +3558,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1" data-node-pid="4">
                         <td>POS - Система с ФР</td>
@@ -3253,6 +3588,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1.1" data-node-pid="4.1">
                         <td>POS - Система с ФР</td>
@@ -3264,15 +3604,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1" data-node-pid="5">
                         <td>POS - Система с ФР</td>
@@ -3284,6 +3634,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1.1" data-node-pid="5.1">
                         <td>POS - Система с ФР</td>
@@ -3295,15 +3650,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1" data-node-pid="1">
                         <td>POS - Система с ФР</td>
@@ -3315,6 +3680,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1.1" data-node-pid="1.1">
                         <td>POS - Система с ФР</td>
@@ -3326,6 +3696,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2">
                         <td>Касса 02 {2 КЕ}</td>
@@ -3335,6 +3710,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>POS - Система с ФР</td>
@@ -3346,6 +3726,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>IT-инфраструктура</td>
@@ -3357,15 +3742,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1" data-node-pid="3">
                         <td>POS - Система с ФР</td>
@@ -3377,6 +3772,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1.1" data-node-pid="3.1">
                         <td>POS - Система с ФР</td>
@@ -3388,15 +3788,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1" data-node-pid="4">
                         <td>POS - Система с ФР</td>
@@ -3408,6 +3818,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1.1" data-node-pid="4.1">
                         <td>POS - Система с ФР</td>
@@ -3419,15 +3834,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1" data-node-pid="5">
                         <td>POS - Система с ФР</td>
@@ -3439,6 +3864,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1.1" data-node-pid="5.1">
                         <td>POS - Система с ФР</td>
@@ -3450,15 +3880,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1" data-node-pid="1">
                         <td>POS - Система с ФР</td>
@@ -3470,6 +3910,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="1.1.1" data-node-pid="1.1">
                         <td>POS - Система с ФР</td>
@@ -3481,6 +3926,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2">
                         <td>Касса 02 {2 КЕ}</td>
@@ -3490,6 +3940,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>POS - Система с ФР</td>
@@ -3501,6 +3956,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="2.1" data-node-pid="2">
                         <td>IT-инфраструктура</td>
@@ -3512,15 +3972,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1" data-node-pid="3">
                         <td>POS - Система с ФР</td>
@@ -3532,6 +4002,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="3.1.1" data-node-pid="3.1">
                         <td>POS - Система с ФР</td>
@@ -3543,15 +4018,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1" data-node-pid="4">
                         <td>POS - Система с ФР</td>
@@ -3563,6 +4048,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="4.1.1" data-node-pid="4.1">
                         <td>POS - Система с ФР</td>
@@ -3574,15 +4064,25 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5">
-                        <td>Касса 01 {1 КЕ}</td>
+                        <td>Касса&nbsp;01&nbsp;{1&nbsp;КЕ}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1" data-node-pid="5">
                         <td>POS - Система с ФР</td>
@@ -3594,6 +4094,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                       <tr data-node-id="5.1.1" data-node-pid="5.1">
                         <td>POS - Система с ФР</td>
@@ -3605,6 +4110,11 @@
                         <td>г.Барнаул</td>
                         <td>1</td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>sdfdsfdsf sdfsdfsdf</td>
                       </tr>
                 </tbody>
               </table>
@@ -6201,7 +6711,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6230,7 +6740,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6259,7 +6769,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6288,7 +6798,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6317,7 +6827,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6346,7 +6856,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6375,7 +6885,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6404,7 +6914,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6433,7 +6943,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6462,7 +6972,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6491,7 +7001,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6520,7 +7030,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6549,7 +7059,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6578,7 +7088,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6607,7 +7117,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6636,7 +7146,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6665,7 +7175,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6694,7 +7204,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6723,7 +7233,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6752,7 +7262,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6781,7 +7291,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6810,7 +7320,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6839,7 +7349,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6868,7 +7378,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6897,7 +7407,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6926,7 +7436,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6955,7 +7465,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -6984,7 +7494,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7013,7 +7523,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7042,7 +7552,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7071,7 +7581,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7100,7 +7610,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7129,7 +7639,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7158,7 +7668,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7187,7 +7697,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7216,7 +7726,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7245,7 +7755,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7274,7 +7784,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7303,7 +7813,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7332,7 +7842,7 @@
                               </div>
                         </td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                 </tbody>
@@ -7343,11 +7853,13 @@
       </div>
       <div class="b-tooltip">
         <div class="b-tooltip__close js-close-tooltip"></div>
-        <div class="b-tooltip__wrap">
-          <h3>Вы действительно хотите удалить?</h3>
-          <div class="b-tooltip__control">
-            <div class="button button--blue">Удалить</div>
-            <div class="button button--light-blue js-close-tooltip">Отмена</div>
+        <div class="b-tooltip__template-remove">
+          <div class="b-tooltip__wrap">
+            <h3>Вы действительно хотите удалить?</h3>
+            <div class="b-tooltip__control">
+              <div class="button button--blue">Удалить</div>
+              <div class="button button--light-blue js-close-tooltip">Отмена</div>
+            </div>
           </div>
         </div>
       </div>
@@ -7388,7 +7900,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7401,7 +7913,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7414,7 +7926,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7427,7 +7939,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7440,7 +7952,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7453,7 +7965,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7466,7 +7978,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7479,7 +7991,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7492,7 +8004,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7505,7 +8017,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7518,7 +8030,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7531,7 +8043,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7544,7 +8056,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7557,7 +8069,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7570,7 +8082,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7583,7 +8095,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7596,7 +8108,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7609,7 +8121,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7622,7 +8134,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7635,7 +8147,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7648,7 +8160,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7661,7 +8173,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7674,7 +8186,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7687,7 +8199,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7700,7 +8212,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7713,7 +8225,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7726,7 +8238,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7739,7 +8251,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7752,7 +8264,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7765,7 +8277,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7778,7 +8290,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7791,7 +8303,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                       <tr>
@@ -7804,7 +8316,7 @@
                         <td>Славиняк Е.Е.</td>
                         <td></td>
                         <td>
-                          <div class="button-icon button-icon--bin js-show-tooltip"></div>
+                          <div class="button-icon button-icon--bin js-show-tooltip" data-type="remove"></div>
                         </td>
                       </tr>
                 </tbody>
@@ -7815,11 +8327,13 @@
       </div>
       <div class="b-tooltip">
         <div class="b-tooltip__close js-close-tooltip"></div>
-        <div class="b-tooltip__wrap">
-          <h3>Вы действительно хотите удалить?</h3>
-          <div class="b-tooltip__control">
-            <div class="button button--blue">Удалить</div>
-            <div class="button button--light-blue js-close-tooltip">Отмена</div>
+        <div class="b-tooltip__template-remove">
+          <div class="b-tooltip__wrap">
+            <h3>Вы действительно хотите удалить?</h3>
+            <div class="b-tooltip__control">
+              <div class="button button--blue">Удалить</div>
+              <div class="button button--light-blue js-close-tooltip">Отмена</div>
+            </div>
           </div>
         </div>
       </div>
@@ -8140,6 +8654,102 @@
                     <td><a href="">Блок питания 5В 2А</a></td>
                     <td> 3</td>
                   </tr>
+                  <tr data-node-id="4">
+                    <td>Оборудование автоматизации</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="4.1" data-node-pid="4">
+                    <td>Системы безопасности</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="4.1.1" data-node-pid="4.1">
+                    <td><a href="">Блок питания 5В 2А</a></td>
+                    <td> 3</td>
+                  </tr>
+                  <tr data-node-id="5">
+                    <td>Оборудование автоматизации</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="5.1" data-node-pid="5">
+                    <td>Системы безопасности</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="5.1.1" data-node-pid="5.1">
+                    <td><a href="">Блок питания 5В 2А</a></td>
+                    <td> 3</td>
+                  </tr>
+                  <tr data-node-id="4">
+                    <td>Оборудование автоматизации</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="4.1" data-node-pid="4">
+                    <td>Системы безопасности</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="4.1.1" data-node-pid="4.1">
+                    <td><a href="">Блок питания 5В 2А</a></td>
+                    <td> 3</td>
+                  </tr>
+                  <tr data-node-id="5">
+                    <td>Оборудование автоматизации</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="5.1" data-node-pid="5">
+                    <td>Системы безопасности</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="5.1.1" data-node-pid="5.1">
+                    <td><a href="">Блок питания 5В 2А</a></td>
+                    <td> 3</td>
+                  </tr>
+                  <tr data-node-id="4">
+                    <td>Оборудование автоматизации</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="4.1" data-node-pid="4">
+                    <td>Системы безопасности</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="4.1.1" data-node-pid="4.1">
+                    <td><a href="">Блок питания 5В 2А</a></td>
+                    <td> 3</td>
+                  </tr>
+                  <tr data-node-id="5">
+                    <td>Оборудование автоматизации</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="5.1" data-node-pid="5">
+                    <td>Системы безопасности</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="5.1.1" data-node-pid="5.1">
+                    <td><a href="">Блок питания 5В 2А</a></td>
+                    <td> 3</td>
+                  </tr>
+                  <tr data-node-id="4">
+                    <td>Оборудование автоматизации</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="4.1" data-node-pid="4">
+                    <td>Системы безопасности</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="4.1.1" data-node-pid="4.1">
+                    <td><a href="">Блок питания 5В 2А</a></td>
+                    <td> 3</td>
+                  </tr>
+                  <tr data-node-id="5">
+                    <td>Оборудование автоматизации</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="5.1" data-node-pid="5">
+                    <td>Системы безопасности</td>
+                    <td></td>
+                  </tr>
+                  <tr data-node-id="5.1.1" data-node-pid="5.1">
+                    <td><a href="">Блок питания 5В 2А</a></td>
+                    <td> 3</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -8317,9 +8927,9 @@
                 <div class="field__title">
                   <h3>Затраты</h3>
                   <div class="field__title-buttons">
-                    <div class="button-icon button-icon--green-plus js-show-tooltip"></div>
-                    <div class="button-icon button-icon--equal js-show-tooltip"></div>
-                    <div class="button-icon button-icon--delete"></div>
+                    <div class="button-icon button-icon--green-plus js-show-tooltip" data-type="add"></div>
+                    <div class="button-icon button-icon--equal js-show-tooltip" data-type="add"></div>
+                    <div class="button-icon button-icon--delete js-show-tooltip" data-type="remove"></div>
                     <div class="button-icon button-icon--refresh-gradient"></div>
                   </div>
                 </div>
@@ -8336,43 +8946,54 @@
       </div>
       <div class="b-tooltip">
         <div class="b-tooltip__close js-close-tooltip"></div>
-        <div class="b-tooltip__header">
-          <h3>Затраты</h3>
+        <div class="b-tooltip__template-add">
+          <div class="b-tooltip__header">
+            <h3>Затраты</h3>
+          </div>
+          <div class="b-tooltip__body">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Тип</h3>
+                    <div class="field__title-buttons">
+                      <div class="button-icon button-icon--green-plus"></div>
+                      <div class="button-icon button-icon--equal"></div>
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <div class="field__box-select">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Сумма затрат</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
+                  </div>
+                </div>
+          </div>
+          <div class="b-tooltip__footer">
+            <div class="button button--min button--blue">Сохранить</div>
+          </div>
         </div>
-        <div class="b-tooltip__body">
-              <div class="field">
-                <div class="field__title">
-                  <h3>Тип</h3>
-                  <div class="field__title-buttons">
-                    <div class="button-icon button-icon--green-plus"></div>
-                    <div class="button-icon button-icon--equal"></div>
-                  </div>
-                </div>
-                <div class="field__box">
-                  <div class="field__box-select">
-                    <select>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Сумма затрат</h3>
-                  <div class="field__title-buttons">
-                  </div>
-                </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-        </div>
-        <div class="b-tooltip__footer">
-          <div class="button button--min button--blue">Сохранить</div>
+        <div class="b-tooltip__template-remove">
+          <div class="b-tooltip__wrap">
+            <h3>Вы действительно хотите удалить?</h3>
+            <div class="b-tooltip__control">
+              <div class="button button--blue">Удалить</div>
+              <div class="button button--light-blue js-close-tooltip">Отмена</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -8532,9 +9153,9 @@
                   <div class="field__title">
                     <h3>Затраты</h3>
                     <div class="field__title-buttons">
-                      <div class="button-icon button-icon--green-plus js-show-tooltip"></div>
-                      <div class="button-icon button-icon--equal js-show-tooltip"></div>
-                      <div class="button-icon button-icon--delete"></div>
+                      <div class="button-icon button-icon--green-plus js-show-tooltip" data-type="add"></div>
+                      <div class="button-icon button-icon--equal js-show-tooltip" data-type="add"></div>
+                      <div class="button-icon button-icon--delete js-show-tooltip" data-type="remove"></div>
                       <div class="button-icon button-icon--refresh-gradient"></div>
                     </div>
                   </div>
@@ -8627,43 +9248,54 @@
       </div>
       <div class="b-tooltip">
         <div class="b-tooltip__close js-close-tooltip"></div>
-        <div class="b-tooltip__header">
-          <h3>Затраты</h3>
+        <div class="b-tooltip__template-add">
+          <div class="b-tooltip__header">
+            <h3>Затраты</h3>
+          </div>
+          <div class="b-tooltip__body">
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Тип</h3>
+                    <div class="field__title-buttons">
+                      <div class="button-icon button-icon--green-plus"></div>
+                      <div class="button-icon button-icon--equal"></div>
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <div class="field__box-select">
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="field__title">
+                    <h3>Сумма затрат</h3>
+                    <div class="field__title-buttons">
+                    </div>
+                  </div>
+                  <div class="field__box">
+                    <input type="text">
+                  </div>
+                </div>
+          </div>
+          <div class="b-tooltip__footer">
+            <div class="button button--min button--blue">Сохранить</div>
+          </div>
         </div>
-        <div class="b-tooltip__body">
-              <div class="field">
-                <div class="field__title">
-                  <h3>Тип</h3>
-                  <div class="field__title-buttons">
-                    <div class="button-icon button-icon--green-plus"></div>
-                    <div class="button-icon button-icon--equal"></div>
-                  </div>
-                </div>
-                <div class="field__box">
-                  <div class="field__box-select">
-                    <select>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__title">
-                  <h3>Сумма затрат</h3>
-                  <div class="field__title-buttons">
-                  </div>
-                </div>
-                <div class="field__box">
-                  <input type="text">
-                </div>
-              </div>
-        </div>
-        <div class="b-tooltip__footer">
-          <div class="button button--min button--blue">Сохранить</div>
+        <div class="b-tooltip__template-remove">
+          <div class="b-tooltip__wrap">
+            <h3>Вы действительно хотите удалить?</h3>
+            <div class="b-tooltip__control">
+              <div class="button button--blue">Удалить</div>
+              <div class="button button--light-blue js-close-tooltip">Отмена</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
