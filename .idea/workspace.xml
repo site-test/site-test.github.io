@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13e308f1-f523-4967-9602-e78d7b904590" name="Default Changelist" comment="" />
+    <list default="true" id="13e308f1-f523-4967-9602-e78d7b904590" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/botinki.html" beforeDir="false" afterPath="$PROJECT_DIR$/botinki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +64,7 @@
       <updated>1554613504224</updated>
       <workItem from="1554613505736" duration="1281000" />
       <workItem from="1554635397879" duration="1000" />
-      <workItem from="1606327877018" duration="3048000" />
+      <workItem from="1606327877018" duration="3210000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1606328036896</created>
@@ -97,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606412397412</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new project">
+      <created>1606412698459</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606412698459</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,14 +121,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="new project" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="481" y="154" key="CommitChangelistDialog2" timestamp="1606412396669">
+    <state x="481" y="154" key="CommitChangelistDialog2" timestamp="1606412698389">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="481" y="154" key="CommitChangelistDialog2/-437.-1440.2560.1440/0.0.1792.1120@0.0.1792.1120" timestamp="1606412396669" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1606412400071">
+    <state x="481" y="154" key="CommitChangelistDialog2/-437.-1440.2560.1440/0.0.1792.1120@0.0.1792.1120" timestamp="1606412698389" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1606412700167">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/-437.-1440.2560.1440/0.0.1792.1120@0.0.1792.1120" timestamp="1606412400071" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/-437.-1440.2560.1440/0.0.1792.1120@0.0.1792.1120" timestamp="1606412700167" />
   </component>
   <component name="masterDetails">
     <states>
