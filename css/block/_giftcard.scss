@@ -1,0 +1,151 @@
+﻿
+/* gift card */
+
+.giftcard{
+	margin: 0 0 60px;
+	padding: 20px 0 0;
+
+	@include mobile{
+		margin: -20px 0 30px;
+		padding: 0;
+	}
+
+	h1{
+		margin-bottom: 27px;
+		text-align: center;
+	}
+	h2{
+		margin: 80px 0 40px;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		text-align: center;
+	}
+	p{
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 26px;
+		text-transform: uppercase;
+		text-align: center;
+
+		@include mobile{
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	.editform{
+		max-width: 680px;
+		margin: 0 auto;
+
+		section:last-of-type{
+			padding-bottom: 0;
+			border: 0;
+			margin-bottom: 30px;
+		}
+		h4{
+			font-size: 14px;
+		}
+		button{
+			@include nonmobile{
+				font-size: 20px;
+			}
+		}
+	}
+	.feedback{
+		margin: -10px 0 10px;
+
+		p{
+			padding: 10px;
+			font-size: 14px !important;
+			text-transform: none;
+		}
+	}
+}
+
+.giftcard-intro{
+	margin: 0 0 50px;
+	padding: 0 0 7px;
+	background: #f9f9fb;
+
+	@include tablet{
+		margin: 0 -10px 50px;
+	}
+
+	img{
+		margin-bottom: 26px;
+	}
+	p{
+		margin: 0 auto;
+		padding: 13px 15px;
+		max-width: 680px;
+		box-sizing: border-box;
+	}
+}
+
+.giftcard-descr-img, .giftcard-descr-text{
+	text-align: center;
+
+	@include nonmobile{
+		display: inline-block;
+		vertical-align: middle;
+		width: 50%;
+	}
+}
+
+.giftcard-descr-img{
+	img{
+		border-radius: 10px;
+		box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+	}
+}
+
+.giftcard-descr-text{
+	p{
+		margin: 30px 0;
+		padding: 0 10px;
+	}
+}
+
+.giftcard_feedback{
+	margin: 0 0 60px;
+	padding: 20px 0 0;
+	text-align: center;
+
+	@include mobile{
+		margin: -20px 0 30px;
+		padding: 0;
+	}
+
+	h1{
+		margin-bottom: 27px;
+	}
+	p{
+		margin: 40px auto 70px;
+		max-width: 780px;
+		font-size: 28px;
+		line-height: 36px;
+
+		@include mobile{
+			margin: 25px auto 50px;
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+	a{
+		color: #887025;
+		border-bottom: 1px solid #887025;
+
+		&:hover{
+			border: 0;
+		}
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+		margin: 0 0 20px;
+	}
+}

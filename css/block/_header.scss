@@ -1,0 +1,230 @@
+﻿
+/* шапка */
+
+body>header{
+	width: $main_desktop_width;
+	margin: 0 auto;
+	padding: 35px 10px 25px;
+	text-align: center;
+
+	@include tablet{
+		padding-top: 25px;
+		width: auto;
+	}
+
+	@include mobile{
+		position: fixed;
+		z-index: 50;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 10px 0;
+		background: #fff;
+		border-bottom: 1px solid $gray;
+	}
+
+	ul{
+		white-space: nowrap;
+	}
+	li{
+		display: inline-block;
+		height: 18px;
+		line-height: 18px;
+		font-size: 14px;
+		font-weight: bold;
+		@include fancyfont;
+		border-right: 1px solid $maincolor;
+
+		@include tablet{
+			border: 0;
+		}
+
+		&:first-child{
+			margin: 0;
+		}
+		&:last-child{
+			padding: 0;
+			border: 0;
+		}
+	}
+}
+
+.topcontact{
+	float: left;
+	margin: 33px -100% 0 0;
+
+	@include tablet{
+		margin-top: 19px;
+		text-align: left;
+	}
+
+	@include mobile{
+		display: none;
+	}
+
+	li{
+		margin: 0 0 0 20px;
+		padding: 0 20px 0 0;
+
+		@include nontablet{
+			vertical-align: middle;
+		}
+
+		@include tablet{
+			display: block;
+			margin: 5px 0 0;
+			padding: 0;
+		}
+	}
+	a{
+		color: $gray;
+
+		&:hover{
+			color: $maincolor;
+		}
+	}
+}
+
+.top-phone{
+	@include nonmobile{
+		height: 34px !important;
+	}
+}
+
+.usermenu{
+	float: right;
+	margin: 41px 0 0 -100%;
+
+	@include tablet{
+		margin-top: 19px;
+		text-align: right;
+	}
+
+	@include mobile{
+		.icart, .iwish{
+			position: absolute;
+			z-index: 1;
+			top: 22px;
+		}
+		.icart{
+			left: 50px;
+		}
+		.iwish{
+			right: 50px;
+		}
+	}
+
+	li{
+		margin: 0 0 0 10px;
+		padding: 0 10px 0 0;
+	}
+	.ico{
+		margin: -3px 0;
+
+		@include mobile{
+			margin: 0;
+		}
+	}
+}
+
+.usermenu-login{
+	display: inline-block;
+	padding: 0 10px 0 0;
+	border-right: 1px solid $maincolor;
+
+	@include tablet{
+		display: block;
+		margin: 0 0 21px;
+		padding: 0;
+		border: 0;
+
+		li:first-child{
+			padding: 0 10px 0 0;
+			border-right: 1px solid $maincolor;
+		}
+	}
+
+	@include mobile{
+		display: none;
+	}
+
+}
+
+.logo{
+	width: 72px;
+	height: 100px;
+
+	@include mobile{
+		width: 29px;
+		height: 40px;
+	}
+}
+
+.search{
+	position: relative;
+
+	@include mobile{
+		position: absolute;
+		z-index: 2;
+		top: 22px;
+		right: 10px;
+	}
+}
+
+.searchform{
+	display: none;
+	position: absolute;
+	top: -20px;
+	right: -6px;
+	padding: 10px 0 10px 10px;
+	background: #fff;
+	white-space: nowrap;
+	font-size: 0;
+
+	@include mobile{
+		position: fixed;
+		z-index: 3;
+		top: 0;
+		left: 34px;
+		right: 0;
+		padding: 13px 10px 10px;
+		text-align: left;
+	}
+
+	.opened &{
+		display: block;
+	}
+}
+
+.inputwrap{
+	border: 1px solid $bordergray;
+	padding: 5px 5px 5px 10px;
+
+	input{
+		width: 200px;
+		height: 24px;
+		line-height: 1em;
+		border: 0;
+		padding: 0;
+		margin: 0 10px 0 0;
+		-webkit-appearance: none;
+
+		@include mobile{
+			width: 80%;
+			width: calc(100% - 34px);
+		}
+	}
+	button{
+		display: inline-block;
+		margin: 0;
+		width: 24px;
+		height: 24px;
+		overflow: hidden;
+		padding: 0 0 0 24px;
+		border: 0;
+
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+}

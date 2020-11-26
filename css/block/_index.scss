@@ -1,0 +1,167 @@
+﻿
+/* главная */
+
+.mainbanner{
+	width: 980px;
+	height: 475px;
+	margin: 0 0 25px;
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+
+	@include tablet{
+		width: auto;
+		height: auto;
+		min-height: 354px;
+	}
+
+	@include mobile{
+		margin: -40px -10px 35px;
+		min-height: 155px;
+	}
+
+	*{
+    box-sizing: inherit;
+	}
+
+	a{
+		height: 475px;
+
+		@include tablet{
+			height: auto;
+			min-height: 354px;
+		}
+
+		@include mobile{
+			min-height: 155px;
+		}
+
+	}
+	img{
+		@include tablet{
+			width: 100%;
+		}
+	}
+}
+
+.trinity{
+	margin: 0 0 40px;
+	white-space: nowrap;
+
+	li{
+		display: inline-block;
+		width: 310px;
+		margin: 0 25px 0 0;
+		vertical-align: middle;
+		text-align: center;
+		white-space: normal;
+
+		@include tablet{
+			width: 31%;
+			width: calc(100% / 3 - 10px);
+			margin: 0 15px 0 0;
+			overflow: hidden;
+		}
+
+		@include mobile{
+			display: block;
+			width: auto;
+			max-width: 310px;
+			margin: 0 auto 30px;
+		}
+
+		&:last-child{
+			margin: 0;
+
+			@include mobile{
+				margin: 0 auto;
+			}
+		}
+	}
+	a{
+		display: block;
+
+		&:hover img{
+			opacity: $img_hover_opacity;
+		}
+	}
+	b{
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+		margin: -28px 0 13px;
+		padding: 15px 30px 0;
+		background: #fff;
+		font-size: 18px;
+		line-height: 13px;
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		@include tablet{
+			padding: 15px 20px 0;
+			min-width: 80px;
+		}
+
+	}
+	span{
+		display: inline-block;
+		width: 190px;
+		overflow: visible;
+		font: 13px $textfont;
+		line-height: 20px;
+
+		@include mobile{
+			width: auto;
+			margin: 0 30px;
+			font-size: 14px;
+		}
+	}
+}
+
+.instagram{
+	display: inline-block;
+	margin: 20px 0 0;
+	padding: 15px;
+	background: #fafafa;
+	white-space: nowrap;
+
+	@include tablet{
+		display: block;
+	}
+
+	@include mobile{
+		padding-bottom: 5px;
+		white-space: normal;
+	}
+
+	li{
+		display: inline-block;
+		margin: 0 15px;
+
+		@include tablet{
+			width: 20%;
+			width: calc(25% - 20px);
+			margin: 0 10px;
+		}
+
+		@include mobile{
+			width: 45%;
+			width: calc(50% - 20px);
+			max-width: 195px;
+			margin: 0 10px 10px;
+		}
+
+		img{
+			width: 195px;
+			height: 195px;
+
+			@include tablet{
+				width: 100%;
+				height: auto;
+			}
+		}
+		a:hover{
+			opacity: $img_hover_opacity;
+		}
+	}
+}

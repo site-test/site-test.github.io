@@ -1,0 +1,278 @@
+﻿
+/* contest ashgirl */
+
+.mmenu-item-cnt-ashgirls{
+	padding: 18px 30px 13px !important;
+	margin: -18px 0 -13px !important;
+	background: #d59ba3;
+
+	@include tablet{
+		padding: 15px 30px 10px !important;
+		margin: -18px 0 -13px !important;
+	}
+	@include mobile{
+		margin: -10px 0 18px !important;
+		padding: 17px 0 16px !important;
+	}
+
+	.mmenu-link{
+		font: bold 22px $textfont;
+		line-height: 16px;
+		border-color: #d59ba3 !important;
+
+		@include tablet{
+			font: bold 16px $textfont;
+		}
+		&.act{
+			color: #fff !important;
+		}
+	}
+}
+
+.cnt-ashgirls{
+	font-family: $textfont;
+	text-transform: uppercase;
+
+	@include nonmobile{
+		padding: 30px 0 0;
+	}
+}
+
+.cnt-ashgirls-form{
+	margin: 0 0 30px;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	background: #f1f3f2;
+
+	@include nonmobile{
+		float: left;
+		width: 50%;
+		padding: 30px 40px;
+		min-height: 560px;
+	}
+	@include nontablet{
+		width: 490px;
+		padding: 30px 60px;
+	}
+
+	label{
+		display: block;
+		margin: 0 0 5px;
+		font-size: 11px;
+	}
+	input, textarea{
+		display: block;
+		width: 100%;
+		margin: 0 0 15px;
+	}
+	textarea{
+		height: 150px;
+	}
+	button{
+		padding: 10px 15px 8px;
+		width: 200px;
+	}
+}
+
+.cnt-ashgirls-form-title{
+	margin: 0 0 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.cnt-ashgirls-form-feedback{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.cnt-ashgirls-text{
+
+	@include nonmobile{
+		float: right;
+		width: 45%;
+	}
+	@include nontablet{
+		width: 460px;
+	}
+}
+
+.cnt-ashgirls-text-tag{
+	margin: 0 0 20px;
+	font: bold 45px $textfont;
+	line-height: 40px;
+
+	@include nonmobile{
+		font-size: 55px;
+	}
+}
+
+.cnt-ashgirls-text-small{
+	margin: 0 0 40px;
+	font-size: 11px;
+	line-height: 1.6em;
+
+	@include nonmobile{
+		width: 85%;
+	}
+	@include nontablet{
+		width: 73%;
+	}
+
+	strong{
+		font-size: 15px;
+		text-transform: none;
+	}
+}
+
+.cnt-ashgirls-text-glamtext, .cnt-ashgirls-text-glamlogo{
+	@include nontablet{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 0 30px;
+	}
+}
+
+.cnt-ashgirls-text-glamtext{
+	font-size: 25px;
+	line-height: 1.2em;
+
+	@include nontablet{
+		width: 200px;
+	}
+	@include tablet{
+		margin: 0 0 10px;
+	}
+}
+
+.cnt-ashgirls-text-glamlogo{
+	@include tablet{
+		margin: 0 0 30px;
+	}
+}
+
+.cnt-ashgirls-text-big{
+	margin: 0 0 20px;
+	font-size: 15px;
+
+	strong{
+		font-size: 25px;
+		font-weight: normal;
+	}
+}
+
+.cnt-ashgirls-text-arrow{
+	@include nonmobile{
+		position: relative;
+		z-index: 2;
+		padding: 0 0 5px;
+
+		&:after{
+			@include pseudoel;
+			position: absolute;
+			z-index: 2;
+			bottom: -8px;
+			left: -64px;
+			width: 128px;
+			height: 42px;
+			background: url(../img/cnt-ashgirl_arrow.svg) 0 0 no-repeat;
+		}
+	}
+}
+
+.cnt-ashgirls-text-red{
+	margin: 0 0 30px;
+	padding: 12px 20px;
+	background: #d59ba3;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.5em;
+	text-transform: none;
+
+	@include nonmobile{
+		padding: 12px 40px;
+	}
+	@include nontablet{
+		padding: 12px 70px;
+	}
+
+	b{
+		text-transform: uppercase;
+	}
+}
+
+.cnt-instagram{
+	padding: 0 0 20px;
+	text-align: center;
+}
+
+.cnt-instagram-title{
+	margin: 0 0 30px;
+	font: bold 30px $textfont;
+}
+
+.cnt-instagram-row{
+	@include nonmobile{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 30px 0 0;
+		width: 28%;
+		width: calc(100% / 3 - 21px);
+	}
+	@include nontablet{
+		margin: 0 34px 0 0;
+		width: 297px;
+	}
+
+	&:last-child{
+		@include nonmobile{
+			margin: 0;
+		}
+	}
+
+	img{
+		margin: 0 0 30px;
+		max-width: 100%;
+		height: auto;
+	}
+	a:hover img{
+		opacity: 0.8;
+	}
+}
+
+.cnt-instagram-row-center{
+	@include nontablet{
+		width: 318px;
+	}
+}
+
+.cnt-instagram-link{
+	margin: 0 0 30px;
+
+	@include mobile{
+		max-width: 600px;
+		margin: 0 auto 30px;
+	}
+
+	a{
+		display: block;
+		padding: 10px;
+		text-align: center;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-decoration: none;
+		white-space: nowrap;
+		color: #fff;
+		background: $maincolor;
+	}
+	img{
+		margin: 0 15px 0 0;
+		vertical-align: middle;
+		opacity: 1 !important;
+	}
+	span{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 2px 0 0;
+	}
+}

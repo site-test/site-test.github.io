@@ -1,0 +1,55 @@
+﻿
+/* timer */
+
+.cybermonday-banner{
+	margin: -19px 0 20px;
+	padding: 25px;
+	background: $maincolor;
+	color: #c12026;
+	font: 15px LCDNova, sans-serif;
+
+	@include mobile{
+		margin: -20px -10px 20px;
+	}
+}
+
+.cybermonday-banner-time{
+	margin: 10px 0 0;
+	font-size: 64px;
+	line-height: 1em;
+	color: #fff;
+
+	@include mobile{
+		font-size: 50px;
+	}
+}
+
+.saletimer{
+	margin: -20px 0 35px;
+	text-align: center;
+	text-transform: uppercase;
+
+	@include tabletonly{
+		margin: -20px -10px 35px;
+	}
+	@include mobile{
+		margin: 0 -10px 25px;
+	}
+
+	.land-sale-timer{
+		margin: 0 !important;
+	}
+}
+
+.saletimer-text{
+	padding: 8px 10px 5px;
+	background: #e6c292;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.2em;
+	color: #000 !important;
+
+	@include mobile{
+		font-size: 13px;
+	}
+}
