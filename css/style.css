@@ -788,7 +788,7 @@
     .kind__live-other-title {
         width: 133px;
         top: -250px;
-        right: 0;
+        right: 14px;
         font-size: 16px;
         line-height: 19px;
     }
@@ -863,6 +863,7 @@
         margin-left: auto;
         margin-bottom: -80px;
         z-index: 1;
+        transform: translateX(1px);
     }
 
     .kind__flex-between-spirit--v2 img:nth-child(2) {
