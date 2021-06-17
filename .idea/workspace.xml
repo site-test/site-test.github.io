@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dd19970-76e6-4729-b102-2f5eb64f6263" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/site-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/site-test.iml" afterDir="false" />
+    <list default="true" id="6dd19970-76e6-4729-b102-2f5eb64f6263" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reash.html" beforeDir="false" afterPath="$PROJECT_DIR$/reash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind.html" beforeDir="false" afterPath="$PROJECT_DIR$/kind.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +55,24 @@
       <workItem from="1621531087932" duration="1686000" />
       <workItem from="1623851974853" duration="2884000" />
       <workItem from="1623858587561" duration="1261000" />
-      <workItem from="1623891470251" duration="14063000" />
+      <workItem from="1623891470251" duration="15052000" />
     </task>
+    <task id="LOCAL-00001" summary="page kind">
+      <created>1623941954118</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623941954118</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="page kind" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

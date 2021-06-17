@@ -525,7 +525,7 @@
     }
 
     .kind__mobile {
-        display: block;
+        display: block!important;
     }
 
     .kind__desktop {
