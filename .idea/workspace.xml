@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13e308f1-f523-4967-9602-e78d7b904590" name="Default Changelist" comment="">
+    <list default="true" id="6dd19970-76e6-4729-b102-2f5eb64f6263" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/site-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/site-test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/botinki.html" beforeDir="false" afterPath="$PROJECT_DIR$/botinki.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reash.html" beforeDir="false" afterPath="$PROJECT_DIR$/reash.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,135 +16,52 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileColors">
-    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
-    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
-    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
-    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
-    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1knEI9jFmi0wjb2TV3f5umM4QAE" />
+  <component name="ProjectId" id="1soFYoPiEOmqLNGyC8kYXRO1z0X" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/kind" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/kind" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/font" />
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13e308f1-f523-4967-9602-e78d7b904590" name="Default Changelist" comment="" />
-      <created>1554613504224</created>
+      <changelist id="6dd19970-76e6-4729-b102-2f5eb64f6263" name="Default Changelist" comment="" />
+      <created>1621531085902</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554613504224</updated>
-      <workItem from="1554613505736" duration="1281000" />
-      <workItem from="1554635397879" duration="1000" />
-      <workItem from="1606327877018" duration="3210000" />
+      <updated>1621531085902</updated>
+      <workItem from="1621531087932" duration="1686000" />
+      <workItem from="1623851974853" duration="2884000" />
+      <workItem from="1623858587561" duration="1261000" />
+      <workItem from="1623891470251" duration="14063000" />
     </task>
-    <task id="LOCAL-00001" summary="new project">
-      <created>1606328036896</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1606328036896</updated>
-    </task>
-    <task id="LOCAL-00002" summary="new project">
-      <created>1606328240273</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1606328240273</updated>
-    </task>
-    <task id="LOCAL-00003" summary="new project">
-      <created>1606329457282</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1606329457282</updated>
-    </task>
-    <task id="LOCAL-00004" summary="new project">
-      <created>1606329663483</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1606329663483</updated>
-    </task>
-    <task id="LOCAL-00005" summary="new project">
-      <created>1606412397412</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1606412397412</updated>
-    </task>
-    <task id="LOCAL-00006" summary="new project">
-      <created>1606412698459</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1606412698459</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="new project" />
-    <option name="LAST_COMMIT_MESSAGE" value="new project" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="481" y="154" key="CommitChangelistDialog2" timestamp="1606412698389">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="481" y="154" key="CommitChangelistDialog2/-437.-1440.2560.1440/0.0.1792.1120@0.0.1792.1120" timestamp="1606412698389" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1606412700167">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/-437.-1440.2560.1440/0.0.1792.1120@0.0.1792.1120" timestamp="1606412700167" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
