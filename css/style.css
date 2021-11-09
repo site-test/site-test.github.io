@@ -1,11 +1,3 @@
-/*@font-face {*/
-/*    font-family: "HelveticaBold";*/
-/*    src: url(../font/ocr_onectt.woff);*/
-/*    src: url(../font/HelveticaBold/HelveticaBold.eot?#iefix) format("embedded-opentype"), url(../font/HelveticaBold/HelveticaBold.woff) format("woff"), url(../font/HelveticaBold/HelveticaBold.ttf) format("truetype");*/
-/*    font-style: normal;*/
-/*    font-weight: 400*/
-/*}*/
-
 @font-face {
     font-family: ocr_onectt;
     font-style: normal;
@@ -21,6 +13,7 @@
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
 }
+
 .kind__container {
     padding: 0 36px;
 }
@@ -886,12 +879,4 @@
         margin-left: auto;
 
     }
-}
-
-@media only screen and (max-width: 768px) {
-
-}
-
-@media only screen and (max-width: 640px) {
-
 }
