@@ -35,6 +35,10 @@
     margin: 0 auto;
 }
 
+.sample__svg {
+    display: none;
+}
+
 .sample__title {
     display: flex;
     flex-direction: column-reverse;
@@ -414,5 +418,16 @@
 
     .sample__project:after {
         transform: translate(20%, -15%);
+    }
+
+    .sample__svg {
+        display: block;
+        margin-top: -25px;
+        margin-bottom: 15px;
+    }
+
+    .sample__svg svg {
+        display: block;
+        margin: 0 auto;
     }
 }
