@@ -222,11 +222,13 @@
     font-weight: 700;
     font-size: 16px;
     height: 40px;
-    line-height: 43px;
+    line-height: 1;
     background: #FA5794;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 85px;
+    padding: 14px 0;
+    box-sizing: border-box;
 }
 
 .sample__project:after {
@@ -407,7 +409,6 @@
 
     .sample__project {
         font-size: 12px;
-        line-height: 36px;
         height: 36px;
     }
 
