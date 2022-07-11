@@ -1,0 +1,282 @@
+﻿
+/* ashgirls */
+
+.land-ashgirls{
+	margin: 0 0 60px;
+	padding: 20px 0 0;
+	text-transform: uppercase;
+
+	@include mobile{
+		margin: -20px 0 30px;
+		padding: 0;
+	}
+}
+
+.land-ashgirls-tagtitle{
+	position: relative;
+	z-index: 1;
+	font-size: 42px;
+	font-weight: 900;
+	line-height: 1em;
+	letter-spacing: 5px;
+	text-align: right;
+	padding: 0 0 41px;
+
+	&:before, &:after{
+		@include pseudoel;
+		position: absolute;
+		height: 23px;
+	}
+	&:before{
+		z-index: 2;
+		left: 0;
+		right: 5px;
+		bottom: 5px;
+		background: #000;
+	}
+	&:after{
+		z-index: 1;
+		left: 5px;
+		right: 0;
+		bottom: 0;
+		background: #bf8e3d;
+	}
+}
+
+.land-ashgirls-intro{
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+
+	@include nonmobile{
+		float: left;
+		width: 613px;
+	}
+
+	.land-ashgirls-tagtitle{
+		margin: 0 0 42px;
+		max-width: 380px;
+
+		@include nonmobile{
+			margin: 104px 173px 42px 160px;
+		}
+		@include smalltabletonly{
+			margin: 44px 223px 42px 110px;
+		}
+	}
+}
+
+.land-ashgirls-intro-text{
+	background: #f1f1f1;
+	padding: 26px 15px 77px;
+	text-align: center;
+
+	@include nonmobile{
+		padding: 26px 203px 47px 37px;
+	}
+	@include smalltabletonly{
+		padding-right: 253px;
+	}
+
+	h3, p{
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	h3{
+		margin: 0 auto 27px;
+		max-width: 300px;
+		letter-spacing: 1px;
+	}
+	p{
+		margin: 0 0 27px;
+		text-align: justify;
+	}
+}
+
+.land-ashgirls-soclinks{
+	padding: 16px 0;
+
+	@include nonmobile{
+		padding: 46px 0 0;
+	}
+
+	img{
+		margin: 0 6px;
+	}
+}
+
+.land-ashgirls-intro-img{
+	position: relative;
+	z-index: 2;
+	border: 15px solid #fff;
+
+	@include mobile{
+		margin: -47px 0 0 30px;
+	}
+	@include nontablet{
+		width: 495px;
+	}
+	@include nonmobile{
+		float: right;
+		margin: 0 0 0 -158px;
+		width: calc(100% - 485px);
+	}
+	@include smalltabletonly{
+		margin: 0 0 0 -208px;
+		width: calc(100% - 435px);
+	}
+
+	@include tablet{
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.land-ashgirls-join{
+	clear: both;
+	padding: 51px 0 0;
+
+	@include nontablet{
+		margin: 0 0 0 158px;
+	}
+	@include nonmobile{
+		margin: 0 0 0 108px;
+	}
+
+	.land-ashgirls-tagtitle{
+		margin: 0 0 62px;
+		padding: 0 0 46px;
+		font-size: 34px;
+		font-weight: bold;
+		letter-spacing: 0;
+		line-height: 44px;
+		text-align: left;
+
+		@include nonmobile{
+			margin: 0 0 92px;
+		}
+	}
+	li{
+		position: relative;
+		z-index: 1;
+		margin: 0 0 47px;
+		padding: 0 0 0 50px;
+		min-height: 23px;
+		font-size: 24px;
+		font-weight: bold;
+
+		@include nonmobile{
+			margin: 0 0 67px;
+		}
+
+		&:before{
+			@include pseudoel;
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 23px;
+			height: 23px;
+			background: #000;
+		}
+	}
+}
+
+.land-ashgirls-insta{
+	padding: 44px 0 0;
+
+	@include nonmobile{
+		padding: 114px 0 0;
+	}
+
+	.land-ashgirls-tagtitle{
+		margin: 0 0 45px;
+		max-width: 380px;
+
+		@include nonmobile{
+			margin: 0 0 75px;
+		}
+	}
+}
+
+.land-ashgirls-slider{
+	position: relative;
+
+	@include nonmobile{
+		margin: 0 35px;
+	}
+	@include nontablet{
+		width: 788px;
+		margin: 0 auto;
+	}
+
+	ul{
+		@include mobile{
+			white-space: nowrap !important;
+			width: auto !important;
+		}
+	}
+	li{
+		display: inline-block;
+		margin: 0 5px;
+		width: 20%;
+		width: calc(25% - 10px);
+
+		@include nontablet{
+			width: 187px;
+			height: 260px;
+		}
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+		min-height: 92px;
+	}
+}
+
+.land-ashgirls-slider-nav{
+	display: block;
+	content: "";
+	width: 0;
+  height: 0;
+  border: solid transparent;
+	border-width: 15px 30px;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+
+	@include mobile{
+		display: none !important;
+	}
+
+	&.rw{
+		left: -35px;
+		border-left: 0;
+		border-right-color: #000;
+
+		@include nontablet{
+			left: -45px;
+		}
+	}
+	&.fw{
+		right: -35px;
+		border-right: 0;
+		border-left-color: #000;
+
+		@include nontablet{
+			right: -45px;
+		}
+	}
+}
+
+.caroufredsel_wrapper{
+	@include mobile{
+		overflow-x: scroll !important;
+	}
+}

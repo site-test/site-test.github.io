@@ -1,0 +1,362 @@
+﻿
+/* формы и кнопки */
+
+form{ margin: 0; }
+input, select, textarea, button{ margin: 0; outline: none; vertical-align: middle; box-sizing: border-box; }
+input::-ms-clear{ display: none; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+select{ font-style: normal; }
+textarea{ resize: vertical; }
+input, select, textarea{ padding: 5px; border: 1px solid $bordergray; font: 14px $textfont; }
+
+%button{
+  padding: 14px 15px 12px;
+  color: #fff;
+  background: $maincolor;
+  border: 2px solid $maincolor;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1em;
+  font-family: $mainfont !important;
+  @include fancyfont;
+
+  &:hover{
+    background: $dark;
+    border-color: $dark;
+  }
+  &:disabled{
+    background: #f2f2f2 !important;
+    border-color: #f2f2f2 !important;
+    color: #bbb !important;
+    cursor: default;
+  }
+}
+
+button, .button{
+  @extend %button;
+}
+
+.bwhite{
+  background: transparent !important;
+  border-color: $maincolor;
+  color: $maincolor;
+
+  &:hover{
+    border-color: $gray;
+    color: $gray;
+  }
+  &:disabled{
+    background: transparent !important;
+    border-color: #e2e2e2 !important;
+  }
+}
+
+.bsubmit{
+
+  @include mobile{
+    width: 100%;
+  }
+  .mwshort &{
+    width: 100%;
+  }
+  .feedbackset &{
+    margin-left: 150px;
+
+    @include mobile{
+      margin: 0;
+    }
+  }
+}
+
+.button{
+  display: inline-block;
+  text-decoration: none !important;
+  text-align: center !important;
+
+  &:hover{
+    color: #fff !important;
+  }
+  &.bwhite:hover{
+    color: $gray !important;
+  }
+}
+
+.uploadbut{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  font-size: 0;
+
+  button{
+    position: relative;
+    z-index: 1;
+    margin: 0 !important;
+  }
+  input[type='file']{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 50px;
+    opacity: 0;
+    margin: 0;
+    width: auto !important;
+    cursor: pointer;
+  }
+  &:hover button{
+    border-color: $gray !important;
+    color: $gray !important;
+  }
+}
+
+.editform{
+  font-family: $textfont;
+
+  section{
+    margin: 0 0 30px;
+    padding: 0 0 0 150px;
+
+    @include mobile{
+      padding: 0;
+    }
+
+    &:last-of-type{
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $bordergray;
+
+      @include mobile{
+        padding: 0;
+        margin: 0 0 30px;
+        border: 0;
+      }
+    }
+    .mwshort &{
+      margin: 0 0 20px;
+      padding: 0;
+    }
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .more{
+    margin: 15px 0 0;
+  }
+  .dop{
+    display: block;
+    margin: 10px 0 0;
+    font-size: 12px;
+  }
+  .comment{
+    margin: 5px 0 0;
+    color: $gray;
+  }
+  h4{
+    float: left;
+    margin: 4px 0 0 -150px;
+    width: 140px;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    @include mobile{
+      float: none;
+      margin: 0 0 7px;
+      width: auto;
+    }
+
+    .mwshort &{
+      float: none;
+      margin: 0 0 7px;
+      width: auto;
+      font-size: 11px;
+    }
+  }
+  p{
+    .mwshort &{
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+
+  input, textarea, select{
+    width: 100%;
+  }
+  label{
+    font-size: 14px;
+
+    & + input[type='checkbox'], & + input[type='radio']{
+      margin-left: 20px;
+    }
+  }
+  .feedback{
+    margin: 0 0 5px;
+  }
+  input[type='checkbox'], input[type='radio']{
+    width: auto;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+
+    + label{
+      vertical-align: middle;
+      line-height: 1em;
+
+      .mwshort &{
+        font-size: 12px;
+      }
+    }
+  }
+  a{
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.captcha{
+  img, a{
+    vertical-align: middle;
+  }
+  img{
+    margin: 0 10px 0 0;
+  }
+  a{
+    font-size: 12px;
+  }
+}
+
+.reqdescr{
+  margin: 0 0 20px !important;
+  font: 12px $textfont !important;
+  color: $gray;
+}
+
+.req{
+  font: normal 12px Verdana, Tahoma, sans-serif !important;
+  color: $red !important;
+}
+
+.uploadlist{
+  display: block;
+  margin: 15px 0 0 !important;
+  padding: 0 !important;
+
+  li{
+    display: block;
+    width: 270px;
+    padding: 7px 30px 7px 10px !important;
+    margin: 0 0 10px !important;
+    border: 1px solid $gray;
+    background: #fff;
+    position: relative;
+    font-size: 0 !important;
+    line-height: 1em !important;
+
+    @include mobile{
+      width: 250px;
+    }
+
+    &:last-child{
+      margin: 0;
+    }
+  }
+  b{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.2em;
+  }
+  i{
+    font-size: 11px;
+    font-style: normal;
+    color: $gray;
+    line-height: 1.5em;
+  }
+  .ico{
+    position: absolute;
+    top: 7px;
+    right: 8px;
+
+    &:before{
+      width: 16px;
+      height: 16px;
+      margin: 0;
+    }
+  }
+}
+
+.feedbackset{
+  section + .feedback{
+    margin: 0 0 10px;
+  }
+}
+
+.buts{
+  button, .button{
+    margin: 0 10px 10px 0;
+
+    @include mobile{
+      width: 100%;
+      margin: 0 0 10px;
+
+      &:last-child{
+        margin: 0;
+      }
+    }
+
+    &:last-child, &.rfloat{
+      margin-right: 0;
+    }
+  }
+}
+
+.calendar{
+  input{
+    width: 100px;
+    margin: 0 10px 0 0;
+  }
+  img{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+}
+
+.login-sep{
+  margin: 30px 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  span{
+    display: inline-block;
+    padding: 0 20px;
+    background: #fff;
+    font-size: 13px;
+    line-height: 1em;
+    @include fancyfont;
+    position: relative;
+    z-index: 2;
+  }
+  &:after{
+    @include pseudoel;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid $gray;
+  }
+}

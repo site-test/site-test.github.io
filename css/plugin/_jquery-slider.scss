@@ -1,0 +1,7 @@
+﻿
+/* jQuery Slider */
+
+.ui-slider{ position: relative; background: #eee; height: 8px; border: 1px solid #d7d7d7; margin: 0 10px 0 4px; }
+.ui-slider .ui-slider-range{ position: absolute; z-index: 1; display: block; background: #fff; top: -1px; height: 8px; border: 1px solid #222; }
+.ui-slider .ui-slider-handle{ position: absolute; z-index: 2; display: inline-block; width: 14px; height: 14px; margin: 0 0 0 -5px; background: #fff !important; border: 1px solid #222; top: -4px; outline: none; cursor: pointer; }
+.ui-slider .ui-slider-handle:hover{ border-color: #000; }

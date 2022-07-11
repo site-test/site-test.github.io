@@ -1,0 +1,108 @@
+﻿
+/* магазины */
+
+.shoplist{
+	padding: 10px 0 5px;
+
+	@include mobile{
+		padding: 0 0 10px;
+	}
+
+	li{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 40px;
+		padding: 0 40px 0 0;
+		width: 28%;
+		width: calc(100% / 3 - 27px);
+		font: 13px $textfont;
+
+		&:nth-child(3n){
+			padding: 0;
+		}
+
+		@include mobile{
+			display: block;
+			width: auto;
+			margin: 30px 0 0;
+			padding: 30px 0 0 !important;
+			border-top: 1px solid $bordergray;
+		}
+	}
+	strong{
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+.shop-address{
+	display: inline-block;
+	margin: 0 0 5px;
+}
+
+.shop-time{
+	display: inline-block;
+	margin: 8px 0 5px;
+	font-size: 12px;
+	color: $gray;
+}
+
+.shop-maplink{
+	span{
+		border-bottom: 1px dashed $maincolor;
+		line-height: 1.7em;
+	}
+	&:before{
+		@include pseudoel(inline-block);
+		width: 20px;
+		height: 20px;
+		@include background("PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+DQo8cGF0aCBmaWxsPSIjMzQzMzMzIiBkPSJNOS45LDExLjFjMi4xLDAsMy44LTEuNywzLjgtMy44YzAtMi4xLTEuNy0zLjgtMy44LTMuOGMtMi4xLDAtMy44LDEuNy0zLjgsMy44QzYuMiw5LjQsNy44LDExLjEsOS45LDExLjENCglMOS45LDExLjF6IE05LjksNC4yYzEuNywwLDMuMSwxLjQsMy4xLDMuMWMwLDEuNy0xLjQsMy4xLTMuMSwzLjFjLTEuNywwLTMuMS0xLjQtMy4xLTMuMUM2LjgsNS42LDguMiw0LjIsOS45LDQuMkw5LjksNC4yeiIvPg0KPHBhdGggZmlsbD0iIzM0MzMzMyIgZD0iTTkuOSwwQzUuOCwwLDIuNCwzLjMsMi40LDcuNWMwLDQuNCwzLjgsOC45LDYuNSwxMmMwLDAsMC40LDAuNSwxLDAuNWgwYzAuNSwwLDEtMC41LDEtMC41DQoJYzIuNy0zLjEsNi41LTcuNiw2LjUtMTJDMTcuNCwzLjMsMTQuMSwwLDkuOSwwTDkuOSwweiBNMTAsMTguN0wxMCwxOC43bC0wLjIsMEM3LjUsMTYsMy43LDExLjYsMy43LDcuNWMwLTMuNCwyLjgtNi4zLDYuMy02LjMNCgljMy40LDAsNi4zLDIuOCw2LjMsNi4zQzE2LjIsMTEuNiwxMi4zLDE2LDEwLDE4LjdMMTAsMTguN3oiLz4NCjwvc3ZnPg==");
+		vertical-align: middle;
+		margin: 0 3px 0 0;
+	}
+	&:hover span{
+		border-color: $gray;
+	}
+}
+
+.shop-map{
+		@include mobile{
+		display: none;
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+
+		&.act{
+			display: block;
+		}
+		.iclose{
+			position: absolute;
+			z-index: 2;
+			top: 14px;
+			right: 10px;
+		}
+	}
+}
+
+.shop-map-wrap{
+	height: 600px;
+
+	@include mobile{
+		height: auto;
+		position: absolute;
+		z-index: 1;
+		top: 44px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.shop-maplink-all{
+	margin: 20px 0;
+	font: 13px $textfont;
+}

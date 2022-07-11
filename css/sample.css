@@ -1,0 +1,417 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../font/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+    url('../font/HelveticaNeueCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../font/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+    url('../font/HelveticaNeueCyr-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../font/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+    url('../font/HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.sample {
+    font-family: "Helvetica Neue";
+    padding-top: 20px;
+}
+
+.sample__wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sample__title {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #CDCDCD;
+    text-align: center;
+}
+
+.sample__title-name {
+    
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 23px;
+
+}
+
+.sample__title-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sample__shoes {
+
+}
+
+.sample__shoes-select {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.tattoo-icon {
+    position: relative;
+    width: 100px;
+    margin: 0 18px;
+    text-align: center;
+    transition: .3s ease-in-out opacity;
+}
+
+.tattoo-icon.is-all {
+    opacity: .4;
+}
+
+.tattoo-icon.is-all.is-active {
+    opacity: 1;
+}
+
+.tattoo-icon:hover .tattoo-icon__arrow {
+    display: block;
+}
+
+.tattoo-icon:hover .tattoo-icon__name {
+    
+    font-weight: 700;
+}
+
+.tattoo-icon__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.tattoo-icon__img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.tattoo-icon__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(0.98);
+    }
+}
+
+.tattoo-icon__arrow {
+    display: none;
+    position: absolute;
+    animation: fadeIn 0.6s alternate infinite ease;
+}
+
+.tattoo-icon__arrow img:nth-child(2) {
+    display: none;
+}
+
+.tattoo-icon__arrow--go {
+    bottom: -77px;
+}
+
+.tattoo-icon__arrow--ba {
+    left: 14px;
+    bottom: -84px;
+}
+
+.tattoo-icon__arrow--ob {
+    bottom: -56px;
+    left: -36px;
+}
+
+.tattoo-icon__arrow--ch {
+    left: -10px;
+    bottom: -44px;
+}
+
+.sample__shoes-img {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.sample__shoes-img img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.sample__collection {
+    border-top: 1px solid #CDCDCD;
+    padding-top: 40px;
+    max-width: 784px;
+    margin: 0 auto 30px;
+}
+
+.sample__subtitle {
+    text-align: center;
+}
+
+.sample__subtitle-sub {
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 7px;
+}
+
+.sample__subtitle-title {
+    
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.sample__subtitle-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.sample__subtitle-desc span {
+    display: block;
+    margin-top: 10px;
+}
+
+.tattoo-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+
+.sample__project {
+    font-family: "Helvetica Neue"!important;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    height: 40px;
+    line-height: 44px;
+    background: #FA5794;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 85px;
+}
+
+.sample__project:after {
+    content: '';
+    position: absolute;
+    width: 108px;
+    height: 119px;
+    top: 50%;
+    left: 50%;
+    transform: translate(75%, -15%);
+    background-image: url("../img/sample/cat.png");
+}
+
+.tattoo-item {
+    text-align: center;
+    width: calc(100%/4 - (26px/4)*3);
+}
+
+.tattoo-item__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 16px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.tattoo-item__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tattoo-item__price {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 14px;
+}
+
+.tattoo-item__btn {
+    font-family: "Helvetica Neue"!important;
+    padding: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    background: #1100D2;
+    text-transform: none;
+    border-color: #1100D2;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .sample {
+        padding-top: 0;
+    }
+
+    .sample__title {
+        flex-direction: column;
+    }
+
+    .sample__title-name {
+        margin-bottom: 20px;
+    }
+
+    .sample__title-desc {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .sample__title {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .sample__shoes-select {
+        flex-wrap: wrap;
+        max-width: 320px;
+        margin:  20px auto 0;
+    }
+
+    .sample__shoes {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sample__shoes-img {
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tattoo-icon {
+        margin: 0 30px 30px;
+    }
+
+    .tattoo-icon__arrow--go {
+        bottom: auto;
+        top: -40px;
+        left: -14px;
+    }
+
+    .tattoo-icon__arrow--ba {
+        left: auto;
+        bottom: auto;
+        top: -40px;
+        right: -14px;
+    }
+
+    .tattoo-icon__arrow--ob {
+        bottom: auto;
+        top: -200px;
+        left: -32px;
+    }
+
+    .tattoo-icon__arrow--ch {
+        left: auto;
+        bottom: auto;
+        top: -200px;
+        right: -46px;
+    }
+
+    .tattoo-icon__arrow img:nth-child(1) {
+        display: none;
+    }
+
+    .tattoo-icon__arrow img:nth-child(2) {
+        display: block;
+    }
+
+    .sample__subtitle-sub {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .sample__subtitle-title {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .sample__subtitle-desc {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .tattoo-list {
+        flex-wrap: wrap;
+        margin-bottom: 7px;
+    }
+
+    .tattoo-item {
+        width: calc(100%/2 - 20px);
+        margin: 0 10px 20px;
+    }
+
+    .tattoo-item__name {
+        margin-top: 6px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .tattoo-item__price {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+
+    .tattoo-item__btn {
+        font-size: 12px;
+        line-height: 36px;
+        height: 36px;
+    }
+
+    .sample__project {
+        font-size: 12px;
+        line-height: 36px;
+        height: 36px;
+    }
+
+    .sample__project:after {
+        transform: translate(20%, -15%);
+    }
+}

@@ -1,0 +1,42 @@
+﻿
+/* системные сообщения */
+
+.feedback{
+	margin: 0 0 10px;
+	text-align: center;
+
+	p{
+		margin: 0 !important;
+		padding: 5px 10px;
+		text-transform: none;
+		font: normal 11px $textfont !important;
+
+		&:empty{
+			padding: 0;
+		}
+	}
+	a{
+		color: #000 !important;
+		text-decoration: underline !important;
+
+		&:hover{
+			text-decoration: none !important;
+		}
+	}
+}
+
+.fbok{
+	background: #dbffca;
+
+	p{
+		color: #068900 !important;
+	}
+}
+
+.fber{
+	background: #ffe0dc;
+
+	p{
+		color: #c00 !important;
+	}
+}

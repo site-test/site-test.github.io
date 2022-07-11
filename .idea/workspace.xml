@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dd19970-76e6-4729-b102-2f5eb64f6263" name="Default Changelist" comment="">
+    <list default="true" id="6dd19970-76e6-4729-b102-2f5eb64f6263" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Black.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Black.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic_1.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic_1.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic_1.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic_1.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtBlkIta.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtBlkIta.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtBlkIta.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtBlkIta.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtLtIta.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtLtIta.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtLtIta.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtLtIta.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBlack.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBlack.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBlack.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBlack.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBoldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-LightItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-LightItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-LightItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-MediumItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-MediumItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-MediumItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Thin.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Thin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ThinItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ThinItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ThinItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +85,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,21 +106,22 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/kind" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/promo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/kind" />
+      <recent name="$PROJECT_DIR$/images/promo" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images/sprite" />
       <recent name="$PROJECT_DIR$/css" />
-      <recent name="$PROJECT_DIR$/font" />
-      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/css/fonts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,7 +135,14 @@
       <workItem from="1621531087932" duration="1686000" />
       <workItem from="1623851974853" duration="2884000" />
       <workItem from="1623858587561" duration="1261000" />
-      <workItem from="1623891470251" duration="15339000" />
+      <workItem from="1623891470251" duration="16008000" />
+      <workItem from="1636459712187" duration="4626000" />
+      <workItem from="1638226198981" duration="3361000" />
+      <workItem from="1640417001190" duration="3439000" />
+      <workItem from="1640425989059" duration="3759000" />
+      <workItem from="1640511613498" duration="1756000" />
+      <workItem from="1650289363780" duration="3584000" />
+      <workItem from="1650293774590" duration="2912000" />
     </task>
     <task id="LOCAL-00001" summary="page kind">
       <created>1623941954118</created>
@@ -70,14 +158,157 @@
       <option name="project" value="LOCAL" />
       <updated>1623943057232</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix">
+      <created>1623943409851</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623943409851</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix">
+      <created>1636461915891</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636461915892</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix">
+      <created>1636462142449</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636462142449</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix">
+      <created>1636468832525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636468832527</updated>
+    </task>
+    <task id="LOCAL-00007" summary="remove all">
+      <created>1640418148158</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640418148158</updated>
+    </task>
+    <task id="LOCAL-00008" summary="create ash">
+      <created>1640418310986</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640418310986</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update images">
+      <created>1640418631657</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640418631657</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add image">
+      <created>1640419068705</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640419068705</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <created>1640423198000</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640423198000</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update script">
+      <created>1640423435804</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640423435804</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update style">
+      <created>1640426044681</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640426044681</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updated fix">
+      <created>1640427630897</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1640427630897</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix">
+      <created>1640429018461</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1640429018461</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix js">
+      <created>1640511851330</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1640511851331</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add promo">
+      <created>1650292515281</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1650292515282</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix">
+      <created>1650293525587</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1650293525587</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix">
+      <created>1650295791795</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1650295791795</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="page kind" />
+    <MESSAGE value="remove all" />
+    <MESSAGE value="create ash" />
+    <MESSAGE value="update images" />
+    <MESSAGE value="add image" />
+    <MESSAGE value="update" />
+    <MESSAGE value="update script" />
+    <MESSAGE value="update style" />
+    <MESSAGE value="updated fix" />
+    <MESSAGE value="fix js" />
+    <MESSAGE value="add promo" />
     <MESSAGE value="fix" />
     <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>

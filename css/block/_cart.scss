@@ -1,0 +1,741 @@
+﻿
+/* корзина */
+
+.cart{
+	margin: 0 0 30px;
+	padding: 30px 0 0;
+
+	@include mobile{
+		margin: -20px 0 30px;
+		padding: 0;
+	}
+	.editform{
+		margin: 0 0 20px;
+	}
+}
+
+.tcart{
+	width: 100%;
+	margin: 0 0 20px;
+	font-family: $textfont;
+
+	@include mobile{
+		margin: 0;
+
+		&, tbody, tr{
+			display: block;
+		}
+		tr{
+			position: relative;
+			z-index: 1;
+			padding: 0 0 20px;
+			margin: 0 0 20px;
+			border-bottom: 1px solid $bordergray;
+
+			&.tfback{
+				padding: 0 0 10px;
+				margin: 0;
+				border: 0;
+
+				td{
+					display: block;
+					width: auto;
+				}
+			}
+			&.tab-outofstock-prodinfo{
+				padding: 0 0 10px;
+				margin: 0;
+				border: 0;
+			}
+		}
+		tr:first-child{
+			display: none;
+		}
+		td{
+			display: inline-block;
+			vertical-align: top;
+			border: 0 !important;
+			width: 40%;
+			width: calc(50% - 20px);
+			text-align: center !important;
+
+			&.cart-product{
+				text-align: left !important;
+			}
+			&.cart-price, &.cart-discount, &.cart-sum{
+				width: 26%;
+				width: calc(100% / 3 - 20px);
+				overflow: visible;
+
+				label{
+					display: block;
+				}
+			}
+			&.tab-outofstock-status{
+				@include mobile{
+					display: block;
+					width: auto;
+					padding: 0;
+				}
+			}
+		}
+		.cart-delivery, .totalsum{
+			td{
+				display: block;
+				width: auto;
+			}
+			 .cart-del{
+				 display: none;
+			 }
+		}
+		select{
+			width: 100px;
+		}
+
+		& ~ .buts{
+			float: none !important;
+		}
+	}
+	th, td{
+		border-bottom: 1px solid $bordergray;
+	}
+	th{
+		padding: 5px 10px;
+		font-size: 13px;
+		@include fancyfont;
+	}
+	td{
+		padding: 10px;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	s{
+		color: $gray;
+	}
+	.sale{
+		color: $red;
+	}
+	label, select{
+		vertical-align: middle;
+	}
+	label{
+		font-size: 12px;
+		margin: 0 5px 0 0;
+
+		@include mobile{
+				font-size: 10px;
+				color: $gray;
+		}
+	}
+	.totalsum{
+		b{
+			font-size: 18px;
+		}
+	}
+	.tfback{
+		td{
+			border: 0;
+			padding: 10px 0 0 !important;
+		}
+		.feedback{
+			margin: 0;
+		}
+	}
+	.iclose, .iclose:before{
+		width: 16px;
+		height: 16px;
+		margin: 0;
+	}
+}
+
+.cart-img{
+	padding-left: 0 !important;
+
+	@include mobile{
+		width: auto !important;
+		padding: 0 !important;
+		vertical-align: middle !important;
+	}
+}
+
+.cart-product{
+	@include mobile{
+		width: 70% !important;
+		width: calc(100% - 120px) !important;
+		vertical-align: middle !important;
+	}
+	a{
+		color: $maincolor;
+		font-weight: bold;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	i{
+		display: inline-block;
+		margin: 5px 0 0;
+		font-size: 11px;
+		font-style: normal;
+		color: $gray;
+	}
+}
+
+.cart-del{
+	@include mobile{
+		width: auto !important;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+	}
+}
+
+.cart-discount-descr{
+	display: inline-block;
+	position: relative;
+	z-index: 5;
+	cursor: help;
+
+	@include mobile{
+		table{
+			width: 250px;
+		}
+		tbody{
+			display: table;
+		}
+		tr{
+			display: table-row !important;
+			border: 0;
+
+			td:last-child{
+				text-align: right !important;
+			}
+		}
+	}
+
+	&>b{
+		display: inline-block;
+		font-weight: normal;
+		border-bottom: 1px dotted $green;
+	}
+	.wrap{
+		display: none;
+		position: absolute;
+		z-index: 2;
+		bottom: 100%;
+		right: -40px;
+		margin: 0 0 10px;
+		padding: 1px 5px;
+		background: #fff;
+		box-shadow: 0 0 5px #ccc;
+
+		@include mobile{
+			right: -115px;
+		}
+
+		&:before{
+			@include arrow(10px);
+			z-index: 1;
+			border-top-color: #fff;
+		}
+		&:after{
+			@include arrow(11px);
+			margin: 0 -1px 0 0;
+			border-top-color: #ccc;
+		}
+		&:after, &:before{
+			position: absolute;
+			top: 100%;
+			right: 60px;
+			border-bottom: 0;
+
+			@include mobile{
+				right: 48%;
+			}
+		}
+	}
+	tr td:first-child{
+		min-width: 120px;
+		text-align: left !important;
+	}
+	td{
+		font-size: 12px !important;
+		text-transform: none;
+		border-color: $lightbordergray;
+
+		@include mobile{
+			display: table-cell;
+			border-bottom: 1px solid $lightbordergray !important;
+		}
+	}
+	tr:last-child td{
+		border: 0 !important;
+	}
+	&:hover{
+		.wrap{
+			display: block;
+		}
+	}
+}
+
+.cart-delivery-num{
+	@include mobile{
+		padding-top: 0 !important;
+	}
+}
+
+.promocode, .customercard{
+	input, button{
+		vertical-align: middle;
+	}
+	button{
+		padding: 8px 10px 7px;
+	  font-size: 12px;
+	}
+}
+
+.promocode{
+	margin: 0 0 20px;
+
+	label{
+		display: inline-block;
+		vertical-align: middle;
+		font: 12px $textfont;
+		text-transform: uppercase;
+		margin: 0 10px 0 0;
+
+		@include mobile{
+			margin: 7px 10px 7px 0;
+		}
+	}
+	input{
+		width: 150px;
+		margin: 0 5px 0 0;
+	}
+}
+
+.progres{
+	padding: 0 0 20px;
+	margin: 0 0 20px;
+	border-bottom: 1px solid $bordergray;
+	font: 13px $textfont;
+
+	i{
+		display: inline-block;
+		margin: 0 5px;
+		width: 30px;
+		font-size: 0;
+		border-bottom: 1px dotted $maincolor;
+		vertical-align: middle;
+
+		@include mobile{
+			display: none;
+		}
+	}
+	b{
+		font-weight: normal;
+	}
+	a{
+		color: $maincolor;
+
+		@include mobile{
+			display: none;
+		}
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+.pnext{
+	color: #bbb;
+
+	@include mobile{
+		display: none;
+	}
+
+	i{
+		border-bottom: 1px dotted #bbb;
+	}
+}
+
+.tab-choose{
+	width: 100%;
+	margin: 0 0 20px;
+	font: 14px $textfont;
+
+	@include mobile{
+		&, tbody, tr, td, th{
+			display: block;
+		}
+		tr{
+			padding: 10px 0;
+			border-bottom: 1px solid $bordergray;
+		}
+	}
+
+	th, td{
+		padding: 15px 10px;
+		text-align: left;
+		border-bottom: 1px solid $bordergray;
+
+		@include mobile{
+			border: 0;
+		}
+	}
+	th{
+		padding: 5px 10px;
+		vertical-align: top;
+		font-size: 12px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	tr.act{
+		background: #eee;
+
+		i{
+			color: $maincolor;
+		}
+	}
+	b{
+		vertical-align: middle;
+		line-height: 1em;
+	}
+	i{
+		display: inline-block;
+		margin: 5px 0;
+		font-style: normal;
+		font-size: 12px;
+		color: $gray;
+	}
+	label, input[type="radio"]{
+		cursor: pointer;
+	}
+	input[type="radio"]{
+		margin: 0 5px 0 0;
+	}
+	tr td:first-child label{
+		display: inline-block;
+		padding: 5px;
+		background: #fff;
+		border: 1px solid #eee;
+	}
+	select{
+		width: 100%;
+	}
+	.comment{
+		margin: 5px 0 0;
+	}
+	a{
+		text-decoration: underline;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+.tab-choose-ico{
+	width: 92px;
+	text-align: center;
+
+	@include mobile{
+		display: none !important;
+	}
+}
+
+.tab-choose-price{
+	width: 100px;
+	text-align: center !important;
+
+	@include mobile{
+		width: auto;
+		padding-top: 0 !important;
+		text-align: left !important;
+	}
+}
+
+.adrset, .pickpoint{
+	font-size: 13px;
+	padding: 10px 15px;
+	background: #fff;
+}
+
+.adrset{
+	margin: 6px 0 0;
+
+	@include mobile{
+		margin: 10px -5px 0;
+	}
+
+	h6{
+		margin: 0 0 5px;
+		font-size: 12px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	input + h6{
+		margin-top: 10px;
+	}
+	section{
+		margin: 5px 0 0;
+
+		span{
+			display: inline-block;
+			margin: 3px 10px 3px 0;
+
+			&:last-child{
+				margin: 5px 0;
+			}
+		}
+	}
+	input[type='text']{
+		width: 250px;
+	}
+	.housenum input[type='text']{
+		width: 50px;
+	}
+	label{
+		cursor: default;
+	}
+}
+
+.pickpoint{
+	margin: 10px 0 0;
+}
+
+.cardlist{
+	padding: 10px;
+	background: #fff;
+	font-size: 0;
+
+	img{
+		margin: 0 15px 0 0;
+		vertical-align: middle;
+	}
+}
+
+.alert{
+	margin: 0 0 30px;
+	font: 13px $textfont;
+	color: $red;
+}
+
+.tab-orderdetails{
+	width: 100%;
+	font: 14px $textfont;
+
+	@include mobile{
+		&, tbody, tr, td, th{
+			display: block;
+		}
+	}
+
+	tr:nth-child(odd){
+		background: $darkbg;
+	}
+
+	th, td{
+		padding: 8px 10px;
+		text-align: left;
+		vertical-align: top;
+	}
+	th{
+		width: 26%;
+		padding-right: 20px;
+		text-align: right;
+
+		@include mobile{
+			width: auto;
+			padding: 15px 10px 0;
+			text-align: left;
+		}
+	}
+	td{
+		@include mobile{
+			padding: 0 10px 15px;
+		}
+	}
+	textarea{
+		width: 100%;
+	}
+}
+
+.agree{
+	margin: 30px 0 20px;
+	padding: 0 0 20px;
+	text-align: center;
+	font: 13px $textfont;
+	border-bottom: 1px solid $bordergray;
+
+	a{
+		text-decoration: underline;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+.cartresult{
+	text-align: center;
+
+	h4{
+		font: bold 18px $textfont;
+	}
+	.comment{
+		p{
+			font-size: 11px;
+			color: $gray;
+		}
+	}
+	img{
+		margin: 30px 0;
+		max-width: 100%;
+	}
+}
+
+.customercard{
+	padding: 0 0 10px;
+
+	.prod-detail{
+		font-size: 0;
+	}
+	input{
+		border: 0;
+		width: 192px;
+		height: 23px;
+		position: relative;
+		z-index: 2;
+		background: transparent;
+	}
+	button{
+		margin: 0 0 10px;
+	}
+}
+
+.customercard-input, .customercard-info{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+}
+
+.customercard-input{
+	margin: 0 5px 10px 0;
+	padding: 3px 4px;
+  border: 1px solid #a4a5a9;
+}
+
+.customercard-info{
+	margin: 0 5px 0 0;
+
+	img{
+		vertical-align: middle;
+		cursor: help;
+	}
+	&:hover{
+		.customercard-info-text{
+			display: block;
+		}
+	}
+}
+
+.customercard-info-text{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	bottom: 35px;
+	left: -5px;
+	width: 220px;
+	padding: 5px;
+	background: #fff;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+
+	p{
+		margin: 0;
+		font: 10px / 12px $textfont;
+		white-space: normal;
+	}
+	p + p{
+		margin-top: 12px;
+	}
+	&:after{
+		@include arrow(10px);
+		border-top-color: #fff;
+		border-bottom: 0;
+		position: absolute;
+		top: 100%;
+		left: 6px;
+	}
+}
+
+.customercard-placeholder{
+	position: absolute;
+	z-index: 1;
+	top: 9px;
+	left: 37px;
+	font: 10px / 10px $textfont;
+	color: $gray;
+}
+
+.tab-outofstock{
+	border-top: 1px solid $bordergray;
+
+	tr{
+		@include mobile{
+			&:last-child{
+				border: 0 !important;
+			}
+		}
+	}
+	th{
+		padding: 5px 10px;
+		font-weight: normal;
+		font-size: 12px !important;
+		text-transform: none;
+		color: #777;
+	}
+}
+
+.tab-outofstock-status{
+	text-align: center;
+	font-size: 11px !important;
+
+	span, label{
+		@include mobile{
+			vertical-align: middle;
+		}
+	}
+	label{
+		font-size: 11px !important;
+	}
+}
+
+.tab-outofstock-prodinfo{
+	td{
+		border: 0 !important;
+	}
+}
+
+.tab-outofstock-prodbutton{
+	td{
+		padding-top: 0 !important;
+		text-align: right;
+
+		@include mobile{
+			display: block;
+			width: auto;
+			text-align: center;
+		}
+	}
+	button{
+		width: 200px;
+		box-sizing: border-box;
+		padding: 8px 10px 7px;
+		font-size: 13px;
+		font-weight: normal;
+	}
+}
