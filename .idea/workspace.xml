@@ -2,81 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd19970-76e6-4729-b102-2f5eb64f6263" name="Default Changelist" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Black.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic_1.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic_1.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic_1.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-BoldItalic_1.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtBlkIta.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtBlkIta.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtBlkIta.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtBlkIta.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtLtIta.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtLtIta.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtLtIta.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtLtIta.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBlack.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBlack.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBlack.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBlack.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBoldItalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBoldItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraBoldItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraLight.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraLight.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ExtraLight.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-LightItalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-LightItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-LightItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-MediumItalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-MediumItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-MediumItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-Thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ThinItalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ThinItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/NeueHaasUnica-ThinItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1soFYoPiEOmqLNGyC8kYXRO1z0X" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -105,20 +34,17 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/promo" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/a1/MadRobots/site-test",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/promo" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images/promo" />
       <recent name="$PROJECT_DIR$/images/sprite" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/css/fonts" />
@@ -143,6 +69,7 @@
       <workItem from="1640511613498" duration="1756000" />
       <workItem from="1650289363780" duration="3584000" />
       <workItem from="1650293774590" duration="2912000" />
+      <workItem from="1657555857417" duration="583000" />
     </task>
     <task id="LOCAL-00001" summary="page kind">
       <created>1623941954118</created>
@@ -277,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650295791795</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix">
+      <created>1657556013928</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657556013928</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +227,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
